@@ -4,608 +4,944 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>HowToAIjob — Find Work With AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
 <style>
-  :root {
-    --bg: #0a0f1e;
-    --surface: #111827;
-    --surface2: #1a2236;
-    --border: rgba(255,255,255,0.07);
-    --blue: #2563eb;
-    --blue-light: #3b82f6;
-    --blue-glow: rgba(37,99,235,0.15);
-    --text: #f1f5f9;
-    --muted: #64748b;
-    --muted2: #94a3b8;
-    --green: #22c55e;
-    --yellow: #f59e0b;
-  }
+:root{
+  --bg:#020a0f;
+  --surface:rgba(255,255,255,0.03);
+  --surface2:rgba(255,255,255,0.05);
+  --surface3:rgba(255,255,255,0.07);
+  --border:rgba(0,255,213,0.08);
+  --border2:rgba(0,255,213,0.16);
+  --accent:#00ffd5;
+  --accent2:#00c4ff;
+  --accent-dim:rgba(0,255,213,0.1);
+  --blue:#00c4ff;
+  --blue-dim:rgba(0,196,255,0.1);
+  --green:#00ffd5;
+  --green-dim:rgba(0,255,213,0.08);
+  --amber:#ffc653;
+  --amber-dim:rgba(255,198,83,0.08);
+  --red:#ff5f6e;
+  --red-dim:rgba(255,95,110,0.08);
+  --purple:#c084fc;
+  --purple-dim:rgba(192,132,252,0.08);
+  --text:#e8f5f3;
+  --text2:#7fb5b0;
+  --text3:#2e5a57;
+  --font:'Space Grotesk',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --radius:14px;
+  --radius-sm:8px;
+  --tr:0.25s cubic-bezier(0.4,0,0.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font);
+  min-height:100vh;
+  overflow-x:hidden;
+  line-height:1.6;
+}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:#0d3330;border-radius:99px;}
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+/* CANVAS — full fixed background */
+#net{position:fixed;inset:0;z-index:0;pointer-events:none;}
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    min-height: 100vh;
-    line-height: 1.6;
-  }
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  height:66px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 2.5rem;
+  background:rgba(2,10,15,0.88);
+  backdrop-filter:blur(24px);
+  border-bottom:1px solid var(--border);
+}
+.logo{font-size:1.2rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.5px;display:flex;align-items:center;gap:8px;}
+.logo em{font-style:normal;color:var(--accent);}
+.logo-badge{background:var(--accent);color:#020a0f;font-size:0.62rem;font-weight:700;padding:2px 7px;border-radius:99px;letter-spacing:1px;}
+.nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color var(--tr);}
+.nav-links a:hover{color:var(--accent);}
+.nav-cta{background:transparent;color:var(--accent) !important;padding:0.45rem 1.25rem;border-radius:var(--radius-sm);font-size:0.875rem;font-weight:600;text-decoration:none;transition:all var(--tr);border:1px solid var(--border2);}
+.nav-cta:hover{background:var(--accent-dim);}
 
-  /* ── NAVBAR ── */
-  nav {
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(10,15,30,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    height: 64px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
+/* TICKER */
+.ticker-wrap{background:rgba(0,255,213,0.03);border-bottom:1px solid var(--border);overflow:hidden;height:36px;display:flex;align-items:center;position:relative;z-index:90;}
+.ticker-label{background:var(--accent);color:#020a0f;font-size:0.68rem;font-weight:700;padding:0 14px;height:100%;display:flex;align-items:center;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;flex-shrink:0;}
+.ticker-track{display:flex;gap:3.5rem;animation:ticker 38s linear infinite;white-space:nowrap;padding-left:2rem;}
+.ticker-item{font-size:0.75rem;font-weight:500;color:var(--text2);display:flex;align-items:center;gap:7px;font-family:var(--mono);}
+.t-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:lp 2s ease infinite;}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
-  .nav-logo {
-    font-size: 1.3rem; font-weight: 900;
-    color: var(--text); text-decoration: none;
-    letter-spacing: -0.5px;
-  }
-  .nav-logo span { color: var(--blue); }
+/* HERO */
+.hero{
+  position:relative;z-index:1;
+  padding:6rem 2rem 4rem;
+  text-align:left;
+  max-width:1080px;margin:0 auto;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:0.72rem;font-weight:600;
+  color:var(--accent);letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:1.5rem;
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:lp 2s ease infinite;}
+@keyframes lp{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,255,213,0.5);}50%{opacity:0.7;box-shadow:0 0 0 6px rgba(0,255,213,0);}}
 
-  .nav-links {
-    display: flex; gap: 2rem; align-items: center;
-    list-style: none;
-  }
-  .nav-links a {
-    color: var(--muted2); text-decoration: none;
-    font-size: 0.875rem; font-weight: 500;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--text); }
+.hero h1{
+  font-size:clamp(3rem,7vw,6.5rem);
+  font-weight:700;
+  line-height:0.95;
+  letter-spacing:-3px;
+  color:#fff;
+  margin-bottom:0.2em;
+}
+.hero h1 .accent-line{
+  color:var(--accent);
+  display:block;
+}
+.hero-desc{
+  font-size:1rem;color:var(--text2);
+  max-width:420px;margin:1.8rem 0 2.5rem;
+  font-weight:400;line-height:1.75;
+}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4rem;}
+.btn-primary{
+  background:var(--accent);color:#020a0f;
+  padding:0.75rem 2rem;border-radius:var(--radius-sm);
+  font-size:0.9rem;font-weight:700;
+  text-decoration:none;transition:all var(--tr);
+  display:flex;align-items:center;gap:8px;border:1px solid transparent;
+  letter-spacing:0.3px;
+}
+.btn-primary:hover{box-shadow:0 0 40px rgba(0,255,213,0.3);transform:translateY(-1px);}
+.btn-ghost{
+  background:transparent;color:var(--text);
+  padding:0.75rem 2rem;border-radius:var(--radius-sm);
+  font-size:0.9rem;font-weight:600;
+  text-decoration:none;border:1px solid var(--border2);
+  transition:all var(--tr);display:flex;align-items:center;gap:8px;
+}
+.btn-ghost:hover{background:var(--accent-dim);border-color:var(--accent);color:var(--accent);}
 
-  .nav-cta {
-    background: var(--blue); color: #fff !important;
-    padding: 0.5rem 1.2rem; border-radius: 8px;
-    font-weight: 600 !important;
-  }
-  .nav-cta:hover { background: var(--blue-light) !important; }
+/* STATS STRIP */
+.stats-strip{
+  display:flex;gap:0;
+  background:rgba(0,255,213,0.03);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;max-width:620px;
+}
+.s-item{flex:1;padding:1.2rem 1rem;text-align:center;border-right:1px solid var(--border);}
+.s-item:last-child{border-right:none;}
+.s-num{font-size:1.7rem;font-weight:700;font-family:var(--mono);display:block;letter-spacing:-1px;}
+.s-lbl{font-size:0.65rem;color:var(--text3);text-transform:uppercase;letter-spacing:2px;margin-top:2px;display:block;}
 
-  /* ── HERO ── */
-  .hero {
-    padding: 5rem 2rem 3rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
+/* CONTAINER */
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem 5rem;position:relative;z-index:1;}
 
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 800px 400px at 50% 0%, rgba(37,99,235,0.12), transparent 70%);
-    pointer-events: none;
-  }
+/* SECTION HEADER */
+.sec-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:1.5rem;padding-bottom:1rem;
+  border-bottom:1px solid var(--border);
+}
+.sec-title{
+  font-size:0.78rem;font-weight:700;color:var(--accent);
+  text-transform:uppercase;letter-spacing:2.5px;font-family:var(--mono);
+  display:flex;align-items:center;gap:8px;
+}
+.sec-badge{
+  background:var(--accent-dim);border:1px solid var(--border2);
+  font-size:0.7rem;color:var(--accent);font-family:var(--mono);
+  padding:3px 10px;border-radius:99px;
+}
+.filter-wrap{display:flex;gap:6px;}
+.f-btn{
+  background:transparent;border:1px solid var(--border);
+  color:var(--text3);font-size:0.72rem;font-weight:600;
+  padding:4px 12px;border-radius:99px;cursor:pointer;
+  transition:all var(--tr);font-family:var(--font);letter-spacing:0.3px;
+}
+.f-btn:hover,.f-btn.on{background:var(--accent-dim);border-color:var(--accent2);color:var(--accent);}
 
-  .hero-badge {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--blue-glow);
-    border: 1px solid rgba(37,99,235,0.3);
-    border-radius: 999px;
-    padding: 0.35rem 1rem;
-    font-size: 0.8rem; font-weight: 600;
-    color: var(--blue-light);
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.5px;
-  }
+/* SEARCH */
+.s-wrap{position:relative;max-width:100%;margin-bottom:1.5rem;}
+.s-input{
+  width:100%;padding:0.85rem 1rem 0.85rem 2.75rem;
+  background:var(--surface);border:1px solid var(--border2);
+  border-radius:var(--radius);color:var(--text);font-size:0.875rem;
+  font-family:var(--font);outline:none;transition:all var(--tr);
+}
+.s-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,255,213,0.08);}
+.s-input::placeholder{color:var(--text3);}
+.s-ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:0.9rem;pointer-events:none;}
 
-  .hero h1 {
-    font-size: clamp(2.2rem, 5vw, 3.8rem);
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -1.5px;
-    margin-bottom: 1.2rem;
-    color: var(--text);
-  }
-  .hero h1 span { color: var(--blue); }
+/* JOB CARDS */
+.jobs-list{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem;}
 
-  .hero p {
-    font-size: 1.1rem; color: var(--muted2);
-    max-width: 540px; margin: 0 auto 2.5rem;
-  }
+/* PAGINATION */
+.pagination{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:3rem;gap:1rem;
+}
+.pg-info{font-size:0.72rem;color:var(--text3);font-family:var(--mono);}
+.pg-info span{color:var(--accent);}
+.pg-btns{display:flex;align-items:center;gap:6px;}
+.pg-btn{
+  background:transparent;border:1px solid var(--border);
+  color:var(--text2);font-size:0.75rem;font-weight:600;
+  padding:6px 14px;border-radius:7px;cursor:pointer;
+  transition:all var(--tr);font-family:var(--font);
+  display:flex;align-items:center;gap:5px;
+}
+.pg-btn:hover:not(:disabled){background:var(--accent-dim);border-color:var(--accent);color:var(--accent);}
+.pg-btn:disabled{opacity:0.25;cursor:not-allowed;}
+.pg-num{
+  background:transparent;border:1px solid var(--border);
+  color:var(--text3);font-size:0.72rem;font-weight:600;
+  width:32px;height:32px;border-radius:7px;cursor:pointer;
+  transition:all var(--tr);font-family:var(--mono);
+  display:flex;align-items:center;justify-content:center;
+}
+.pg-num:hover{background:var(--accent-dim);border-color:var(--border2);color:var(--accent);}
+.pg-num.active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent);}
+@keyframes pgFade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
 
-  .hero-stats {
-    display: flex; gap: 2rem; justify-content: center;
-    flex-wrap: wrap; margin-bottom: 1rem;
-  }
-  .stat {
-    display: flex; flex-direction: column; align-items: center;
-  }
-  .stat-num {
-    font-size: 1.6rem; font-weight: 900; color: var(--text);
-  }
-  .stat-label {
-    font-size: 0.75rem; color: var(--muted); letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+.jcard{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.2rem 1.5rem;
+  display:flex;align-items:center;gap:1.25rem;
+  text-decoration:none;color:inherit;
+  transition:all var(--tr);
+  position:relative;overflow:hidden;
+}
+.jcard::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--accent),var(--blue));
+  transform:scaleY(0);transform-origin:bottom;
+  transition:transform var(--tr);
+}
+.jcard:hover{
+  border-color:var(--border2);
+  background:var(--surface2);
+  transform:translateX(4px);
+}
+.jcard:hover::before{transform:scaleY(1);}
 
-  /* ── MAIN LAYOUT ── */
-  .container {
-    max-width: 1100px; margin: 0 auto;
-    padding: 0 1.5rem 4rem;
-  }
+.jcard.hot{
+  background:rgba(0,255,213,0.02);
+  border-color:rgba(0,255,213,0.12);
+}
+.jcard.hot::before{transform:scaleY(1);}
 
-  /* ── SECTION HEADER ── */
-  .section-header {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 1.5rem; padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
-  }
-  .section-title {
-    font-size: 1.1rem; font-weight: 700;
-    color: var(--text); letter-spacing: -0.3px;
-  }
-  .section-count {
-    font-size: 0.8rem; color: var(--muted);
-    background: var(--surface2);
-    padding: 0.25rem 0.75rem; border-radius: 999px;
-  }
+.jico{
+  width:50px;height:50px;border-radius:12px;
+  background:var(--surface3);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;flex-shrink:0;
+  transition:transform var(--tr);
+}
+.jcard:hover .jico{transform:scale(1.06);}
 
-  /* ── JOB CARDS ── */
-  .jobs-grid {
-    display: flex; flex-direction: column; gap: 1rem;
-    margin-bottom: 3rem;
-  }
+.jbody{flex:1;min-width:0;}
+.jtop{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
+.jtitle{font-size:0.95rem;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.hot-badge{background:rgba(0,255,213,0.12);color:var(--accent);font-size:0.62rem;font-weight:700;padding:2px 8px;border-radius:99px;letter-spacing:0.5px;flex-shrink:0;border:1px solid rgba(0,255,213,0.2);}
+.jco{font-size:0.8rem;color:var(--text2);margin-bottom:7px;font-family:var(--mono);}
+.tags{display:flex;gap:5px;flex-wrap:wrap;}
+.tag{font-size:0.68rem;font-weight:600;padding:2px 8px;border-radius:5px;letter-spacing:0.3px;border:1px solid;}
+.tg{background:var(--green-dim);color:var(--green);border-color:rgba(0,255,213,0.2);}
+.tc{background:var(--blue-dim);color:var(--blue);border-color:rgba(0,196,255,0.2);}
+.ta{background:var(--amber-dim);color:var(--amber);border-color:rgba(255,198,83,0.2);}
+.tr{background:var(--red-dim);color:var(--red);border-color:rgba(255,95,110,0.2);}
+.tp{background:var(--purple-dim);color:var(--purple);border-color:rgba(192,132,252,0.2);}
 
-  .job-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.4rem 1.6rem;
-    display: flex; align-items: center; gap: 1.2rem;
-    text-decoration: none; color: inherit;
-    transition: all 0.2s;
-    position: relative;
-    overflow: hidden;
-  }
-  .job-card::before {
-    content: '';
-    position: absolute; left: 0; top: 0; bottom: 0;
-    width: 3px; background: var(--blue);
-    opacity: 0; transition: opacity 0.2s;
-  }
-  .job-card:hover {
-    border-color: rgba(37,99,235,0.3);
-    background: var(--surface2);
-    transform: translateY(-1px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  }
-  .job-card:hover::before { opacity: 1; }
+.jright{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex-shrink:0;}
+.jpay{font-size:1rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:-0.5px;}
+.jpay.b{color:var(--blue);}
+.jpay.a{color:var(--amber);}
+.jtime{font-size:0.65rem;color:var(--text3);font-family:var(--mono);}
+.apply{
+  background:transparent;color:var(--accent);
+  padding:5px 14px;border-radius:6px;
+  font-size:0.75rem;font-weight:600;
+  transition:all var(--tr);white-space:nowrap;
+  border:1px solid rgba(0,255,213,0.25);
+  display:flex;align-items:center;gap:4px;
+}
+.jcard:hover .apply{background:var(--accent-dim);border-color:var(--accent);}
 
-  .job-icon {
-    width: 48px; height: 48px; border-radius: 12px;
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.4rem; flex-shrink: 0;
-  }
+/* LIVE FEED */
+.feed-box{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;
+}
+.feed-hd{
+  padding:0.85rem 1.25rem;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(0,255,213,0.02);
+}
+.feed-title{font-size:0.72rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:8px;}
+.feed-body{max-height:190px;overflow:hidden;position:relative;}
+.feed-body::after{content:'';position:absolute;bottom:0;left:0;right:0;height:50px;background:linear-gradient(transparent,rgba(2,10,15,0.95));pointer-events:none;}
+.feed-row{
+  padding:0.65rem 1.25rem;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:10px;
+  font-size:0.77rem;color:var(--text2);font-family:var(--mono);
+  animation:fsld 0.4s ease both;
+}
+.fdot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:lp 2s ease infinite;}
+.ftime{font-size:0.68rem;color:var(--text3);margin-left:auto;}
+@keyframes fsld{from{opacity:0;transform:translateY(-8px);}to{opacity:1;transform:none;}}
 
-  .job-info { flex: 1; }
-  .job-title {
-    font-size: 1rem; font-weight: 700;
-    color: var(--text); margin-bottom: 0.25rem;
-  }
-  .job-company {
-    font-size: 0.85rem; color: var(--muted2);
-    margin-bottom: 0.5rem;
-  }
-  .job-tags {
-    display: flex; gap: 0.5rem; flex-wrap: wrap;
-  }
-  .tag {
-    font-size: 0.72rem; font-weight: 600;
-    padding: 0.2rem 0.6rem; border-radius: 6px;
-    letter-spacing: 0.3px;
-  }
-  .tag-remote { background: rgba(34,197,94,0.1); color: var(--green); border: 1px solid rgba(34,197,94,0.2); }
-  .tag-pay { background: rgba(245,158,11,0.1); color: var(--yellow); border: 1px solid rgba(245,158,11,0.2); }
-  .tag-type { background: rgba(37,99,235,0.1); color: var(--blue-light); border: 1px solid rgba(37,99,235,0.2); }
-  .tag-new { background: rgba(239,68,68,0.1); color: #f87171; border: 1px solid rgba(239,68,68,0.2); }
+/* PLATFORMS */
+.plat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:0.7rem;margin-bottom:3rem;}
+.pcard{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);padding:1.1rem;
+  text-decoration:none;color:inherit;
+  display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;
+  transition:all var(--tr);
+}
+.pcard:hover{border-color:var(--border2);background:var(--surface2);transform:translateY(-3px);}
+.pico{font-size:1.7rem;}
+.pname{font-size:0.8rem;font-weight:600;color:var(--text);}
+.phandle{font-size:0.68rem;color:var(--text3);font-family:var(--mono);}
 
-  .job-meta {
-    display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;
-    flex-shrink: 0;
-  }
-  .job-pay {
-    font-size: 1rem; font-weight: 800;
-    color: var(--green);
-  }
-  .apply-btn {
-    background: var(--blue); color: #fff;
-    padding: 0.45rem 1rem; border-radius: 8px;
-    font-size: 0.8rem; font-weight: 600;
-    white-space: nowrap;
-    transition: background 0.2s;
-  }
-  .job-card:hover .apply-btn { background: var(--blue-light); }
+/* CTA */
+.cta{
+  background:rgba(0,255,213,0.03);border:1px solid rgba(0,255,213,0.15);
+  border-radius:var(--radius);padding:3rem 2rem;
+  text-align:center;margin-bottom:3rem;position:relative;overflow:hidden;
+}
+.cta h2{font-size:1.8rem;font-weight:700;letter-spacing:-0.5px;margin-bottom:0.5rem;color:#fff;}
+.cta p{color:var(--text2);margin-bottom:1.75rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
 
-  /* ── PLATFORMS ── */
-  .platforms-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 0.75rem;
-    margin-bottom: 3rem;
-  }
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text3);font-size:0.78rem;font-family:var(--mono);}
+footer a{color:var(--accent);text-decoration:none;}
 
-  .platform-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1rem;
-    text-decoration: none; color: inherit;
-    display: flex; flex-direction: column; align-items: center;
-    gap: 0.5rem; text-align: center;
-    transition: all 0.2s;
-  }
-  .platform-card:hover {
-    border-color: rgba(37,99,235,0.3);
-    background: var(--surface2);
-    transform: translateY(-2px);
-  }
-  .platform-icon { font-size: 1.6rem; }
-  .platform-name {
-    font-size: 0.82rem; font-weight: 600; color: var(--text);
-  }
-  .platform-handle {
-    font-size: 0.72rem; color: var(--muted);
-  }
+/* REVEAL */
+.rv{opacity:0;transform:translateY(24px);transition:opacity 0.65s ease,transform 0.65s ease;}
+.rv.in{opacity:1;transform:none;}
 
-  /* ── FOOTER ── */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem;
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.82rem;
-  }
-  footer a { color: var(--blue-light); text-decoration: none; }
-
-  /* ── LIVE BADGE ── */
-  .live-dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    background: var(--green);
-    display: inline-block;
-    animation: pulse 2s ease infinite;
-  }
-  @keyframes pulse {
-    0%,100%{opacity:1;} 50%{opacity:0.4;}
-  }
-
-  @media (max-width: 640px) {
-    .job-card { flex-wrap: wrap; }
-    .job-meta { flex-direction: row; align-items: center; width: 100%; justify-content: space-between; }
-    .nav-links { display: none; }
-  }
+@media(max-width:640px){
+  nav{padding:0 1rem;}
+  .nav-links{display:none;}
+  .jcard{flex-wrap:wrap;}
+  .jright{flex-direction:row;align-items:center;width:100%;justify-content:space-between;}
+  .hero{padding:4rem 1.5rem 3rem;}
+  .hero h1{letter-spacing:-2px;}
+  .stats-strip{flex-wrap:wrap;}
+  .s-item{min-width:110px;}
+  .sec-filter{display:none;}
+}
 </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- NETWORK CANVAS BACKGROUND -->
+<canvas id="net"></canvas>
+
+<!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">H<span>ow</span>To<span>AI</span>job</a>
+  <a href="#" class="logo">HowToAI<em>job</em><span class="logo-badge">LIVE</span></a>
   <ul class="nav-links">
     <li><a href="#jobs">Jobs</a></li>
-    <li><a href="#platforms">Follow Us</a></li>
-    <li><a href="https://t.me/HowToAIjob" target="_blank" class="nav-cta">Join Telegram</a></li>
+    <li><a href="#feed">Activity</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="https://t.me/HowToAIjob" target="_blank" class="nav-cta">Join Telegram ↗</a></li>
   </ul>
 </nav>
 
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-label">● Live</div>
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-dot"></span>Mercor posted $200/hr AI role</span>
+    <span class="ticker-item"><span class="t-dot"></span>DataAnnotation — 12 new openings today</span>
+    <span class="ticker-item"><span class="t-dot"></span>Mindrift hiring in 40+ countries</span>
+    <span class="ticker-item"><span class="t-dot"></span>AfterQuery (YC) paying up to $90/hr</span>
+    <span class="ticker-item"><span class="t-dot"></span>TELUS International — 7 roles worldwide</span>
+    <span class="ticker-item"><span class="t-dot"></span>Outlier AI — 61 expert openings live</span>
+    <span class="ticker-item"><span class="t-dot"></span>CrowdGen accepting 200+ countries</span>
+    <span class="ticker-item"><span class="t-dot"></span>Deccan AI — $25M backed, invite only</span>
+    <span class="ticker-item"><span class="t-dot"></span>Mercor posted $200/hr AI role</span>
+    <span class="ticker-item"><span class="t-dot"></span>DataAnnotation — 12 new openings today</span>
+    <span class="ticker-item"><span class="t-dot"></span>Mindrift hiring in 40+ countries</span>
+    <span class="ticker-item"><span class="t-dot"></span>AfterQuery (YC) paying up to $90/hr</span>
+    <span class="ticker-item"><span class="t-dot"></span>TELUS International — 7 roles worldwide</span>
+    <span class="ticker-item"><span class="t-dot"></span>Outlier AI — 61 expert openings live</span>
+    <span class="ticker-item"><span class="t-dot"></span>CrowdGen accepting 200+ countries</span>
+    <span class="ticker-item"><span class="t-dot"></span>Deccan AI — $25M backed, invite only</span>
+  </div>
+</div>
+
 <!-- HERO -->
-<div class="hero">
-  <div class="hero-badge">
-    <span class="live-dot"></span>
-    Updated Daily — AI-Powered Opportunities
+<section class="hero">
+  <div class="hero-eyebrow"><span class="live-dot"></span>Updated daily — AI-powered opportunities</div>
+  <h1>Find Work in<br>the <span class="accent-line">AI Economy.</span></h1>
+  <p class="hero-desc">Verified remote jobs, freelance gigs &amp; data opportunities — curated daily for anyone ready to work with AI.</p>
+  <div class="hero-actions">
+    <a href="#jobs" class="btn-primary">Browse Jobs →</a>
+    <a href="https://t.me/HowToAIjob" target="_blank" class="btn-ghost">Join 10K+ Community</a>
   </div>
-  <h1>Find Your Next Job<br>With <span>AI</span></h1>
-  <p>Verified remote AI jobs, freelance opportunities & tools — curated daily for you.</p>
-  <div class="hero-stats">
-    <div class="stat">
-      <span class="stat-num">50+</span>
-      <span class="stat-label">Jobs Posted</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">$100+</span>
-      <span class="stat-label">Max Per Hour</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">100%</span>
-      <span class="stat-label">Remote</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">Free</span>
-      <span class="stat-label">Always</span>
-    </div>
+  <div class="stats-strip">
+    <div class="s-item"><span class="s-num" style="color:var(--accent)" id="c1">0</span><span class="s-lbl">Jobs Posted</span></div>
+    <div class="s-item"><span class="s-num" style="color:var(--blue)" id="c2">0</span><span class="s-lbl">Max $/hr</span></div>
+    <div class="s-item"><span class="s-num" style="color:var(--amber)" id="c3">0</span><span class="s-lbl">Countries</span></div>
+    <div class="s-item"><span class="s-num" style="color:var(--purple)" id="c4">0</span><span class="s-lbl">% Remote</span></div>
   </div>
-</div>
+</section>
 
-<!-- MAIN -->
-<div class="container">
+<!-- MAIN CONTENT -->
+<div class="wrap">
 
-  <!-- JOBS -->
-  <div class="section-header" id="jobs">
-    <span class="section-title">🔥 Latest AI Opportunities</span>
-  </div>
-
-  <div class="jobs-grid">
-
-    <a class="job-card" href="/alignerr/robotics" target="_blank">
-      <div class="job-icon">🤖</div>
-      <div class="job-info">
-        <div class="job-title">Robotics ML Expert</div>
-        <div class="job-company">Alignerr</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-type">Freelance</span>
-          <span class="tag tag-new">New</span>
-        </div>
+  <!-- LIVE FEED -->
+  <div id="feed" class="rv">
+    <div class="feed-box">
+      <div class="feed-hd">
+        <div class="feed-title"><span class="live-dot"></span>Activity Stream</div>
+        <span style="font-size:0.68rem;color:var(--text3);font-family:var(--mono);" id="clk">--:--:--</span>
       </div>
-      <div class="job-meta">
-        <div class="job-pay">$1000/ref</div>
-        <div class="apply-btn">Apply Now →</div>
+      <div class="feed-body" id="feedBody">
+        <div class="feed-row"><span class="fdot"></span>New applicant joined Mercor waitlist<span class="ftime">just now</span></div>
+        <div class="feed-row"><span class="fdot"></span>DataAnnotation posted Python role — $80/hr<span class="ftime">2m ago</span></div>
+        <div class="feed-row"><span class="fdot"></span>Mindrift accepted 47 new trainers today<span class="ftime">5m ago</span></div>
+        <div class="feed-row"><span class="fdot"></span>AfterQuery filled 3 of 40 open spots<span class="ftime">9m ago</span></div>
+        <div class="feed-row"><span class="fdot"></span>CrowdGen opened Hindi &amp; Bengali tasks<span class="ftime">14m ago</span></div>
       </div>
-    </a>
-
-    <a class="job-card" href="/uber" target="_blank">
-      <div class="job-icon">🚗</div>
-      <div class="job-info">
-        <div class="job-title">Freelance AI Contributor</div>
-        <div class="job-company">Uber AI Solutions</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-type">Freelance</span>
-          <span class="tag tag-new">New</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">Flexible</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/afterquery" target="_blank">
-      <div class="job-icon">⚡</div>
-      <div class="job-info">
-        <div class="job-title">AI Expert — 40+ Roles Open</div>
-        <div class="job-company">AfterQuery (YC-backed)</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-pay">Up to $90/hr</span>
-          <span class="tag tag-type">Freelance</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">$90/hr</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/mindrift" target="_blank">
-      <div class="job-icon">🧠</div>
-      <div class="job-info">
-        <div class="job-title">AI Trainer — All Skills Welcome</div>
-        <div class="job-company">Mindrift</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-pay">$15–$100+/hr</span>
-          <span class="tag tag-type">Freelance</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">$100/hr</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/dataannotation" target="_blank">
-      <div class="job-icon">📊</div>
-      <div class="job-info">
-        <div class="job-title">AI Data Annotator</div>
-        <div class="job-company">DataAnnotation.tech</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-pay">$25–$100+/hr</span>
-          <span class="tag tag-type">Freelance</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">$100/hr</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/oneforma" target="_blank">
-      <div class="job-icon">🌍</div>
-      <div class="job-info">
-        <div class="job-title">Freelance AI Contributor — 60+ Languages</div>
-        <div class="job-company">OneForma</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-pay">$4.5–$45/hr</span>
-          <span class="tag tag-type">Freelance</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">$45/hr</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/outlier" target="_blank">
-      <div class="job-icon">🔬</div>
-      <div class="job-info">
-        <div class="job-title">AI Expert — 61+ Roles Open</div>
-        <div class="job-company">Outlier AI</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-type">Freelance</span>
-          <span class="tag tag-new">New</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">Varies</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/sarootlabs" target="_blank">
-      <div class="job-icon">✍️</div>
-      <div class="job-info">
-        <div class="job-title">Prompt Engineer</div>
-        <div class="job-company">Saroot Labs Inc.</div>
-        <div class="job-tags">
-          <span class="tag tag-remote">Remote</span>
-          <span class="tag tag-pay">$20–$30/hr</span>
-          <span class="tag tag-type">Part-time</span>
-          <span class="tag tag-new">New</span>
-        </div>
-      </div>
-      <div class="job-meta">
-        <div class="job-pay">$30/hr</div>
-        <div class="apply-btn">Apply Now →</div>
-      </div>
-    </a>
-
-    <a class="job-card" href="/crowdgen" target="_blank">
-  <div class="job-icon">🌐</div>
-  <div class="job-info">
-    <div class="job-title">AI Contributor — 500+ Languages</div>
-    <div class="job-company">CrowdGen by Appen</div>
-    <div class="job-tags">
-      <span class="tag tag-remote">200+ Countries</span>
-      <span class="tag tag-pay">Up to $40/hr</span>
-      <span class="tag tag-type">Freelance</span>
-      <span class="tag tag-new">New</span>
     </div>
   </div>
-  <div class="job-meta">
-    <div class="job-pay">$40/hr</div>
-    <div class="apply-btn">Apply Now →</div>
-  </div>
-</a>
 
-    <a class="job-card" href="/telus" target="_blank">
-  <div class="job-icon">📡</div>
-  <div class="job-info">
-    <div class="job-title">AI Contributor — 7 Roles Open</div>
-    <div class="job-company">TELUS International AI</div>
-    <div class="job-tags">
-      <span class="tag tag-remote">Worldwide</span>
-      <span class="tag tag-pay">$6–$50/hr</span>
-      <span class="tag tag-type">Freelance</span>
-      <span class="tag tag-new">New</span>
+  <!-- JOBS SECTION -->
+  <div class="sec-head rv" id="jobs">
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">13 live</span></div>
+    <div class="filter-wrap">
+      <button class="f-btn on" onclick="filt('all',this)">All</button>
+      <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
+      <button class="f-btn" onclick="filt('fulltime',this)">Full-time</button>
+      <button class="f-btn" onclick="filt('new',this)">New</button>
     </div>
   </div>
-  <div class="job-meta">
-    <div class="job-pay">$50/hr</div>
-    <div class="apply-btn">Apply Now →</div>
-  </div>
-</a>
 
-    <a class="job-card" href="/mercor" target="_blank">
-  <div class="job-icon">💎</div>
-  <div class="job-info">
-    <div class="job-title">Premium AI Jobs — All Skills</div>
-    <div class="job-company">Mercor</div>
-    <div class="job-tags">
-      <span class="tag tag-remote">Remote</span>
-      <span class="tag tag-pay">$16–$200+/hr</span>
-      <span class="tag tag-type">Freelance</span>
-      <span class="tag tag-new">New</span>
+  <div class="s-wrap rv">
+    <span class="s-ico">⌕</span>
+    <input class="s-input" type="text" placeholder="Search jobs, companies, skills..." oninput="search(this.value)"/>
+  </div>
+
+  <div class="jobs-list" id="jobsList">
+    <a class="jcard hot" href="/alignerr/robotics" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">🤖</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">Robotics ML Expert</span><span class="hot-badge">★ HOT</span></div>
+        <div class="jco">Alignerr · Machine Learning</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$1000<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/ref</span></div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/uber" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">🚗</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">Freelance AI Contributor</span></div>
+        <div class="jco">Uber AI Solutions · Tech</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay a">Flexible</div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/afterquery" target="_blank" data-type="freelance">
+      <div class="jico">⚡</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Expert — 40+ Roles Open</span></div>
+        <div class="jco">AfterQuery (YC-backed) · Startup</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$90/hr</span><span class="tag tc">Freelance</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$90<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">2 days ago</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/mindrift" target="_blank" data-type="freelance">
+      <div class="jico">🧠</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Trainer — All Skills Welcome</span></div>
+        <div class="jco">Mindrift · AI Training</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$15–$100/hr</span><span class="tag tc">Freelance</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$100<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">3 days ago</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/dataannotation" target="_blank" data-type="freelance">
+      <div class="jico">📊</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Data Annotator</span></div>
+        <div class="jco">DataAnnotation.tech · Data</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$25–$100/hr</span><span class="tag tc">Freelance</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$100<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">3 days ago</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/oneforma" target="_blank" data-type="freelance">
+      <div class="jico">🌍</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Contributor — 60+ Languages</span></div>
+        <div class="jco">OneForma · Linguistics</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$4.5–$45/hr</span><span class="tag tc">Freelance</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$45<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">4 days ago</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/outlier" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">🔬</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Expert — 61+ Roles Open</span></div>
+        <div class="jco">Outlier AI · Research</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay b">Varies</div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/sarootlabs" target="_blank" data-type="parttime" data-new="true">
+      <div class="jico">✍️</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">Prompt Engineer</span></div>
+        <div class="jco">Saroot Labs Inc. · Engineering</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$20–$30/hr</span><span class="tag tp">Part-time</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$30<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/crowdgen" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">🌐</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Contributor — 500+ Languages</span></div>
+        <div class="jco">CrowdGen by Appen · Global</div>
+        <div class="tags"><span class="tag tc">200+ Countries</span><span class="tag ta">Up to $40/hr</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$40<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/telus" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">📡</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">AI Contributor — 7 Roles Open</span></div>
+        <div class="jco">TELUS International AI · Telecom</div>
+        <div class="tags"><span class="tag tc">Worldwide</span><span class="tag ta">$6–$50/hr</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$50<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard hot" href="/mercor" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">💎</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">Premium AI Jobs — All Skills</span><span class="hot-badge">💰 TOP PAY</span></div>
+        <div class="jco">Mercor · Premium Platform</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$16–$200/hr</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$200<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/naveera" target="_blank" data-type="fulltime" data-new="true">
+      <div class="jico">🚀</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">25+ Remote Tech Jobs Open</span></div>
+        <div class="jco">Naveera Tech · Software</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">Full-time</span><span class="tag tr">New</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay b">25+ Roles</div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+
+    <a class="jcard" href="/deccan" target="_blank" data-type="freelance" data-new="true">
+      <div class="jico">⭐</div>
+      <div class="jbody">
+        <div class="jtop"><span class="jtitle">Top 1% AI Expert Network</span></div>
+        <div class="jco">Deccan AI Experts · Elite</div>
+        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">Up to $50/hr</span><span class="tag tp">Invite Only</span></div>
+      </div>
+      <div class="jright">
+        <div class="jpay">$50<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+        <div class="jtime">Today</div>
+        <div class="apply">Apply →</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- PAGINATION -->
+  <div class="pagination rv" id="pgBar">
+    <div class="pg-info">Showing <span id="pgRange">1–6</span> of <span id="pgTotal">13</span> jobs</div>
+    <div class="pg-btns" id="pgBtns"></div>
+  </div>
+
+  <!-- COMMUNITY -->
+  <div class="sec-head rv" id="community"><div class="sec-title">Community Channels</div></div>
+  <div class="plat-grid rv">
+    <a class="pcard" href="https://t.me/HowToAIjob" target="_blank"><span class="pico">✈️</span><span class="pname">Telegram</span><span class="phandle">@HowToAIjob</span></a>
+    <a class="pcard" href="https://youtube.com/@HowToAIjob" target="_blank"><span class="pico">▶️</span><span class="pname">YouTube</span><span class="phandle">@HowToAIjob</span></a>
+    <a class="pcard" href="https://instagram.com/howtoaijob" target="_blank"><span class="pico">📸</span><span class="pname">Instagram</span><span class="phandle">@howtoaijob</span></a>
+    <a class="pcard" href="https://x.com/HowToAIjob" target="_blank"><span class="pico">𝕏</span><span class="pname">X (Twitter)</span><span class="phandle">@HowToAIjob</span></a>
+    <a class="pcard" href="https://facebook.com/howtoaijob" target="_blank"><span class="pico">📘</span><span class="pname">Facebook</span><span class="phandle">@howtoaijob</span></a>
+    <a class="pcard" href="https://linkedin.com/in/howtoaijob" target="_blank"><span class="pico">💼</span><span class="pname">LinkedIn</span><span class="phandle">@howtoaijob</span></a>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta rv">
+    <h2>Don't miss the next opportunity</h2>
+    <p>Join 10,000+ people getting daily AI job alerts — completely free.</p>
+    <div class="cta-btns">
+      <a href="https://t.me/HowToAIjob" target="_blank" class="btn-primary">Join Telegram →</a>
+      <a href="https://youtube.com/@HowToAIjob" target="_blank" class="btn-ghost">Watch on YouTube</a>
     </div>
-  </div>
-  <div class="job-meta">
-    <div class="job-pay">$200/hr</div>
-    <div class="apply-btn">Apply Now →</div>
-  </div>
-</a>
-
-    <a class="job-card" href="/naveera" target="_blank">
-  <div class="job-icon">🚐</div>
-  <div class="job-info">
-    <div class="job-title">25+ Remote Tech Jobs Open</div>
-    <div class="job-company">Naveera Tech</div>
-    <div class="job-tags">
-      <span class="tag tag-remote">Remote</span>
-      <span class="tag tag-type">Full-time</span>
-      <span class="tag tag-new">New</span>
-    </div>
-  </div>
-  <div class="job-meta">
-    <div class="job-pay">25+ Roles</div>
-    <div class="apply-btn">Apply Now →</div>
-  </div>
-</a>
-    <a class="job-card" href="/deccan" target="_blank">
-  <div class="job-icon">⭐</div>
-  <div class="job-info">
-    <div class="job-title">Top 1% AI Expert Network</div>
-    <div class="job-company">Deccan AI Experts</div>
-    <div class="job-tags">
-      <span class="tag tag-remote">Remote</span>
-      <span class="tag tag-pay">Up to $50/hr</span>
-      <span class="tag tag-type">Invite Only</span>
-      <span class="tag tag-new">$25M Backed</span>
-    </div>
-  </div>
-  <div class="job-meta">
-    <div class="job-pay">$50/hr</div>
-    <div class="apply-btn">Apply Now →</div>
-  </div>
-</a>
-    
-  </div>
-
-  <!-- FOLLOW US -->
-  <div class="section-header" id="platforms">
-    <span class="section-title">📲 Follow HowToAIjob</span>
-  </div>
-
-  <div class="platforms-grid">
-    <a class="platform-card" href="https://t.me/HowToAIjob" target="_blank">
-      <span class="platform-icon">✈️</span>
-      <span class="platform-name">Telegram</span>
-      <span class="platform-handle">@HowToAIjob</span>
-    </a>
-    <a class="platform-card" href="https://youtube.com/@HowToAIjob" target="_blank">
-      <span class="platform-icon">▶️</span>
-      <span class="platform-name">YouTube</span>
-      <span class="platform-handle">@HowToAIjob</span>
-    </a>
-    <a class="platform-card" href="https://instagram.com/howtoaijob" target="_blank">
-      <span class="platform-icon">📸</span>
-      <span class="platform-name">Instagram</span>
-      <span class="platform-handle">@howtoaijob</span>
-    </a>
-    <a class="platform-card" href="https://x.com/HowToAIjob" target="_blank">
-      <span class="platform-icon">𝕏</span>
-      <span class="platform-name">X (Twitter)</span>
-      <span class="platform-handle">@HowToAIjob</span>
-    </a>
-    <a class="platform-card" href="https://facebook.com/howtoaijob" target="_blank">
-      <span class="platform-icon">📘</span>
-      <span class="platform-name">Facebook</span>
-      <span class="platform-handle">@howtoaijob</span>
-    </a>
-    <a class="platform-card" href="https://linkedin.com/in/howtoaijob" target="_blank">
-      <span class="platform-icon">💼</span>
-      <span class="platform-name">LinkedIn</span>
-      <span class="platform-handle">@howtoaijob</span>
-    </a>
   </div>
 
 </div>
 
-<!-- FOOTER -->
 <footer>
-  <p style="margin-bottom:0.5rem;">
-    <a href="#">HowToAIjob</a> — Find Work With AI
-  </p>
-  <p>© 2025 HowToAIjob · All Rights Reserved · <a href="mailto:howtoaijob@gmail.com">howtoaijob@gmail.com</a></p>
+  <div style="font-size:1rem;font-weight:700;color:var(--text2);margin-bottom:0.5rem;">HowToAI<span style="color:var(--accent)">job</span></div>
+  Find Work in the AI Economy — updated daily, always free.<br>
+  © 2025 HowToAIjob · <a href="mailto:howtoaijob@gmail.com">howtoaijob@gmail.com</a>
 </footer>
 
+<script>
+/* ════════════════════════════════════
+   NETWORK / CONSTELLATION BACKGROUND
+   ════════════════════════════════════ */
+(function(){
+  const C = document.getElementById('net');
+  const ctx = C.getContext('2d');
+  let W, H, pts, mouse = {x:-9999,y:-9999};
+
+  function resize(){
+    W = C.width = window.innerWidth;
+    H = C.height = window.innerHeight;
+    init();
+  }
+
+  function init(){
+    const count = Math.floor((W * H) / 12000);
+    pts = [];
+    for(let i=0; i<count; i++){
+      pts.push({
+        x: Math.random()*W,
+        y: Math.random()*H,
+        vx: (Math.random()-0.5)*0.35,
+        vy: (Math.random()-0.5)*0.35,
+        r: Math.random()*1.8+0.4,
+        base: Math.random()*0.5+0.2
+      });
+    }
+  }
+
+  const MAX_DIST = 140;
+  const MOUSE_DIST = 180;
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+
+    /* Update positions */
+    pts.forEach(p=>{
+      p.x += p.vx;
+      p.y += p.vy;
+      if(p.x<0||p.x>W) p.vx*=-1;
+      if(p.y<0||p.y>H) p.vy*=-1;
+    });
+
+    /* Draw connections */
+    for(let i=0;i<pts.length;i++){
+      for(let j=i+1;j<pts.length;j++){
+        const dx = pts[i].x-pts[j].x;
+        const dy = pts[i].y-pts[j].y;
+        const dist = Math.sqrt(dx*dx+dy*dy);
+        if(dist < MAX_DIST){
+          const alpha = (1-dist/MAX_DIST)*0.35;
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(0,255,213,${alpha})`;
+          ctx.lineWidth = 0.6;
+          ctx.moveTo(pts[i].x, pts[i].y);
+          ctx.lineTo(pts[j].x, pts[j].y);
+          ctx.stroke();
+        }
+      }
+      /* Mouse repel lines */
+      const mdx = pts[i].x - mouse.x;
+      const mdy = pts[i].y - mouse.y;
+      const md = Math.sqrt(mdx*mdx+mdy*mdy);
+      if(md < MOUSE_DIST){
+        const a = (1-md/MOUSE_DIST)*0.6;
+        ctx.beginPath();
+        ctx.strokeStyle = `rgba(0,196,255,${a})`;
+        ctx.lineWidth = 0.8;
+        ctx.moveTo(pts[i].x, pts[i].y);
+        ctx.lineTo(mouse.x, mouse.y);
+        ctx.stroke();
+      }
+    }
+
+    /* Draw dots */
+    pts.forEach(p=>{
+      const mdx = p.x - mouse.x;
+      const mdy = p.y - mouse.y;
+      const md = Math.sqrt(mdx*mdx+mdy*mdy);
+      const boost = md < MOUSE_DIST ? (1-md/MOUSE_DIST)*0.5 : 0;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(0,255,213,${p.base+boost})`;
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', resize);
+  window.addEventListener('mousemove', e=>{ mouse.x=e.clientX; mouse.y=e.clientY; });
+  window.addEventListener('mouseleave', ()=>{ mouse.x=-9999; mouse.y=-9999; });
+
+  resize();
+  draw();
+})();
+
+/* ════════════════
+   CLOCK
+   ════════════════ */
+function tick(){
+  const el=document.getElementById('clk');
+  if(el) el.textContent=new Date().toTimeString().slice(0,8);
+}
+setInterval(tick,1000); tick();
+
+/* ════════════════
+   STAT COUNTERS
+   ════════════════ */
+function countUp(id, target, suffix){
+  const el=document.getElementById(id);
+  if(!el) return;
+  let n=0; const step=target/50;
+  const iv=setInterval(()=>{
+    n=Math.min(n+step,target);
+    el.textContent=Math.floor(n)+suffix;
+    if(n>=target){el.textContent=target+suffix;clearInterval(iv);}
+  },25);
+}
+setTimeout(()=>{
+  countUp('c1',50,'+');
+  countUp('c2',200,'');
+  countUp('c3',200,'+');
+  countUp('c4',100,'%');
+},600);
+
+/* ════════════════
+   SCROLL REVEAL
+   ════════════════ */
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+},{threshold:0.08});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+
+/* ════════════════
+   LIVE FEED AUTO-UPDATE
+   ════════════════ */
+const feedMsgs=[
+  'New ML role at Alignerr — $1000 referral',
+  'Mindrift opened Bengali & Telugu tasks',
+  'Mercor waitlist moved — 50 spots open',
+  'DataAnnotation.tech paying $80/hr for code',
+  'Outlier AI added 8 expert categories',
+  'TELUS opened Arabic annotation project',
+  'CrowdGen posted Hindi transcription tasks',
+  'AfterQuery filled 5 of 40 roles today',
+  'Saroot Labs screening Prompt Engineers',
+  'Deccan AI sent invites to 20 new experts',
+  'OneForma posted Urdu translation gigs',
+  'Naveera Tech screening DevOps candidates'
+];
+let fi=0;
+setInterval(()=>{
+  const box=document.getElementById('feedBody');
+  if(!box) return;
+  const row=document.createElement('div');
+  row.className='feed-row';
+  row.innerHTML=`<span class="fdot"></span>${feedMsgs[fi%feedMsgs.length]}<span class="ftime">just now</span>`;
+  fi++;
+  box.insertBefore(row,box.firstChild);
+  const rows=box.querySelectorAll('.feed-row');
+  if(rows.length>8) rows[rows.length-1].remove();
+  const times=box.querySelectorAll('.ftime');
+  if(times[1]) times[1].textContent='1m ago';
+},7000);
+
+/* ════════════════
+   PAGINATION SYSTEM
+   ════════════════ */
+const PER_PAGE = 6;
+let curPage = 1;
+let activeFilter = 'all';
+let searchQuery = '';
+
+function getVisible(){
+  return Array.from(document.querySelectorAll('.jcard')).filter(c=>{
+    const matchFilter =
+      activeFilter==='all' ? true :
+      activeFilter==='new' ? c.dataset.new==='true' :
+      activeFilter==='fulltime' ? c.dataset.type==='fulltime' :
+      c.dataset.type===activeFilter;
+    const matchSearch = !searchQuery || c.textContent.toLowerCase().includes(searchQuery);
+    return matchFilter && matchSearch;
+  });
+}
+
+function renderPage(){
+  const all = getVisible();
+  const total = all.length;
+  const totalPages = Math.ceil(total/PER_PAGE);
+  curPage = Math.min(curPage, totalPages||1);
+  const start = (curPage-1)*PER_PAGE;
+  const end = start+PER_PAGE;
+
+  // Show/hide cards
+  document.querySelectorAll('.jcard').forEach(c=>c.style.display='none');
+  all.slice(start,end).forEach((c,i)=>{
+    c.style.display='flex';
+    c.style.animation='none';
+    void c.offsetWidth;
+    c.style.animation=`pgFade 0.3s ease ${i*0.04}s both`;
+  });
+
+  // Range text
+  const rEl=document.getElementById('pgRange');
+  const tEl=document.getElementById('pgTotal');
+  if(rEl) rEl.textContent=total===0?'0':`${start+1}–${Math.min(end,total)}`;
+  if(tEl) tEl.textContent=total;
+
+  // Buttons
+  const btns=document.getElementById('pgBtns');
+  if(!btns) return;
+  btns.innerHTML='';
+
+  // Prev
+  const prev=document.createElement('button');
+  prev.className='pg-btn';
+  prev.innerHTML='← Prev';
+  prev.disabled=curPage<=1;
+  prev.onclick=()=>{curPage--;renderPage();window.scrollTo({top:document.getElementById('jobs').offsetTop-80,behavior:'smooth'});};
+  btns.appendChild(prev);
+
+  // Page numbers
+  const maxNums=5;
+  let numStart=Math.max(1,curPage-2);
+  let numEnd=Math.min(totalPages,numStart+maxNums-1);
+  if(numEnd-numStart<maxNums-1) numStart=Math.max(1,numEnd-maxNums+1);
+
+  if(numStart>1){
+    const n=document.createElement('button');
+    n.className='pg-num';n.textContent='1';
+    n.onclick=()=>{curPage=1;renderPage();};btns.appendChild(n);
+    if(numStart>2){const d=document.createElement('span');d.textContent='…';d.style.cssText='color:var(--text3);font-size:0.75rem;padding:0 2px;font-family:var(--mono)';btns.appendChild(d);}
+  }
+  for(let i=numStart;i<=numEnd;i++){
+    const n=document.createElement('button');
+    n.className='pg-num'+(i===curPage?' active':'');
+    n.textContent=i;
+    const pg=i;
+    n.onclick=()=>{curPage=pg;renderPage();window.scrollTo({top:document.getElementById('jobs').offsetTop-80,behavior:'smooth'});};
+    btns.appendChild(n);
+  }
+  if(numEnd<totalPages){
+    if(numEnd<totalPages-1){const d=document.createElement('span');d.textContent='…';d.style.cssText='color:var(--text3);font-size:0.75rem;padding:0 2px;font-family:var(--mono)';btns.appendChild(d);}
+    const n=document.createElement('button');
+    n.className='pg-num';n.textContent=totalPages;
+    n.onclick=()=>{curPage=totalPages;renderPage();};btns.appendChild(n);
+  }
+
+  // Next
+  const next=document.createElement('button');
+  next.className='pg-btn';
+  next.innerHTML='Next →';
+  next.disabled=curPage>=totalPages;
+  next.onclick=()=>{curPage++;renderPage();window.scrollTo({top:document.getElementById('jobs').offsetTop-80,behavior:'smooth'});};
+  btns.appendChild(next);
+}
+
+/* ════════════════
+   FILTER
+   ════════════════ */
+function filt(type,btn){
+  document.querySelectorAll('.f-btn').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  activeFilter=type;
+  curPage=1;
+  renderPage();
+}
+
+/* ════════════════
+   SEARCH
+   ════════════════ */
+function search(v){
+  searchQuery=v.toLowerCase();
+  curPage=1;
+  renderPage();
+}
+
+// Init pagination on load
+renderPage();
+</script>
 </body>
 </html>
