@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://howtoaijob.pages.dev/</loc>
-  </url>
+
+<url><loc>https://howtoaijob.pages.dev/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/afterquery/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/crowdgen/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/dataannotation/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/deccan/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/mercor/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/mindrift/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/oneforma/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/outlier/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/telus/</loc></url>
+<url><loc>https://howtoaijob.pages.dev/uber/</loc></url>
+
 </urlset>
