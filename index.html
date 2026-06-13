@@ -989,7 +989,7 @@ function renderPage(){
   prev.className='pg-btn';
   prev.innerHTML='← Prev';
   prev.disabled=curPage<=1;
-  prev.onclick=()=>{curPage--;renderPage();
+  prev.onclick=()=>{curPage--;renderPage();};
   btns.appendChild(prev);
 
   // Page numbers
@@ -1009,7 +1009,7 @@ function renderPage(){
     n.className='pg-num'+(i===curPage?' active':'');
     n.textContent=i;
     const pg=i;
-    n.onclick=()=>{curPage=pg;renderPage();
+    n.onclick=()=>{curPage=pg;renderPage();};
     btns.appendChild(n);
   }
   if(numEnd<totalPages){
@@ -1024,7 +1024,7 @@ function renderPage(){
   next.className='pg-btn';
   next.innerHTML='Next →';
   next.disabled=curPage>=totalPages;
-  next.onclick=()=>{curPage++;renderPage();
+  next.onclick=()=>{curPage++;renderPage();};
   btns.appendChild(next);
 }
 
