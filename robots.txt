@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://howtoaijob.pages.dev/sitemap.xml
