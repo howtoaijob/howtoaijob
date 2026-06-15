@@ -1,29 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - HowToAIJob</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact HowToAIJob - Send us your questions, suggestions, or partnership inquiries.">
+  <title>Contact Us - HowToAIJob</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Contact Us</h1>
+<nav>
+  <div class="nav-inner">
+    <a href="about.html" class="nav-logo">HowTo<span>AI</span>Job</a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </div>
+</nav>
 
-<p>
-If you have any questions, suggestions, business inquiries, or partnership opportunities, feel free to contact us.
-</p>
+<main>
 
-<p>
-Email: howtoaijob@gmail.com
-</p>
+  <div class="hero">
+    <h1>Get in <span>touch</span></h1>
+    <p>
+      Have a question, suggestion, or partnership idea? Fill out the form
+      and we'll get back to you as soon as possible.
+    </p>
+  </div>
 
-<p>
-Website: https://howtoaijob.pages.dev/
-</p>
+  <div class="contact-grid">
 
-<p>
-We will do our best to respond as soon as possible.
-</p>
+    <form id="contact-form" onsubmit="handleSubmit(event)" novalidate>
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="inquiry">Inquiry type</label>
+        <select id="inquiry" name="inquiry">
+          <option value="">Select one...</option>
+          <option value="general">General question</option>
+          <option value="job">Job listing submission</option>
+          <option value="partnership">Partnership / collaboration</option>
+          <option value="business">Business inquiry</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn">Send message</button>
+      <div class="success-note" id="success-note">
+        ✓ Message sent! We'll get back to you within 1–2 business days.
+      </div>
+    </form>
+
+    <div class="info-box">
+      <h3>Other ways to connect</h3>
+      <div class="info-row">
+        <span class="dot">→</span>
+        <span><strong>Website:</strong> <a href="https://howtoaijob.pages.dev/" target="_blank" style="color:#185FA5;">howtoaijob.pages.dev</a></span>
+      </div>
+      <div class="info-row">
+        <span class="dot">→</span>
+        <span>Replies within 1–2 business days</span>
+      </div>
+      <div class="info-row">
+        <span class="dot">→</span>
+        <span>Serving job seekers globally</span>
+      </div>
+      <hr>
+      <p style="font-size:13px;color:#6b6b6b;line-height:1.7;">
+        We welcome job listing submissions, collaboration proposals, tool recommendations,
+        and feedback to help us improve the platform for everyone.
+      </p>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://howtoaijob.pages.dev/" target="_blank">Website</a>
+  </div>
+  <p>© 2025 HowToAIJob. All rights reserved.</p>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const msg = document.getElementById('message').value.trim();
+  if (!name || !email || !msg) {
+    alert('Please fill in your name, email, and message.');
+    return;
+  }
+  document.getElementById('success-note').style.display = 'block';
+  document.getElementById('contact-form').reset();
+}
+</script>
 
 </body>
 </html>
