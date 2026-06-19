@@ -466,7 +466,7 @@ footer a{color:var(--accent);text-decoration:none;}
 
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
-    <div class="sec-title">Latest Opportunities <span class="sec-badge">25 live</span></div>
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">26 live</span></div>
     <div class="filter-wrap">
       <button class="f-btn on" onclick="filt('all',this)">All</button>
       <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
@@ -479,8 +479,33 @@ footer a{color:var(--accent);text-decoration:none;}
     <span class="s-ico">⌕</span>
     <input class="s-input" type="text" placeholder="Search jobs, companies, skills..." oninput="search(this.value)"/>
   </div>
-
+  
   <div class="jobs-list" id="jobsList">
+    <a class="jcard hot" href="/rexzone" target="_blank" data-type="freelance" data-new="true">
+  <div class="jico">🧬</div>
+  <div class="jbody">
+    <div class="jtop">
+      <span class="jtitle">Expert-First AI Training — All Domains</span>
+      <span class="hot-badge">🔥 NEW</span>
+    </div>
+
+    <div class="jco">RemoExperts (Rex.zone)</div>
+
+    <div class="tags">
+      <span class="tag tg">Worldwide</span>
+      <span class="tag ta">$25–$65/hr</span>
+      <span class="tag tc">Freelance</span>
+      <span class="tag tr">New</span>
+    </div>
+  </div>
+
+  <div class="jright">
+    <div class="jpay">$65<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
+    <div class="jtime">Today</div>
+    <div class="apply">Apply →</div>
+  </div>
+</a>
+    
     <a class="jcard hot" href="/handshake" target="_blank" data-type="freelance" data-new="true">
   <div class="jico">🎓</div>
 
@@ -1124,7 +1149,7 @@ function countUp(id, target, suffix){
   },25);
 }
 setTimeout(()=>{
-  countUp('c1',25,'+');
+  countUp('c1',26,'+');
   countUp('c2',200,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
