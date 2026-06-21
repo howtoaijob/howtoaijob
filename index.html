@@ -84,20 +84,13 @@ nav{
 }
 .logo{font-size:1.2rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.5px;display:flex;align-items:center;gap:8px;}
 .logo em{font-style:normal;color:var(--accent);}
-.logo-badge{background:var(--accent);color:#020a0f;font-size:0.62rem;font-weight:700;padding:2px 7px;border-radius:99px;letter-spacing:1px;}
+.logo .type-cursor{display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:2px;animation:blink 0.8s step-end infinite;vertical-align:-2px;}
+@keyframes blink{0%,49%{opacity:1;}50%,100%{opacity:0;}}
 .nav-links{display:flex;gap:2rem;align-items:center;list-style:none;}
 .nav-links a{color:var(--text2);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color var(--tr);}
 .nav-links a:hover{color:var(--accent);}
 .nav-cta{background:transparent;color:var(--accent) !important;padding:0.45rem 1.25rem;border-radius:var(--radius-sm);font-size:0.875rem;font-weight:600;text-decoration:none;transition:all var(--tr);border:1px solid var(--border2);}
 .nav-cta:hover{background:var(--accent-dim);}
-
-/* TICKER */
-.ticker-wrap{background:rgba(0,255,213,0.03);border-bottom:1px solid var(--border);overflow:hidden;height:36px;display:flex;align-items:center;position:relative;z-index:90;}
-.ticker-label{background:var(--accent);color:#020a0f;font-size:0.68rem;font-weight:700;padding:0 14px;height:100%;display:flex;align-items:center;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;flex-shrink:0;}
-.ticker-track{display:flex;gap:3.5rem;animation:ticker 38s linear infinite;white-space:nowrap;padding-left:2rem;}
-.ticker-item{font-size:0.75rem;font-weight:500;color:var(--text2);display:flex;align-items:center;gap:7px;font-family:var(--mono);}
-.t-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:lp 2s ease infinite;}
-@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
 /* HERO */
 .hero{
@@ -184,6 +177,34 @@ nav{
   padding:3px 10px;border-radius:99px;
 }
 .filter-wrap{display:flex;gap:6px;}
+
+/* ABOUT / HOW IT WORKS */
+.about-text{font-size:0.92rem;line-height:1.85;color:var(--text2);max-width:780px;margin-bottom:2rem;}
+.about-text p{margin-bottom:1rem;}
+.about-text p:last-child{margin-bottom:0;}
+.about-text strong{color:#fff;font-weight:600;}
+
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin-bottom:1.75rem;}
+.step-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);padding:1.3rem;
+  position:relative;overflow:hidden;
+}
+.step-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--accent),var(--blue));
+}
+.step-num{font-family:var(--mono);font-size:0.72rem;font-weight:700;color:var(--accent);letter-spacing:2px;margin-bottom:0.6rem;display:block;}
+.step-card h3{font-size:0.92rem;font-weight:700;color:#fff;margin-bottom:0.45rem;}
+.step-card p{font-size:0.82rem;color:var(--text2);line-height:1.65;}
+
+.note-box{
+  background:rgba(255,198,83,0.04);border:1px solid rgba(255,198,83,0.18);
+  border-radius:var(--radius);padding:1.1rem 1.4rem;
+  font-size:0.82rem;color:var(--text2);line-height:1.75;
+  margin-bottom:3rem;
+}
+.note-box strong{color:var(--amber);}
 .f-btn{
   background:transparent;border:1px solid var(--border);
   color:var(--text3);font-size:0.72rem;font-weight:600;
@@ -239,10 +260,8 @@ nav{
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:var(--radius);
-  padding:1.2rem 1.5rem;
-  display:flex;align-items:center;gap:1.25rem;
   text-decoration:none;color:inherit;
-  transition:all var(--tr);
+  transition:border-color var(--tr),background var(--tr),transform var(--tr);
   position:relative;overflow:hidden;
 }
 .jcard::before{
@@ -253,8 +272,6 @@ nav{
 }
 .jcard:hover{
   border-color:var(--border2);
-  background:var(--surface2);
-  transform:translateX(4px);
 }
 .jcard:hover::before{transform:scaleY(1);}
 
@@ -264,6 +281,9 @@ nav{
 }
 .jcard.hot::before{transform:scaleY(1);}
 
+.jmain:hover{background:var(--surface2);}
+.jmain:hover .jico{transform:scale(1.06);}
+
 .jico{
   width:50px;height:50px;border-radius:12px;
   background:var(--surface3);border:1px solid var(--border);
@@ -271,7 +291,6 @@ nav{
   font-size:1.4rem;flex-shrink:0;
   transition:transform var(--tr);
 }
-.jcard:hover .jico{transform:scale(1.06);}
 
 .jbody{flex:1;min-width:0;}
 .jtop{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
@@ -288,41 +307,56 @@ nav{
 
 .jright{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex-shrink:0;}
 .jpay{font-size:1rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:-0.5px;}
+.jpay .unit{font-size:0.65rem;font-weight:400;color:var(--text3);}
 .jpay.b{color:var(--blue);}
 .jpay.a{color:var(--amber);}
 .jtime{font-size:0.65rem;color:var(--text3);font-family:var(--mono);}
-.apply{
-  background:transparent;color:var(--accent);
-  padding:5px 14px;border-radius:6px;
-  font-size:0.75rem;font-weight:600;
-  transition:all var(--tr);white-space:nowrap;
-  border:1px solid rgba(0,255,213,0.25);
-  display:flex;align-items:center;gap:4px;
-}
-.jcard:hover .apply{background:var(--accent-dim);border-color:var(--accent);}
 
-/* LIVE FEED */
-.feed-box{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius);overflow:hidden;margin-bottom:3rem;
+/* CARD HEADER (clickable to expand) */
+.jmain{display:flex;align-items:center;gap:1.25rem;cursor:pointer;padding:1.2rem 1.5rem;}
+.jchev{
+  font-size:0.7rem;color:var(--text3);
+  transition:transform var(--tr),color var(--tr);
+  margin-top:2px;
 }
-.feed-hd{
-  padding:0.85rem 1.25rem;border-bottom:1px solid var(--border);
-  display:flex;align-items:center;justify-content:space-between;
-  background:rgba(0,255,213,0.02);
+.jcard.open .jchev{transform:rotate(180deg);color:var(--accent);}
+
+/* EXPANDABLE DETAILS PANEL */
+.jdetails{
+  max-height:0;opacity:0;overflow:hidden;
+  padding:0 1.5rem;
+  transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease,padding var(--tr);
 }
-.feed-title{font-size:0.72rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:8px;}
-.feed-body{max-height:190px;overflow:hidden;position:relative;}
-.feed-body::after{content:'';position:absolute;bottom:0;left:0;right:0;height:50px;background:linear-gradient(transparent,rgba(2,10,15,0.95));pointer-events:none;}
-.feed-row{
-  padding:0.65rem 1.25rem;border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:10px;
-  font-size:0.77rem;color:var(--text2);font-family:var(--mono);
-  animation:fsld 0.4s ease both;
+.jcard.open .jdetails{
+  max-height:560px;opacity:1;
+  padding:0 1.5rem 1.4rem;
 }
-.fdot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0;animation:lp 2s ease infinite;}
-.ftime{font-size:0.68rem;color:var(--text3);margin-left:auto;}
-@keyframes fsld{from{opacity:0;transform:translateY(-8px);}to{opacity:1;transform:none;}}
+.jdetail-text{
+  font-size:0.85rem;line-height:1.75;color:var(--text2);
+  padding-top:1.1rem;border-top:1px solid var(--border);
+}
+.jdetail-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:0.7rem;margin:1rem 0 1.2rem;
+}
+.jdetail-item{
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:8px;padding:0.7rem 0.9rem;
+}
+.jdetail-item b{
+  display:block;font-size:0.62rem;color:var(--accent);
+  text-transform:uppercase;letter-spacing:1px;
+  margin-bottom:4px;font-family:var(--mono);font-weight:700;
+}
+.jdetail-item span{font-size:0.78rem;color:var(--text2);line-height:1.5;}
+.apply-btn{
+  background:var(--accent);color:#020a0f;
+  padding:0.55rem 1.3rem;border-radius:var(--radius-sm);
+  font-size:0.8rem;font-weight:700;
+  text-decoration:none;display:inline-flex;align-items:center;gap:6px;
+  transition:all var(--tr);
+}
+.apply-btn:hover{box-shadow:0 0 24px rgba(0,255,213,0.3);transform:translateY(-1px);}
 
 /* PLATFORMS */
 .plat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:0.7rem;margin-bottom:3rem;}
@@ -359,8 +393,10 @@ footer a{color:var(--accent);text-decoration:none;}
 @media(max-width:640px){
   nav{padding:0 1rem;}
   .nav-links{display:none;}
-  .jcard{flex-wrap:wrap;}
+  .jmain{flex-wrap:wrap;padding:1rem 1.1rem;}
   .jright{flex-direction:row;align-items:center;width:100%;justify-content:space-between;}
+  .jdetails{padding-left:1.1rem;padding-right:1.1rem;}
+  .jcard.open .jdetails{padding:0 1.1rem 1.1rem;}
   .hero{padding:4rem 1.5rem 3rem;}
   .hero h1{letter-spacing:-2px;}
   .stats-strip{flex-wrap:wrap;}
@@ -376,37 +412,14 @@ footer a{color:var(--accent);text-decoration:none;}
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="logo">HowToAI<em>job</em><span class="logo-badge">LIVE</span></a>
+  <a href="#" class="logo" id="siteLogo">HowToAI<em>job</em></a>
   <ul class="nav-links">
     <li><a href="#jobs">Jobs</a></li>
-    <li><a href="#feed">Activity</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#community">Community</a></li>
     <li><a href="https://t.me/HowToAIjob" target="_blank" class="nav-cta">Join Telegram ↗</a></li>
   </ul>
 </nav>
-
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker-label">● Live</div>
-  <div class="ticker-track">
-    <span class="ticker-item"><span class="t-dot"></span>Mercor posted $200/hr AI role</span>
-    <span class="ticker-item"><span class="t-dot"></span>DataAnnotation — 12 new openings today</span>
-    <span class="ticker-item"><span class="t-dot"></span>Mindrift hiring in 40+ countries</span>
-    <span class="ticker-item"><span class="t-dot"></span>AfterQuery (YC) paying up to $90/hr</span>
-    <span class="ticker-item"><span class="t-dot"></span>TELUS International — 7 roles worldwide</span>
-    <span class="ticker-item"><span class="t-dot"></span>Outlier AI — 61 expert openings live</span>
-    <span class="ticker-item"><span class="t-dot"></span>CrowdGen accepting 200+ countries</span>
-    <span class="ticker-item"><span class="t-dot"></span>Deccan AI — $25M backed, invite only</span>
-    <span class="ticker-item"><span class="t-dot"></span>Mercor posted $200/hr AI role</span>
-    <span class="ticker-item"><span class="t-dot"></span>DataAnnotation — 12 new openings today</span>
-    <span class="ticker-item"><span class="t-dot"></span>Mindrift hiring in 40+ countries</span>
-    <span class="ticker-item"><span class="t-dot"></span>AfterQuery (YC) paying up to $90/hr</span>
-    <span class="ticker-item"><span class="t-dot"></span>TELUS International — 7 roles worldwide</span>
-    <span class="ticker-item"><span class="t-dot"></span>Outlier AI — 61 expert openings live</span>
-    <span class="ticker-item"><span class="t-dot"></span>CrowdGen accepting 200+ countries</span>
-    <span class="ticker-item"><span class="t-dot"></span>Deccan AI — $25M backed, invite only</span>
-  </div>
-</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -428,42 +441,6 @@ footer a{color:var(--accent);text-decoration:none;}
 <!-- MAIN CONTENT -->
 <div class="wrap">
 
-  <!-- LIVE FEED -->
-  <div id="feed" class="rv">
-    <div class="feed-box">
-      <div class="feed-hd">
-        <div class="feed-title"><span class="live-dot"></span>Activity Stream</div>
-        <span style="font-size:0.68rem;color:var(--text3);font-family:var(--mono);" id="clk">--:--:--</span>
-      </div>
-      <div class="feed-body" id="feedBody">
-  <div class="feed-row"><span class="fdot"></span>xAI opened 219 remote AI roles<span class="ftime">just now</span></div>
-  <div class="feed-row"><span class="fdot"></span>Crossover hiring top 1% remote talent<span class="ftime">1m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>CrowdGen accepting contributors globally<span class="ftime">2m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>DataAnnotation.tech paying up to $80/hr<span class="ftime">3m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Deccan AI expanding invite-only network<span class="ftime">4m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Handshake AI Fellowship accepting applications<span class="ftime">5m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Innodata hiring across 20+ countries<span class="ftime">6m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>LinguaSenseAI hiring language specialists<span class="ftime">7m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Mercor posted high-paying AI opportunities<span class="ftime">8m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Meridial Expert Network onboarding experts<span class="ftime">9m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Micro1 launched AI Expert projects<span class="ftime">10m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Mindrift opened multilingual projects<span class="ftime">11m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Naveera Tech screening remote candidates<span class="ftime">12m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>OneForma posted translation opportunities<span class="ftime">13m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Outlier AI added new expert categories<span class="ftime">14m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Prolific accepting new participants<span class="ftime">15m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>RWS TrainAI recruiting AI Data Specialists<span class="ftime">16m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Saroot Labs hiring Prompt Engineers<span class="ftime">17m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Scale AI expanding contributor network<span class="ftime">18m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>SME Careers seeking AI Training Experts<span class="ftime">19m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>TELUS opened annotation opportunities<span class="ftime">20m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Turing opened new AI training opportunities<span class="ftime">21m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>Uber AI Solutions accepting contributors<span class="ftime">22m ago</span></div>
-  <div class="feed-row"><span class="fdot"></span>AfterQuery opened AI evaluation roles<span class="ftime">23m ago</span></div>
-      </div>
-    </div>
-  </div>
-
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
     <div class="sec-title">Latest Opportunities <span class="sec-badge">27 live</span></div>
@@ -481,540 +458,724 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
   
   <div class="jobs-list" id="jobsList">
-    <a class="jcard hot" href="/pareto" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🎯</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Top Expert Network — Up to $230/hr</span>
-      <span class="hot-badge">🔥 ELITE</span>
-    </div>
-
-    <div class="jco">Pareto AI · San Francisco · Venture Backed</div>
-
-    <div class="tags">
-      <span class="tag tg">100% Remote</span>
-      <span class="tag ta">$35–$230/hr</span>
-      <span class="tag tp">Expert Network</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$230<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-    
-    <a class="jcard hot" href="/rexzone" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🧬</div>
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Expert-First AI Training — All Domains</span>
-      <span class="hot-badge">🔥 NEW</span>
-    </div>
-
-    <div class="jco">RemoExperts (Rex.zone)</div>
-
-    <div class="tags">
-      <span class="tag tg">Worldwide</span>
-      <span class="tag ta">$25–$65/hr</span>
-      <span class="tag tc">Freelance</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$65<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-    
-    <a class="jcard hot" href="/handshake" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🎓</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Earn Up to $100/hr — PhDs & Masters</span>
-      <span class="hot-badge">🔥 ACADEMIC</span>
-    </div>
-
-    <div class="jco">Handshake AI Fellowship · 100K+ Fellows</div>
-
-    <div class="tags">
-      <span class="tag tg">100% Remote</span>
-      <span class="tag ta">Up to $100/hr</span>
-      <span class="tag tp">30+ Fields</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$100<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-    
-    <a class="jcard hot" href="/alignerr/robotics" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">🤖</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">Robotics ML Expert</span><span class="hot-badge">★ HOT</span></div>
-        <div class="jco">Alignerr · Machine Learning</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
+    <div class="jcard hot" data-type="freelance" data-new="true">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🎯</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Top 0.01% Expert Network — All Domains</span><span class="hot-badge">🔥 NEW</span></div>
+          <div class="jco">Pareto AI · San Francisco</div>
+          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$35–$230/hr</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$230<span class="unit">/hr</span></div>
+          <div class="jtime">Yesterday</div>
+          <div class="jchev">▾</div>
+        </div>
       </div>
-      <div class="jright">
-        <div class="jpay">$1000<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/ref</span></div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
+      <div class="jdetails">
+        <p class="jdetail-text">Pareto AI runs a human-data platform that connects AI labs with vetted subject-matter experts for RLHF, prompt evaluation, and domain-specific annotation — across fields like medicine, law, finance, and engineering. It sits at the high end of this list: the company says general work pays $35–$60/hr, with specialized expert tasks going up to $230/hr, and that it has raised $37M in funding so far.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Licensed or credentialed specialists — doctors, lawyers, engineers, quants — not just general annotation experience</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A completed profile, a paid screening task, and proof of your professional background</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>$230/hr applies to specialized expert work, not the general rate — check which tier you actually qualify for before applying</span></div>
+        </div>
+        <a href="/pareto" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
       </div>
-    </a>
-
-    <a class="jcard" href="/uber" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">🚗</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">Freelance AI Contributor</span></div>
-        <div class="jco">Uber AI Solutions · Tech</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay a">Flexible</div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/afterquery" target="_blank" data-type="freelance">
-      <div class="jico">⚡</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Expert — 40+ Roles Open</span></div>
-        <div class="jco">AfterQuery (YC-backed) · Startup</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$90/hr</span><span class="tag tc">Freelance</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$90<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">2 days ago</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/mindrift" target="_blank" data-type="freelance">
-      <div class="jico">🧠</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Trainer — All Skills Welcome</span></div>
-        <div class="jco">Mindrift · AI Training</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$15–$100/hr</span><span class="tag tc">Freelance</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$100<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">3 days ago</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/dataannotation" target="_blank" data-type="freelance">
-      <div class="jico">📊</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Data Annotator</span></div>
-        <div class="jco">DataAnnotation.tech · Data</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$25–$100/hr</span><span class="tag tc">Freelance</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$100<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">3 days ago</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/oneforma" target="_blank" data-type="freelance">
-      <div class="jico">🌍</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Contributor — 60+ Languages</span></div>
-        <div class="jco">OneForma · Linguistics</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$4.5–$45/hr</span><span class="tag tc">Freelance</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$45<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">4 days ago</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/outlier" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">🔬</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Expert — 61+ Roles Open</span></div>
-        <div class="jco">Outlier AI · Research</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay b">Varies</div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/sarootlabs" target="_blank" data-type="parttime" data-new="true">
-      <div class="jico">✍️</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">Prompt Engineer</span></div>
-        <div class="jco">Saroot Labs Inc. · Engineering</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$20–$30/hr</span><span class="tag tp">Part-time</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$30<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/crowdgen" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">🌐</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Contributor — 500+ Languages</span></div>
-        <div class="jco">CrowdGen by Appen · Global</div>
-        <div class="tags"><span class="tag tc">200+ Countries</span><span class="tag ta">Up to $40/hr</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$40<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/telus" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">📡</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">AI Contributor — 7 Roles Open</span></div>
-        <div class="jco">TELUS International AI · Telecom</div>
-        <div class="tags"><span class="tag tc">Worldwide</span><span class="tag ta">$6–$50/hr</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$50<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard hot" href="/mercor" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">💎</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">Premium AI Jobs — All Skills</span><span class="hot-badge">💰 TOP PAY</span></div>
-        <div class="jco">Mercor · Premium Platform</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$16–$200/hr</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$200<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/naveera" target="_blank" data-type="fulltime" data-new="true">
-      <div class="jico">🚀</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">25+ Remote Tech Jobs Open</span></div>
-        <div class="jco">Naveera Tech · Software</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">Full-time</span><span class="tag tr">New</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay b">25+ Roles</div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a>
-
-    <a class="jcard" href="/deccan" target="_blank" data-type="freelance" data-new="true">
-      <div class="jico">⭐</div>
-      <div class="jbody">
-        <div class="jtop"><span class="jtitle">Top 1% AI Expert Network</span></div>
-        <div class="jco">Deccan AI Experts · Elite</div>
-        <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">Up to $50/hr</span><span class="tag tp">Invite Only</span></div>
-      </div>
-      <div class="jright">
-        <div class="jpay">$50<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-        <div class="jtime">Today</div>
-        <div class="apply">Apply →</div>
-      </div>
-    </a> 
-    
-    <a class="jcard" href="/sme" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🎓</div>
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Subject Matter Expert — AI Training</span>
     </div>
 
-    <div class="jco">SME Careers by SuperAnnotate</div>
-
-    <div class="tags">
-      <span class="tag tg">40+ Countries</span>
-      <span class="tag ta">$20–$130+/hr</span>
-      <span class="tag tp">Freelance</span>
-      <span class="tag tr">NVIDIA Backed</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$130<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard" href="/turing" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🧠</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">LLM Trainer — Agent Function Call</span>
-    </div>
-
-    <div class="jco">Turing — Anthropic • Nvidia • Disney</div>
-
-    <div class="tags">
-      <span class="tag tg">Remote</span>
-      <span class="tag tp">6 Weeks</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay b">Frontier AI</div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard" href="/linguasense" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🎤</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Language & Audio Remote Jobs</span>
+    <div class="jcard hot" data-type="freelance" data-new="true">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🧬</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Expert-First AI Training — All Domains</span><span class="hot-badge">🔥 NEW</span></div>
+          <div class="jco">RemoExperts (Rex.zone)</div>
+          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$25–$65/hr</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$65<span class="unit">/hr</span></div>
+          <div class="jtime">2 days ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Rex.zone connects subject-matter experts with AI labs that need domain-specific data — model answers get checked, scored, or rewritten across fields like law, medicine, finance and more. Work is task-based and remote, so you pick projects that match what you actually know.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People with deep knowledge in a specific field, not just general writing skill</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A laptop, stable internet, and proof of expertise (resume or portfolio) in your domain</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Apply with the domain you're strongest in — niche expertise usually gets matched to better-paying projects</span></div>
+        </div>
+        <a href="/rexzone" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
 
-    <div class="jco">LinguaSenseAI</div>
-
-    <div class="tags">
-      <span class="tag tg">Remote</span>
-      <span class="tag tp">Freelance</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay b">Varies</div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-    
-    <a class="jcard" href="/micro1" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🧠</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">AI Expert — Frontier Lab Projects</span>
-    </div>
-
-    <div class="jco">Micro1 — Palo Alto</div>
-
-    <div class="tags">
-      <span class="tag tg">Remote</span>
-      <span class="tag ta">$20–$100+/hr</span>
-      <span class="tag tp">Freelance</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$100<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard" href="/rws" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🌐</div>
-  <div class="jbody">
-    <div class="jtop"><span class="jtitle">AI Data Specialist — TrainAI Community</span></div>
-    <div class="jco">RWS TrainAI · Since 1992</div>
-    <div class="tags">
-      <span class="tag tg">Worldwide</span>
-      <span class="tag ta">$8–$20+/hr</span>
-      <span class="tag tp">Freelance</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-  <div class="jright">
-    <div class="jpay">$20<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard hot" href="/xai" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">⚡</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">219 Remote Jobs — Train GROK AI</span>
-      <span class="hot-badge">🔥 VIRAL</span>
+    <div class="jcard hot" data-type="freelance" data-new="true">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🎓</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Earn Up to $100/hr — PhDs & Masters</span><span class="hot-badge">🔥 ACADEMIC</span></div>
+          <div class="jco">Handshake AI Fellowship · 100K+ Fellows</div>
+          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">Up to $100/hr</span><span class="tag tp">30+ Fields</span><span class="tag tr">New</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$100<span class="unit">/hr</span></div>
+          <div class="jtime">3 days ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Built on Handshake's existing university network, this fellowship targets PhD and Master's-level fellows who evaluate or generate advanced AI responses in their academic specialty. It's one of the higher-paying options here, but it leans heavily on formal qualifications.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Current or recent grad students with a Master's or PhD</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Academic transcripts or proof of degree, often a short subject test</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Have your degree or transcript ready before applying — it speeds up screening a lot</span></div>
+        </div>
+        <a href="/handshake" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
 
-    <div class="jco">xAI — Elon Musk's AI Company</div>
-
-    <div class="tags">
-      <span class="tag tg">100% Remote</span>
-      <span class="tag ta">$40–$200+/hr</span>
-      <span class="tag tr">219 Roles!</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$200<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard hot" href="/innodata" target="_blank" data-type="fulltime" data-new="true">
-  <div class="jico">🏆</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Work for Google, Apple & Microsoft!</span>
-      <span class="hot-badge">🔥 NASDAQ</span>
-    </div>
-
-    <div class="jco">Innodata Inc. · 36+ Years Experience</div>
-
-    <div class="tags">
-      <span class="tag tg">20+ Countries</span>
-      <span class="tag ta">85+ Languages</span>
-      <span class="tag tp">Full-time</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay b">Premium</div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard" href="/prolific" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🎓</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Get Paid for Online Studies</span>
+    <div class="jcard hot" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🤖</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Robotics ML Expert</span><span class="hot-badge">★ HOT</span></div>
+          <div class="jco">Alignerr · Machine Learning</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$1000<span class="unit">/ref</span></div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Alignerr recruits ML experts to label and validate robotics-related training data. Worth flagging clearly: the $1000 shown on this card is a referral bonus for bringing in other qualified experts, not the hourly pay for the work itself — actual task pay is set separately once you're onboarded.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People with a robotics, ML, or computer-vision background</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Relevant technical background; the referral bonus needs a successful invite</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Don't apply expecting $1000/hr — check the real task rate on the application page first</span></div>
+        </div>
+        <a href="/alignerr/robotics" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
 
-    <div class="jco">Prolific · Founded at Oxford University</div>
-
-    <div class="tags">
-      <span class="tag tg">Worldwide</span>
-      <span class="tag ta">$8–$20+/hr</span>
-      <span class="tag tp">Flexible</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay">$20<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/hr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard hot" href="/meridial" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">🌌</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">80% of World's AI Models Trained Here!</span>
-      <span class="hot-badge">🔥 ELITE</span>
-    </div>
-
-    <div class="jco">Invisible Technologies | Meridial Expert Network</div>
-
-    <div class="tags">
-      <span class="tag tg">100% Remote</span>
-      <span class="tag ta">Premium Pay</span>
-      <span class="tag tp">24K+ Experts</span>
-      <span class="tag tr">New</span>
-    </div>
-  </div>
-
-  <div class="jright">
-    <div class="jpay b">Elite</div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard hot" href="/crossover" target="_blank" data-type="fulltime" data-new="true">
-  <div class="jico">👑</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">$10K–$1M/Year — Top 1% Remote Jobs</span>
-      <span class="hot-badge">💰 ELITE</span>
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🚗</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Freelance AI Contributor</span></div>
+          <div class="jco">Uber AI Solutions · Tech</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay a">Flexible</div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Listed as a flexible freelance contributor role. We don't have much first-hand detail on this one yet, so treat it like any unfamiliar gig listing: read the actual offer page closely before committing real time to it.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People comfortable evaluating a new platform on their own</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Details vary by role — check the official application page</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Search the company name plus "review" before applying to any platform you haven't heard of</span></div>
+        </div>
+        <a href="/uber" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
 
-    <div class="jco">Crossover · Fortune 500 Clients · 100 Countries</div>
-
-    <div class="tags">
-      <span class="tag tg">100% Remote</span>
-      <span class="tag ta">$10K–$1M/yr</span>
-      <span class="tag tp">Top 1% Only</span>
-      <span class="tag tr">New</span>
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">⚡</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Expert — 40+ Roles Open</span></div>
+          <div class="jco">AfterQuery (YC-backed) · Startup</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$90/hr</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$90<span class="unit">/hr</span></div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">AfterQuery is a YC-backed startup hiring AI experts to evaluate and refine model outputs across 40+ open roles. Being YC-backed means it went through outside investor vetting, which is a decent — though not guaranteed — signal of legitimacy.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Freelancers comfortable with structured evaluation and grading tasks</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A remote setup; some roles want a specific technical or writing background</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Browse a few of the 40+ roles — pay and requirements differ a lot between them</span></div>
+        </div>
+        <a href="/afterquery" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
-  </div>
 
-  <div class="jright">
-    <div class="jpay">$1M<span style="font-size:0.65rem;font-weight:400;color:var(--text3)">/yr</span></div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-
-    <a class="jcard hot" href="/scaleai" target="_blank" data-type="freelance" data-new="true">
-  <div class="jico">📐</div>
-
-  <div class="jbody">
-    <div class="jtop">
-      <span class="jtitle">Powers 90% of World's Top AI Models</span>
-      <span class="hot-badge">🔥 LEGENDARY</span>
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🧠</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Trainer — All Skills Welcome</span></div>
+          <div class="jco">Mindrift · AI Training</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$15–$100/hr</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$100<span class="unit">/hr</span></div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Mindrift runs AI training projects across many skill areas and languages, with pay scaling from entry-level to expert tasks. It's a broad, multi-skill platform rather than one narrow niche, so most backgrounds can usually find something to apply for.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Beginners and experienced contributors alike — roles span a wide pay range</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Sign-up plus a short skills assessment for your chosen track</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Try a couple of different task categories — pay varies more by task type than by platform</span></div>
+        </div>
+        <a href="/mindrift" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
 
-    <div class="jco">Scale AI · Trusted by Meta, Mayo Clinic, US Gov</div>
-
-    <div class="tags">
-      <span class="tag tg">100% Remote</span>
-      <span class="tag tp">Since 2016</span>
-      <span class="tag tr">New</span>
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">📊</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Data Annotator</span></div>
+          <div class="jco">DataAnnotation.tech · Data</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$25–$100/hr</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$100<span class="unit">/hr</span></div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">One of the more established platforms on this list — contributors complete coding, writing, and data-labeling tasks that help train AI models, paid hourly. Getting in usually means passing a qualification exercise first; pay tends to rise as you build a track record.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People willing to start with simpler tasks and build up from there</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Passing an initial qualification test before you get access to paid tasks</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Early tasks pay less while you're being evaluated — that's normal, not a red flag</span></div>
+        </div>
+        <a href="/dataannotation" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
     </div>
-  </div>
 
-  <div class="jright">
-    <div class="jpay b">Premium</div>
-    <div class="jtime">Today</div>
-    <div class="apply">Apply →</div>
-  </div>
-</a>
-    
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🌍</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Contributor — 60+ Languages</span></div>
+          <div class="jco">OneForma · Linguistics</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$4.5–$45/hr</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$45<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">OneForma focuses on linguistic and data-collection microtasks — translation checks, transcription, search relevance — across 60+ languages. Pay per task is usually modest since tasks are short, but it's accessible if your language isn't widely supported elsewhere.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Bilingual or multilingual speakers, especially in less common languages</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Native or fluent-level skill in your listed language(s)</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Multilingual applicants usually get matched to more available tasks, faster</span></div>
+        </div>
+        <a href="/oneforma" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🔬</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Expert — 61+ Roles Open</span></div>
+          <div class="jco">Outlier AI · Research</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">Varies</div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Outlier runs expert evaluation tasks — reviewing, scoring, and correcting AI-generated answers — across 60+ open roles in subjects like coding, math, and writing. Pay is task-based rather than a flat hourly rate, so it depends on which project you qualify for.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People strong in a specific subject — coding, writing, math, and similar</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Passing a subject-specific qualification quiz to unlock paid tasks</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Pick the subject category you're genuinely confident in — qualification tests can be strict</span></div>
+        </div>
+        <a href="/outlier" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="parttime">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">✍️</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Prompt Engineer</span></div>
+          <div class="jco">Saroot Labs Inc. · Engineering</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$20–$30/hr</span><span class="tag tp">Part-time</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$30<span class="unit">/hr</span></div>
+          <div class="jtime">2 weeks ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">A part-time Prompt Engineer role — writing and refining prompts used to test or steer AI model behavior. It's narrower and more specialized than most listings here, and the pay reflects a part-time rather than full freelance commitment.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People comfortable writing clear, structured instructions for AI systems</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Strong written English and some familiarity with how AI chat tools respond to prompts</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>A short portfolio of example prompts can help a lot during screening</span></div>
+        </div>
+        <a href="/sarootlabs" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🌐</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Contributor — 500+ Languages</span></div>
+          <div class="jco">CrowdGen by Appen · Global</div>
+          <div class="tags"><span class="tag tc">200+ Countries</span><span class="tag ta">Up to $40/hr</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$40<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Appen is a long-running, publicly listed data company, and CrowdGen is its crowdsourced worker portal for things like search evaluation, data collection, and transcription in 200+ countries. It's a high-volume microtask model — individual tasks pay modestly but availability is broad.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Anyone wanting flexible, low-commitment microtasks on the side</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Just a sign-up and basic task tutorials — no special qualification usually needed</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Treat this as supplemental income rather than a primary one — task volume can be inconsistent</span></div>
+        </div>
+        <a href="/crowdgen" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">📡</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Contributor — 7 Roles Open</span></div>
+          <div class="jco">TELUS International AI · Telecom</div>
+          <div class="tags"><span class="tag tc">Worldwide</span><span class="tag ta">$6–$50/hr</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$50<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">TELUS Digital's AI data arm runs annotation and labeling projects worldwide, currently with seven open contributor roles. Being part of a large, established company, the process tends to be more structured than smaller gig platforms.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People who prefer a more corporate, process-driven application experience</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>ID verification or a background check is common for larger BPO-style platforms</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Expect a slightly longer onboarding process than you'd see on smaller startups</span></div>
+        </div>
+        <a href="/telus" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard hot" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">💎</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Premium AI Jobs — All Skills</span><span class="hot-badge">💰 TOP PAY</span></div>
+          <div class="jco">Mercor · Premium Platform</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$16–$200/hr</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$200<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Mercor matches experts directly with frontier AI labs for premium-paying contract work, with pay varying a lot by skill level and project. It's one of the higher-end options on this list, which usually also means more competitive screening.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Experienced professionals — engineering, research, or specialized domains</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A strong resume or portfolio — screening is more competitive at this pay tier</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Tailor your application to one specific skill area rather than applying broadly</span></div>
+        </div>
+        <a href="/mercor" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="fulltime">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🚀</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">25+ Remote Tech Jobs Open</span></div>
+          <div class="jco">Naveera Tech · Software</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">Full-time</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">25+ Roles</div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Listed as full-time remote tech roles rather than freelance gig work, with 25+ positions open. Full-time listings are worth a closer look at company background, since the commitment level here is higher than a freelance task platform.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People looking for a full-time remote tech job, not freelance gigs</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A standard full-time hiring process — interviews, background checks, and so on</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>For any full-time offer, confirm the legal entity and contract terms before signing anything</span></div>
+        </div>
+        <a href="/naveera" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">⭐</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Top 1% AI Expert Network</span></div>
+          <div class="jco">Deccan AI Experts · Elite</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">Up to $50/hr</span><span class="tag tp">Invite Only</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$50<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">An invite-only network for top-tier AI experts. Invite-only models usually mean a higher entry bar and limited slots, so this one's less about applying on demand and more about getting noticed by the network in the first place.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Established experts with a public track record — publications, GitHub, portfolio</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Typically a referral or an inbound invite rather than an open application</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>A visible public portfolio helps — invite-only networks often source candidates that way</span></div>
+        </div>
+        <a href="/deccan" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🎓</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Subject Matter Expert — AI Training</span></div>
+          <div class="jco">SME Careers by SuperAnnotate</div>
+          <div class="tags"><span class="tag tg">40+ Countries</span><span class="tag ta">$20–$130+/hr</span><span class="tag tp">Freelance</span><span class="tag tr">NVIDIA Backed</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$130<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">SuperAnnotate's subject-matter-expert track pays a wide range depending on how specialized your knowledge is, with roles open across 40+ countries. The wide $20–$130+/hr band reflects how much subject expertise can change your rate.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Specialists in a technical or academic field, not generalists</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Proof of subject expertise — degree, certification, or relevant work history</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>The high end of that pay range usually goes to rare or highly technical specialties</span></div>
+        </div>
+        <a href="/sme" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🧠</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">LLM Trainer — Agent Function Call</span></div>
+          <div class="jco">Turing — Anthropic • Nvidia • Disney</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">6 Weeks</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">Frontier AI</div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Turing places software and AI engineers with major companies on a project basis, including LLM-training work like agent function-calling — teaching a model to correctly trigger tools and APIs. Engagements are typically several weeks long rather than one-off tasks.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Software engineers comfortable with technical interviews</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Usually a coding assessment plus a technical interview</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Brush up on tool-use and function-calling patterns specifically before the interview</span></div>
+        </div>
+        <a href="/turing" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🎤</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Language & Audio Remote Jobs</span></div>
+          <div class="jco">LinguaSenseAI</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">Varies</div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Focused specifically on language and audio work — transcription, voice recording, pronunciation review for AI speech models. It's a narrower niche than most listings here, so it suits people with strong audio or language skills more than general data work.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People with clear speech, strong language skills, or audio-editing experience</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A decent microphone or quiet recording space for audio-based tasks</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Test your mic setup before any audio task — quality often affects payment approval</span></div>
+        </div>
+        <a href="/linguasense" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🧠</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Expert — Frontier Lab Projects</span></div>
+          <div class="jco">Micro1 — Palo Alto</div>
+          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$20–$100+/hr</span><span class="tag tp">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$100<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Similar in model to Mercor and Turing — micro1 matches AI experts with frontier lab projects, with pay scaling by skill level. A few platforms on this page use this same "staffing agency for AI labs" approach, so requirements tend to overlap.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Experienced AI/ML practitioners comfortable with a formal screening process</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A resume review plus a technical assessment</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Rejected by one staffing-style platform? The others here (Mercor, Turing) are worth trying too — criteria differ slightly</span></div>
+        </div>
+        <a href="/micro1" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🌐</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">AI Data Specialist — TrainAI Community</span></div>
+          <div class="jco">RWS TrainAI · Since 1992</div>
+          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$8–$20+/hr</span><span class="tag tp">Freelance</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$20<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">RWS is an established language-services company expanding into AI training data work through TrainAI, covering translation-adjacent and linguistic annotation tasks. Pay here sits on the lower end of this list, which is typical for high-volume linguistic microtasks.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Translators or bilingual freelancers looking for AI-adjacent work</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Language-pair fluency relevant to the open tasks</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Useful as a side platform alongside others on this list rather than a sole income source</span></div>
+        </div>
+        <a href="/rws" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard hot" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">⚡</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">219 Remote Jobs — Train GROK AI</span><span class="hot-badge">🔥 VIRAL</span></div>
+          <div class="jco">xAI — Elon Musk's AI Company</div>
+          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">$40–$200+/hr</span><span class="tag tr">219 Roles!</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$200<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">xAI is running a large recruiting push — 219 listed roles — for people who help train and evaluate Grok. A drive at this scale usually means varied roles at very different pay levels, so "up to $200/hr" applies to specific senior tasks, not every opening.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>A wide range of backgrounds, given how many different roles are open</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Varies a lot by specific role — check each listing individually</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Don't assume every one of the 219 roles pays the headline $200/hr — check the actual listing</span></div>
+        </div>
+        <a href="/xai" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard hot" data-type="fulltime">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🏆</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Work for Google, Apple & Microsoft!</span><span class="hot-badge">🔥 NASDAQ</span></div>
+          <div class="jco">Innodata Inc. · 36+ Years Experience</div>
+          <div class="tags"><span class="tag tg">20+ Countries</span><span class="tag ta">85+ Languages</span><span class="tag tp">Full-time</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">Premium</div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Innodata is a publicly traded (Nasdaq) AI data engineering company that's been operating for decades, working with major tech clients. As a listed public company, it has more public financial transparency than most platforms on this page.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People who prefer working with an established, publicly accountable company</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>A standard full-time application process, often with role-specific technical screening</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>You can check Innodata's public filings or investor info for extra confidence before applying</span></div>
+        </div>
+        <a href="/innodata" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard" data-type="freelance">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🎓</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Get Paid for Online Studies</span></div>
+          <div class="jco">Prolific · Founded at Oxford University</div>
+          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$8–$20+/hr</span><span class="tag tp">Flexible</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$20<span class="unit">/hr</span></div>
+          <div class="jtime">1 week ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Prolific is a bit different from the rest of this list — instead of AI-labeling tasks, it connects you with paid academic and commercial research studies and surveys, some of which feed into AI/UX research. Pay is per-study rather than ongoing hourly task work.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>People who enjoy surveys and short studies rather than ongoing task work</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Just a participant profile — no special qualification needed to start</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Studies fill up fast — turning on notifications helps you catch ones in your demographic</span></div>
+        </div>
+        <a href="/prolific" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard hot" data-type="freelance" data-new="true">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">🌌</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">80% of World's AI Models Trained Here!</span><span class="hot-badge">🔥 ELITE</span></div>
+          <div class="jco">Invisible Technologies | Meridial Expert Network</div>
+          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">Premium Pay</span><span class="tag tp">24K+ Experts</span><span class="tag tr">New</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">Elite</div>
+          <div class="jtime">5 days ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Invisible Technologies runs the Meridial Expert Network, an operations-and-data partner for several major AI labs, with a large existing pool of experts already onboarded. Being part of a bigger network can mean steadier project flow, but also more competition to get matched.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Generalists comfortable with varied operational and data tasks, not just one niche</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Onboarding into the expert network before tasks become available</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Expect an onboarding period before consistent project flow starts</span></div>
+        </div>
+        <a href="/meridial" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard hot" data-type="fulltime" data-new="true">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">👑</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">$10K–$1M/Year — Top 1% Remote Jobs</span><span class="hot-badge">💰 ELITE</span></div>
+          <div class="jco">Crossover · Fortune 500 Clients · 100 Countries</div>
+          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">$10K–$1M/yr</span><span class="tag tp">Top 1% Only</span><span class="tag tr">New</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay">$1M<span class="unit">/yr</span></div>
+          <div class="jtime">5 days ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Crossover has run remote, performance-based hiring for years, placing people in roles with Fortune 500 clients across 100 countries, with a wide pay band reflecting very different role levels. The "top 1%" framing means the screening process is intentionally selective.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Highly experienced professionals comfortable with rigorous, performance-tracked work</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Multi-stage interviews and skills testing — the process is longer than most</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Block out real time for the application — Crossover's process is known for being thorough</span></div>
+        </div>
+        <a href="/crossover" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
+
+    <div class="jcard hot" data-type="freelance" data-new="true">
+      <div class="jmain" onclick="toggleDetails(this)">
+        <div class="jico">📐</div>
+        <div class="jbody">
+          <div class="jtop"><span class="jtitle">Powers 90% of World's Top AI Models</span><span class="hot-badge">🔥 LEGENDARY</span></div>
+          <div class="jco">Scale AI · Trusted by Meta, Mayo Clinic, US Gov</div>
+          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag tp">Since 2016</span><span class="tag tr">New</span></div>
+        </div>
+        <div class="jright">
+          <div class="jpay b">Premium</div>
+          <div class="jtime">4 days ago</div>
+          <div class="jchev">▾</div>
+        </div>
+      </div>
+      <div class="jdetails">
+        <p class="jdetail-text">Scale AI is one of the most established names in AI training data, founded in 2016 and used by many major AI labs. As the most well-known platform on this list, expect higher applicant volume and correspondingly more competitive task qualification.</p>
+        <div class="jdetail-grid">
+          <div class="jdetail-item"><b>Good fit for</b><span>Anyone wanting to start with a recognizable, widely-used platform</span></div>
+          <div class="jdetail-item"><b>Typically needs</b><span>Account sign-up plus task-specific qualification tests</span></div>
+          <div class="jdetail-item"><b>Keep in mind</b><span>Popular task categories fill fast — check back regularly for new openings</span></div>
+        </div>
+        <a href="/scaleai" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+      </div>
+    </div>
   </div>
   
   <!-- PAGINATION -->
   <div class="pagination rv" id="pgBar">
     <div class="pg-info">Showing <span id="pgRange">1–6</span> of <span id="pgTotal">14</span> jobs</div>
     <div class="pg-btns" id="pgBtns"></div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="sec-head rv" id="about">
+    <div class="sec-title">About HowToAIjob</div>
+    <span class="sec-badge">Read me</span>
+  </div>
+
+  <div class="about-text rv">
+    <p><strong>HowToAIjob is a listings directory</strong> for the AI-economy job market — the fast-growing world of AI training, data annotation, model evaluation, and expert-review work that companies like Scale AI, Mercor, and Outlier rely on to build better AI systems. Instead of checking a dozen different company career pages every day, you can scan one page here and see what's currently open, roughly what it pays, and whether it's freelance or full-time.</p>
+    <p>We don't run any of these jobs ourselves, and we're not affiliated with the companies listed below. We track public hiring pages across the AI training industry and pull the details into one place, updated as listings change. When you click through on a card, you're applying directly with that company, on their own site, under their own terms — we're simply the map, not the destination.</p>
+  </div>
+
+  <div class="steps-grid rv">
+    <div class="step-card">
+      <span class="step-num">01 · DISCOVER</span>
+      <h3>We scan the industry</h3>
+      <p>Our team checks public career and hiring pages across dozens of AI companies and platforms for new openings in training, annotation, evaluation, and related freelance or full-time roles.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-num">02 · ORGANIZE</span>
+      <h3>We sort and tag</h3>
+      <p>Each listing gets sorted by type — freelance, full-time, or part-time — tagged with pay range and location where available, and marked "New" when it's been posted recently.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-num">03 · EXPLAIN</span>
+      <h3>We add real context</h3>
+      <p>Tap any listing and you'll find a plain-language summary: what the work actually involves, who it tends to suit, and what's worth knowing before you apply — not just a one-line title.</p>
+    </div>
+    <div class="step-card">
+      <span class="step-num">04 · HAND OFF</span>
+      <h3>You apply, directly</h3>
+      <p>"Visit official page" sends you straight to the company's own application page. We don't collect applications, charge fees, or sit anywhere in the middle of the actual hiring process.</p>
+    </div>
+  </div>
+
+  <div class="note-box rv">
+    <strong>A quick note:</strong> HowToAIjob is an independent listings directory, not a recruiter or employer. We don't guarantee any listing's accuracy, availability, or pay at the time you apply — always confirm details on the company's own page before starting work or sharing personal information, and never pay anyone to "secure" a job.
   </div>
 
   <!-- COMMUNITY -->
@@ -1153,13 +1314,31 @@ footer a{color:var(--accent);text-decoration:none;}
 })();
 
 /* ════════════════
-   CLOCK
+   LOGO BOOT-UP ANIMATION
    ════════════════ */
-function tick(){
-  const el=document.getElementById('clk');
-  if(el) el.textContent=new Date().toTimeString().slice(0,8);
-}
-setInterval(tick,1000); tick();
+(function typeLogo(){
+  const el = document.getElementById('siteLogo');
+  if(!el) return;
+  const full = 'HowToAIjob';
+  const splitAt = 7; // "HowToAI" | "job"
+  el.textContent = '';
+  const cursor = document.createElement('span');
+  cursor.className = 'type-cursor';
+  let i = 0;
+  function step(){
+    if(i <= full.length){
+      const plain = full.slice(0, Math.min(i, splitAt));
+      const accent = i > splitAt ? full.slice(splitAt, i) : '';
+      el.innerHTML = plain + (accent ? `<em>${accent}</em>` : '');
+      el.appendChild(cursor);
+      i++;
+      setTimeout(step, 70);
+    } else {
+      setTimeout(()=>cursor.remove(), 900);
+    }
+  }
+  step();
+})();
 
 /* ════════════════
    STAT COUNTERS
@@ -1176,7 +1355,7 @@ function countUp(id, target, suffix){
 }
 setTimeout(()=>{
   countUp('c1',27,'+');
-  countUp('c2',200,'');
+  countUp('c2',230,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
 },600);
@@ -1190,36 +1369,22 @@ const obs = new IntersectionObserver(entries=>{
 document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 
 /* ════════════════
-   LIVE FEED AUTO-UPDATE
+   JOB CARD EXPAND / COLLAPSE
    ════════════════ */
-const feedMsgs=[
-  'New ML role at Alignerr — $1000 referral',
-  'Mindrift opened Bengali & Telugu tasks',
-  'Mercor waitlist moved — 50 spots open',
-  'DataAnnotation.tech paying $80/hr for code',
-  'Outlier AI added 8 expert categories',
-  'TELUS opened Arabic annotation project',
-  'CrowdGen posted Hindi transcription tasks',
-  'AfterQuery filled 5 of 40 roles today',
-  'Saroot Labs screening Prompt Engineers',
-  'Deccan AI sent invites to 20 new experts',
-  'OneForma posted Urdu translation gigs',
-  'Naveera Tech screening DevOps candidates'
-];
-let fi=0;
-setInterval(()=>{
-  const box=document.getElementById('feedBody');
-  if(!box) return;
-  const row=document.createElement('div');
-  row.className='feed-row';
-  row.innerHTML=`<span class="fdot"></span>${feedMsgs[fi%feedMsgs.length]}<span class="ftime">just now</span>`;
-  fi++;
-  box.insertBefore(row,box.firstChild);
-  const rows=box.querySelectorAll('.feed-row');
-  if(rows.length>8) rows[rows.length-1].remove();
-  const times=box.querySelectorAll('.ftime');
-  if(times[1]) times[1].textContent='1m ago';
-},7000);
+function toggleDetails(headerEl){
+  const card = headerEl.closest('.jcard');
+  const wasOpen = card.classList.contains('open');
+  // accordion feel: close any other open card automatically
+  document.querySelectorAll('.jcard.open').forEach(c=>{
+    if(c!==card) c.classList.remove('open');
+  });
+  card.classList.toggle('open', !wasOpen);
+  if(!wasOpen){
+    setTimeout(()=>{
+      card.scrollIntoView({behavior:'smooth', block:'nearest'});
+    }, 180);
+  }
+}
 
 /* ════════════════
    PAGINATION SYSTEM
@@ -1241,6 +1406,17 @@ function getVisible(){
   });
 }
 
+function changePage(p){
+  curPage = p;
+  // collapse any expanded card first so the list height stays consistent
+  document.querySelectorAll('.jcard.open').forEach(c=>c.classList.remove('open'));
+  renderPage();
+  // always land back at the same spot (top of the list) instead of
+  // jumping wherever the reflow happens to push the page
+  const anchor=document.getElementById('jobs');
+  if(anchor) anchor.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
 function renderPage(){
   const all = getVisible();
   const total = all.length;
@@ -1252,7 +1428,7 @@ function renderPage(){
   // Show/hide cards
   document.querySelectorAll('.jcard').forEach(c=>c.style.display='none');
   all.slice(start,end).forEach((c,i)=>{
-    c.style.display='flex';
+    c.style.display='block';
     c.style.animation='none';
     void c.offsetWidth;
     c.style.animation=`pgFade 0.3s ease ${i*0.04}s both`;
@@ -1274,7 +1450,7 @@ function renderPage(){
   prev.className='pg-btn';
   prev.innerHTML='← Prev';
   prev.disabled=curPage<=1;
-  prev.onclick=()=>{curPage--;renderPage();};
+  prev.onclick=()=>changePage(curPage-1);
   btns.appendChild(prev);
 
   // Page numbers
@@ -1286,7 +1462,7 @@ function renderPage(){
   if(numStart>1){
     const n=document.createElement('button');
     n.className='pg-num';n.textContent='1';
-    n.onclick=()=>{curPage=1;renderPage();};btns.appendChild(n);
+    n.onclick=()=>changePage(1);btns.appendChild(n);
     if(numStart>2){const d=document.createElement('span');d.textContent='…';d.style.cssText='color:var(--text3);font-size:0.75rem;padding:0 2px;font-family:var(--mono)';btns.appendChild(d);}
   }
   for(let i=numStart;i<=numEnd;i++){
@@ -1294,14 +1470,14 @@ function renderPage(){
     n.className='pg-num'+(i===curPage?' active':'');
     n.textContent=i;
     const pg=i;
-    n.onclick=()=>{curPage=pg;renderPage();};
+    n.onclick=()=>changePage(pg);
     btns.appendChild(n);
   }
   if(numEnd<totalPages){
     if(numEnd<totalPages-1){const d=document.createElement('span');d.textContent='…';d.style.cssText='color:var(--text3);font-size:0.75rem;padding:0 2px;font-family:var(--mono)';btns.appendChild(d);}
     const n=document.createElement('button');
     n.className='pg-num';n.textContent=totalPages;
-    n.onclick=()=>{curPage=totalPages;renderPage();};btns.appendChild(n);
+    n.onclick=()=>changePage(totalPages);btns.appendChild(n);
   }
 
   // Next
@@ -1309,9 +1485,10 @@ function renderPage(){
   next.className='pg-btn';
   next.innerHTML='Next →';
   next.disabled=curPage>=totalPages;
-  next.onclick=()=>{curPage++;renderPage();};
+  next.onclick=()=>changePage(curPage+1);
   btns.appendChild(next);
 }
+
 
 /* ════════════════
    FILTER
@@ -1337,5 +1514,4 @@ function search(v){
 renderPage();
 </script>
 </body>
-</html> 
-
+</html>
