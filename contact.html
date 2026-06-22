@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Privacy Policy — HowToAIjob</title>
-<meta name="description" content="Privacy Policy for HowToAIjob — learn how we handle data and protect your privacy.">
+<title>Contact Us — HowToAIjob</title>
+<meta name="description" content="Contact HowToAIjob — send questions, job listing submissions, or partnership inquiries.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -50,7 +50,7 @@ nav{
 .nav-cta{color:var(--accent) !important;padding:0.4rem 1.1rem;border-radius:var(--radius-sm);border:1px solid var(--border2);}
 .nav-cta:hover{background:var(--accent-dim);}
 
-main{max-width:760px;margin:0 auto;padding:4rem 2rem 6rem;}
+main{max-width:860px;margin:0 auto;padding:4rem 2rem 6rem;}
 
 .page-label{font-size:0.7rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;}
 .page-label::before{content:'';width:20px;height:1px;background:var(--accent);}
@@ -58,29 +58,99 @@ main{max-width:760px;margin:0 auto;padding:4rem 2rem 6rem;}
 .page-hero h1{font-size:2.2rem;font-weight:700;letter-spacing:-1.5px;line-height:1.2;margin-bottom:1rem;}
 .page-hero h1 em{font-style:normal;color:var(--accent);}
 .page-hero p{font-size:0.92rem;color:var(--text2);line-height:1.8;}
-.updated{font-size:0.72rem;font-family:var(--mono);color:var(--text3);margin-top:0.5rem;}
 
-.policy-block{
+/* GRID */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:2rem;
+  align-items:start;
+}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr;}}
+
+/* FORM */
+.form-wrap{
   background:var(--surface);
   border:1px solid var(--border);
   border-radius:var(--radius);
-  padding:1.3rem 1.5rem;
-  margin-bottom:1rem;
+  padding:1.8rem;
 }
-.policy-block h3{
-  font-size:0.9rem;font-weight:700;color:#fff;
-  margin-bottom:0.6rem;
-  display:flex;align-items:center;gap:10px;
+.form-group{margin-bottom:1.2rem;}
+.form-group label{
+  display:block;font-size:0.78rem;font-weight:600;
+  color:var(--text2);margin-bottom:6px;font-family:var(--mono);
+  text-transform:uppercase;letter-spacing:1px;
 }
-.policy-block h3 .ico{font-size:1.1rem;}
-.policy-block p{font-size:0.85rem;color:var(--text2);line-height:1.8;}
-.policy-block p a{color:var(--accent);text-decoration:none;}
-.policy-block p a:hover{text-decoration:underline;}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;font-size:0.88rem;font-family:var(--font);
+  background:rgba(255,255,255,0.04);
+  border:1px solid var(--border);
+  border-radius:var(--radius-sm);
+  padding:0.7rem 1rem;
+  color:var(--text);
+  outline:none;
+  transition:border-color var(--tr),background var(--tr);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--border2);
+  background:rgba(0,255,213,0.03);
+}
+.form-group select option{background:#020a0f;color:var(--text);}
+.form-group textarea{resize:vertical;min-height:120px;}
 
-.divider{border:none;border-top:1px solid var(--border);margin:2rem 0;}
-.foot-note{font-size:0.8rem;color:var(--text3);line-height:1.7;}
-.foot-note a{color:var(--accent);text-decoration:none;}
+.submit-btn{
+  background:var(--accent);color:#020a0f;
+  border:none;border-radius:var(--radius-sm);
+  padding:0.7rem 1.8rem;
+  font-size:0.88rem;font-weight:700;font-family:var(--font);
+  cursor:pointer;transition:all var(--tr);
+  width:100%;
+}
+.submit-btn:hover{box-shadow:0 0 24px rgba(0,255,213,0.3);transform:translateY(-1px);}
+.submit-btn:disabled{opacity:0.6;cursor:not-allowed;transform:none;}
 
+.success-msg{
+  display:none;
+  background:rgba(0,255,213,0.06);
+  border:1px solid var(--border2);
+  border-radius:var(--radius-sm);
+  padding:1rem;
+  font-size:0.85rem;
+  color:var(--accent);
+  margin-top:1rem;
+  text-align:center;
+  font-family:var(--mono);
+}
+
+/* INFO BOX */
+.info-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.5rem;
+}
+.info-box h3{
+  font-size:0.78rem;font-weight:700;
+  color:var(--accent);font-family:var(--mono);
+  letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:1.2rem;
+}
+.info-row{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:0.82rem;color:var(--text2);
+  margin-bottom:0.9rem;line-height:1.6;
+}
+.info-row .dot{color:var(--accent);flex-shrink:0;margin-top:2px;}
+.info-row a{color:var(--accent);text-decoration:none;}
+.info-row a:hover{text-decoration:underline;}
+.divider{border:none;border-top:1px solid var(--border);margin:1rem 0;}
+.info-note{font-size:0.78rem;color:var(--text3);line-height:1.7;}
+
+/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text3);font-size:0.78rem;font-family:var(--mono);}
 footer a{color:var(--accent);text-decoration:none;}
 .footer-logo{font-size:1rem;font-weight:700;color:var(--text2);margin-bottom:0.5rem;}
@@ -102,8 +172,8 @@ footer a{color:var(--accent);text-decoration:none;}
   <ul class="nav-links">
     <li><a href="/">Jobs</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="privacy.html" class="active">Privacy</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
     <li><a href="https://t.me/HowToAIjob" target="_blank" class="nav-cta">Telegram ↗</a></li>
   </ul>
 </nav>
@@ -111,45 +181,82 @@ footer a{color:var(--accent);text-decoration:none;}
 <main>
 
   <div class="page-hero">
-    <div class="page-label">Legal</div>
-    <h1>Privacy <em>Policy</em></h1>
-    <p>We respect your privacy and are committed to being transparent about how we handle information when you visit HowToAIjob.</p>
-    <div class="updated">Last updated: June 2026</div>
+    <div class="page-label">Contact</div>
+    <h1>Get in <em>touch</em></h1>
+    <p>Have a question, suggestion, job listing submission, or partnership idea? Fill out the form and we'll get back to you as soon as possible.</p>
   </div>
 
-  <div class="policy-block">
-    <h3><span class="ico">📊</span> Analytics</h3>
-    <p>We use Google Analytics to understand how visitors interact with our website. This helps us improve content and user experience. Data collected is anonymized and is not linked to any individual user. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google's opt-out tool</a>.</p>
+  <div class="contact-grid">
+
+    <!-- ══ FORM ══
+         Formspree se real email aati hai.
+         SETUP: formspree.io pe free account banao →
+         New Form → copy the form ID → paste below in action URL
+         Example: action="https://formspree.io/f/YOUR_FORM_ID"
+    -->
+    <div class="form-wrap">
+      <form id="contactForm"
+            action="https://formspree.io/f/howtoaijob"
+            method="POST">
+
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="inquiry">Inquiry type</label>
+          <select id="inquiry" name="inquiry">
+            <option value="">Select one...</option>
+            <option value="general">General question</option>
+            <option value="job">Job listing submission</option>
+            <option value="partnership">Partnership / collaboration</option>
+            <option value="business">Business inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <!-- honeypot anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="New message — HowToAIjob Contact Form">
+
+        <button type="submit" class="submit-btn" id="submitBtn">Send message →</button>
+        <div class="success-msg" id="successMsg">
+          ✓ Message sent! We'll reply within 1–2 business days.
+        </div>
+
+      </form>
+    </div>
+
+    <div class="info-box">
+      <h3>Other ways to reach us</h3>
+      <div class="info-row">
+        <span class="dot">→</span>
+        <span><strong>Email:</strong><br><a href="mailto:howtoaijob@gmail.com">howtoaijob@gmail.com</a></span>
+      </div>
+      <div class="info-row">
+        <span class="dot">→</span>
+        <span><strong>Telegram:</strong><br><a href="https://t.me/HowToAIjob" target="_blank">t.me/HowToAIjob</a></span>
+      </div>
+      <div class="info-row">
+        <span class="dot">→</span>
+        <span>Replies within 1–2 business days</span>
+      </div>
+      <hr class="divider">
+      <p class="info-note">We welcome job listing submissions, collaboration proposals, and feedback to help improve the platform for everyone.</p>
+    </div>
+
   </div>
-
-  <div class="policy-block">
-    <h3><span class="ico">🍪</span> Cookies</h3>
-    <p>Our website may use cookies and similar technologies for analytics and performance purposes. You can manage or disable cookie preferences at any time through your browser settings. Continuing to use our site implies consent to our cookie usage.</p>
-  </div>
-
-  <div class="policy-block">
-    <h3><span class="ico">🔒</span> Your data</h3>
-    <p>We do not sell, trade, or share your personal information with third parties, except when required by law. Any information you voluntarily provide — such as through our contact form — is used solely to respond to your inquiry and is not stored beyond that purpose.</p>
-  </div>
-
-  <div class="policy-block">
-    <h3><span class="ico">🔗</span> Third-party links</h3>
-    <p>HowToAIjob contains links to external job platforms and company websites. We are not responsible for the privacy practices of those sites. When you click "Visit official page", you leave HowToAIjob and are subject to that company's own privacy policy. We recommend reviewing their policies before sharing any personal information.</p>
-  </div>
-
-  <div class="policy-block">
-    <h3><span class="ico">💼</span> Job listings disclaimer</h3>
-    <p>HowToAIjob is an independent listings directory — not a recruiter or employer. We do not guarantee the accuracy, availability, or pay rates of any listing at the time you apply. Always confirm details on the company's own page before starting work or sharing personal information. Never pay anyone to "secure" a job.</p>
-  </div>
-
-  <div class="policy-block">
-    <h3><span class="ico">🔄</span> Policy updates</h3>
-    <p>This policy may be updated from time to time. Continued use of the website after any changes constitutes your acceptance of the updated policy. We will update the "Last updated" date above when changes are made.</p>
-  </div>
-
-  <hr class="divider">
-
-  <p class="foot-note">By using this website, you agree to this Privacy Policy. Questions? Use our <a href="contact.html">contact page</a>.</p>
 
 </main>
 
@@ -164,6 +271,40 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
   © 2026 HowToAIjob · <a href="mailto:howtoaijob@gmail.com">howtoaijob@gmail.com</a>
 </footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const btn  = document.getElementById('submitBtn');
+const msg  = document.getElementById('successMsg');
+
+form.addEventListener('submit', async function(e){
+  e.preventDefault();
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  const data = new FormData(form);
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if(res.ok){
+      msg.style.display = 'block';
+      form.reset();
+      btn.textContent = 'Sent ✓';
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Send message →';
+      alert('Something went wrong. Please email us directly at howtoaijob@gmail.com');
+    }
+  } catch(err){
+    btn.disabled = false;
+    btn.textContent = 'Send message →';
+    alert('Network error. Please email us at howtoaijob@gmail.com');
+  }
+});
+</script>
 
 </body>
 </html>
