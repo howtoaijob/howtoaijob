@@ -1,87 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="HowToAIJob - Helping students, freelancers, and professionals find AI jobs, remote work, and AI tools.">
-  <title>About Us - HowToAIJob</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Us — HowToAIjob</title>
+<meta name="description" content="HowToAIjob is a free daily-updated directory of remote AI training jobs. Learn how it works and who it's for.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#020a0f;
+  --surface:rgba(255,255,255,0.03);
+  --surface2:rgba(255,255,255,0.05);
+  --border:rgba(0,255,213,0.08);
+  --border2:rgba(0,255,213,0.16);
+  --accent:#00ffd5;
+  --accent-dim:rgba(0,255,213,0.1);
+  --blue:#00c4ff;
+  --amber:#ffc653;
+  --text:#e8f5f3;
+  --text2:#7fb5b0;
+  --text3:#2e5a57;
+  --font:'Space Grotesk',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --radius:14px;
+  --radius-sm:8px;
+  --tr:0.25s cubic-bezier(0.4,0,0.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(2,10,15,0.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:0 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  height:60px;
+}
+.logo{font-size:1.2rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.5px;}
+.logo em{font-style:normal;color:var(--accent);}
+.nav-links{display:flex;gap:1.5rem;align-items:center;list-style:none;}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color var(--tr);}
+.nav-links a:hover,.nav-links a.active{color:var(--accent);}
+.nav-cta{color:var(--accent) !important;padding:0.4rem 1.1rem;border-radius:var(--radius-sm);border:1px solid var(--border2);}
+.nav-cta:hover{background:var(--accent-dim);}
+
+/* MAIN */
+main{max-width:860px;margin:0 auto;padding:4rem 2rem 6rem;}
+
+/* HERO */
+.page-hero{margin-bottom:3rem;}
+.page-label{font-size:0.7rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;}
+.page-label::before{content:'';width:20px;height:1px;background:var(--accent);}
+.page-hero h1{font-size:2.2rem;font-weight:700;letter-spacing:-1.5px;line-height:1.2;margin-bottom:1rem;}
+.page-hero h1 em{font-style:normal;color:var(--accent);}
+.page-hero p{font-size:1rem;color:var(--text2);line-height:1.8;max-width:600px;}
+
+/* CARDS GRID */
+.cards-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:1rem;
+  margin-bottom:3rem;
+}
+.info-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.4rem;
+  position:relative;overflow:hidden;
+}
+.info-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--accent),var(--blue));
+}
+.info-card .ico{font-size:1.5rem;margin-bottom:0.8rem;}
+.info-card h3{font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:0.4rem;}
+.info-card p{font-size:0.8rem;color:var(--text2);line-height:1.65;}
+
+/* DIVIDER */
+.divider{border:none;border-top:1px solid var(--border);margin:2.5rem 0;}
+
+/* SECTION */
+.section-label{font-size:0.68rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;}
+.body-text{font-size:0.92rem;color:var(--text2);line-height:1.85;max-width:640px;}
+.body-text p{margin-bottom:1rem;}
+
+/* TAGS */
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;}
+.pill{font-size:0.75rem;background:var(--accent-dim);color:var(--accent);border:1px solid var(--border2);border-radius:99px;padding:4px 14px;font-family:var(--mono);}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text3);font-size:0.78rem;font-family:var(--mono);}
+footer a{color:var(--accent);text-decoration:none;}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--text2);margin-bottom:0.5rem;}
+.footer-logo em{font-style:normal;color:var(--accent);}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1rem;flex-wrap:wrap;}
+
+@media(max-width:640px){
+  nav{padding:0 1rem;}
+  main{padding:3rem 1.2rem 4rem;}
+  .page-hero h1{font-size:1.7rem;}
+  .nav-links{gap:1rem;}
+}
+</style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-inner">
-    <a href="about.html" class="nav-logo">HowTo<span>AI</span>Job</a>
-    <div class="nav-links">
-      <a href="about.html" class="active">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <a href="/" class="logo">HowToAI<em>job</em></a>
+  <ul class="nav-links">
+    <li><a href="/" >Jobs</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://t.me/HowToAIjob" target="_blank" class="nav-cta">Telegram ↗</a></li>
+  </ul>
 </nav>
 
 <main>
 
-  <div class="hero">
-    <h1>Helping you find your place in <span>AI careers</span></h1>
-    <p>
-      HowToAIJob is a platform dedicated to helping people discover AI jobs, remote work
-      opportunities, freelance projects, and useful AI tools — all in one place.
-    </p>
+  <div class="page-hero">
+    <div class="page-label">About us</div>
+    <h1>Helping you find your place<br>in the <em>AI economy</em></h1>
+    <p>HowToAIjob is a free, daily-updated directory of remote AI training jobs — covering freelance gigs, expert contracts, and full-time roles across the AI industry.</p>
   </div>
 
-  <div class="cards">
-    <div class="card">
-      <div class="card-icon">💼</div>
+  <div class="cards-grid">
+    <div class="info-card">
+      <div class="ico">💼</div>
       <h3>AI Job Listings</h3>
-      <p>Curated openings in AI, ML, and tech roles, updated regularly.</p>
+      <p>Curated openings in AI training, annotation, evaluation, and expert roles — updated every day.</p>
     </div>
-    <div class="card">
-      <div class="card-icon">🏠</div>
-      <h3>Remote Work</h3>
-      <p>Find remote-friendly opportunities that fit your lifestyle and schedule.</p>
+    <div class="info-card">
+      <div class="ico">🏠</div>
+      <h3>100% Remote</h3>
+      <p>Every listing is remote-friendly — work from anywhere in the world on your own schedule.</p>
     </div>
-    <div class="card">
-      <div class="card-icon">🛠️</div>
-      <h3>AI Tools</h3>
-      <p>Discover the best AI tools to boost your productivity and skills.</p>
+    <div class="info-card">
+      <div class="ico">🔍</div>
+      <h3>Real Context</h3>
+      <p>Each listing has a plain-language summary so you know what to expect before you apply.</p>
     </div>
-    <div class="card">
-      <div class="card-icon">👥</div>
+    <div class="info-card">
+      <div class="ico">👥</div>
       <h3>For Everyone</h3>
-      <p>Students, freelancers, and professionals — all welcome here.</p>
+      <p>Beginners to domain experts — entry-level tasks to $200+/hr specialist roles.</p>
     </div>
   </div>
 
-  <hr>
+  <hr class="divider">
 
-  <div class="label">Our mission</div>
-  <p style="font-size:15px;color:#6b6b6b;max-width:580px;line-height:1.8;">
-    We believe the AI industry should be accessible to everyone. Whether you're a student
-    exploring your first tech role, a freelancer looking for AI projects, or a professional
-    upskilling — HowToAIJob is built for you. We regularly share job listings, career
-    resources, online earning opportunities, and AI-related information.
-  </p>
+  <div class="section-label">Our mission</div>
+  <div class="body-text">
+    <p>We believe the AI training job market should be easy to navigate for everyone — not just people who already know where to look. Instead of checking dozens of company career pages every day, you can scan one place here and see what's currently open, roughly what it pays, and whether it suits your background.</p>
+    <p>We don't run any of these jobs ourselves and we're not affiliated with the companies listed. We track public hiring pages across the AI training industry and bring the details into one place. When you click through, you apply directly with that company on their own site — we're simply the map, not the destination.</p>
+  </div>
 
-  <div class="tags">
-    <span class="tag">AI Jobs</span>
-    <span class="tag">Remote Work</span>
-    <span class="tag">Freelance</span>
-    <span class="tag">Career Resources</span>
-    <span class="tag">Online Earning</span>
+  <div class="tag-row">
+    <span class="pill">AI Training</span>
+    <span class="pill">Data Annotation</span>
+    <span class="pill">Remote Work</span>
+    <span class="pill">Freelance</span>
+    <span class="pill">RLHF</span>
+    <span class="pill">Prompt Engineering</span>
+    <span class="pill">Expert Network</span>
+    <span class="pill">Online Earning</span>
   </div>
 
 </main>
 
 <footer>
+  <div class="footer-logo">HowToAI<em>job</em></div>
+  Find Work in the AI Economy — updated daily, always free.<br><br>
   <div class="footer-links">
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="contact.html">Contact</a>
-    <a href="https://howtoaijob.pages.dev/" target="_blank">Website</a>
+    <a href="about.html">About Us</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="/">Jobs</a>
   </div>
-  <p>© 2025 HowToAIJob. All rights reserved.</p>
+  © 2026 HowToAIjob · <a href="mailto:howtoaijob@gmail.com">howtoaijob@gmail.com</a>
 </footer>
 
 </body>
