@@ -1,99 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Privacy Policy - HowToAIJob. Learn how we handle your data.">
-  <title>Privacy Policy - HowToAIJob</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — HowToAIjob</title>
+<meta name="description" content="Privacy Policy for HowToAIjob — learn how we handle data and protect your privacy.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#020a0f;
+  --surface:rgba(255,255,255,0.03);
+  --surface2:rgba(255,255,255,0.05);
+  --border:rgba(0,255,213,0.08);
+  --border2:rgba(0,255,213,0.16);
+  --accent:#00ffd5;
+  --accent-dim:rgba(0,255,213,0.1);
+  --blue:#00c4ff;
+  --amber:#ffc653;
+  --text:#e8f5f3;
+  --text2:#7fb5b0;
+  --text3:#2e5a57;
+  --font:'Space Grotesk',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --radius:14px;
+  --radius-sm:8px;
+  --tr:0.25s cubic-bezier(0.4,0,0.2,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;}
+
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(2,10,15,0.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  padding:0 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  height:60px;
+}
+.logo{font-size:1.2rem;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.5px;}
+.logo em{font-style:normal;color:var(--accent);}
+.nav-links{display:flex;gap:1.5rem;align-items:center;list-style:none;}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color var(--tr);}
+.nav-links a:hover,.nav-links a.active{color:var(--accent);}
+.nav-cta{color:var(--accent) !important;padding:0.4rem 1.1rem;border-radius:var(--radius-sm);border:1px solid var(--border2);}
+.nav-cta:hover{background:var(--accent-dim);}
+
+main{max-width:760px;margin:0 auto;padding:4rem 2rem 6rem;}
+
+.page-label{font-size:0.7rem;font-weight:700;color:var(--accent);font-family:var(--mono);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1rem;display:flex;align-items:center;gap:8px;}
+.page-label::before{content:'';width:20px;height:1px;background:var(--accent);}
+.page-hero{margin-bottom:2.5rem;}
+.page-hero h1{font-size:2.2rem;font-weight:700;letter-spacing:-1.5px;line-height:1.2;margin-bottom:1rem;}
+.page-hero h1 em{font-style:normal;color:var(--accent);}
+.page-hero p{font-size:0.92rem;color:var(--text2);line-height:1.8;}
+.updated{font-size:0.72rem;font-family:var(--mono);color:var(--text3);margin-top:0.5rem;}
+
+.policy-block{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:1.3rem 1.5rem;
+  margin-bottom:1rem;
+}
+.policy-block h3{
+  font-size:0.9rem;font-weight:700;color:#fff;
+  margin-bottom:0.6rem;
+  display:flex;align-items:center;gap:10px;
+}
+.policy-block h3 .ico{font-size:1.1rem;}
+.policy-block p{font-size:0.85rem;color:var(--text2);line-height:1.8;}
+.policy-block p a{color:var(--accent);text-decoration:none;}
+.policy-block p a:hover{text-decoration:underline;}
+
+.divider{border:none;border-top:1px solid var(--border);margin:2rem 0;}
+.foot-note{font-size:0.8rem;color:var(--text3);line-height:1.7;}
+.foot-note a{color:var(--accent);text-decoration:none;}
+
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--text3);font-size:0.78rem;font-family:var(--mono);}
+footer a{color:var(--accent);text-decoration:none;}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--text2);margin-bottom:0.5rem;}
+.footer-logo em{font-style:normal;color:var(--accent);}
+.footer-links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1rem;flex-wrap:wrap;}
+
+@media(max-width:640px){
+  nav{padding:0 1rem;}
+  main{padding:3rem 1.2rem 4rem;}
+  .page-hero h1{font-size:1.7rem;}
+  .nav-links{gap:1rem;}
+}
+</style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-inner">
-    <a href="about.html" class="nav-logo">HowTo<span>AI</span>Job</a>
-    <div class="nav-links">
-      <a href="about.html">About</a>
-      <a href="privacy.html" class="active">Privacy</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <a href="/" class="logo">HowToAI<em>job</em></a>
+  <ul class="nav-links">
+    <li><a href="/">Jobs</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="privacy.html" class="active">Privacy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://t.me/HowToAIjob" target="_blank" class="nav-cta">Telegram ↗</a></li>
+  </ul>
 </nav>
 
 <main>
 
-  <div class="hero">
-    <h1>Privacy <span>Policy</span></h1>
-    <p>
-      We respect your privacy and are committed to being transparent about how we
-      handle information when you visit HowToAIJob.
-    </p>
+  <div class="page-hero">
+    <div class="page-label">Legal</div>
+    <h1>Privacy <em>Policy</em></h1>
+    <p>We respect your privacy and are committed to being transparent about how we handle information when you visit HowToAIjob.</p>
+    <div class="updated">Last updated: June 2026</div>
   </div>
 
   <div class="policy-block">
-    <h3><span class="icon">📊</span> Analytics</h3>
-    <p>
-      We use Google Analytics to understand how visitors interact with our website.
-      This helps us improve content and user experience. Data collected through
-      analytics is anonymized and is not linked to any individual user.
-    </p>
+    <h3><span class="ico">📊</span> Analytics</h3>
+    <p>We use Google Analytics to understand how visitors interact with our website. This helps us improve content and user experience. Data collected is anonymized and is not linked to any individual user. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google's opt-out tool</a>.</p>
   </div>
 
   <div class="policy-block">
-    <h3><span class="icon">🍪</span> Cookies</h3>
-    <p>
-      Our website may use cookies and similar technologies for analytics and
-      performance purposes. You can manage or disable cookie preferences at any
-      time through your browser settings. Continuing to use our site implies
-      consent to our cookie usage.
-    </p>
+    <h3><span class="ico">🍪</span> Cookies</h3>
+    <p>Our website may use cookies and similar technologies for analytics and performance purposes. You can manage or disable cookie preferences at any time through your browser settings. Continuing to use our site implies consent to our cookie usage.</p>
   </div>
 
   <div class="policy-block">
-    <h3><span class="icon">🔒</span> Your data</h3>
-    <p>
-      We do not sell, trade, or share your personal information with third parties,
-      except when required by law. Any information you voluntarily provide — such
-      as through a contact form — is used solely to respond to your inquiry and
-      is not stored beyond that purpose.
-    </p>
+    <h3><span class="ico">🔒</span> Your data</h3>
+    <p>We do not sell, trade, or share your personal information with third parties, except when required by law. Any information you voluntarily provide — such as through our contact form — is used solely to respond to your inquiry and is not stored beyond that purpose.</p>
   </div>
 
   <div class="policy-block">
-    <h3><span class="icon">🔗</span> Third-party links</h3>
-    <p>
-      Our website may contain links to external websites. We are not responsible
-      for the privacy practices of those sites and recommend reviewing their
-      privacy policies separately.
-    </p>
+    <h3><span class="ico">🔗</span> Third-party links</h3>
+    <p>HowToAIjob contains links to external job platforms and company websites. We are not responsible for the privacy practices of those sites. When you click "Visit official page", you leave HowToAIjob and are subject to that company's own privacy policy. We recommend reviewing their policies before sharing any personal information.</p>
   </div>
 
   <div class="policy-block">
-    <h3><span class="icon">🔄</span> Policy updates</h3>
-    <p>
-      This policy may be updated from time to time. Continued use of the website
-      after any changes constitutes your acceptance of the updated policy.
-      Last updated: June 2025.
-    </p>
+    <h3><span class="ico">💼</span> Job listings disclaimer</h3>
+    <p>HowToAIjob is an independent listings directory — not a recruiter or employer. We do not guarantee the accuracy, availability, or pay rates of any listing at the time you apply. Always confirm details on the company's own page before starting work or sharing personal information. Never pay anyone to "secure" a job.</p>
   </div>
 
-  <hr>
-  <p style="font-size:13px;color:#999;">
-    By using this website, you agree to this Privacy Policy.
-    Questions? Use our <a href="contact.html" style="color:#185FA5;">contact page</a>.
-  </p>
+  <div class="policy-block">
+    <h3><span class="ico">🔄</span> Policy updates</h3>
+    <p>This policy may be updated from time to time. Continued use of the website after any changes constitutes your acceptance of the updated policy. We will update the "Last updated" date above when changes are made.</p>
+  </div>
+
+  <hr class="divider">
+
+  <p class="foot-note">By using this website, you agree to this Privacy Policy. Questions? Use our <a href="contact.html">contact page</a>.</p>
 
 </main>
 
 <footer>
+  <div class="footer-logo">HowToAI<em>job</em></div>
+  Find Work in the AI Economy — updated daily, always free.<br><br>
   <div class="footer-links">
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="contact.html">Contact</a>
-    <a href="https://howtoaijob.pages.dev/" target="_blank">Website</a>
+    <a href="about.html">About Us</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="/">Jobs</a>
   </div>
-  <p>© 2025 HowToAIJob. All rights reserved.</p>
+  © 2026 HowToAIjob · <a href="mailto:howtoaijob@gmail.com">howtoaijob@gmail.com</a>
 </footer>
 
 </body>
