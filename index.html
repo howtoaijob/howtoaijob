@@ -443,7 +443,7 @@ footer a{color:var(--accent);text-decoration:none;}
 
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
-    <div class="sec-title">Latest Opportunities <span class="sec-badge">29 live</span></div>
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">30 live</span></div>
     <div class="filter-wrap">
       <button class="f-btn on" onclick="filt('all',this)">All</button>
       <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
@@ -458,6 +458,35 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
   
   <div class="jobs-list" id="jobsList">
+    <div class="jcard" data-type="freelance" data-new="true">
+  <div class="jmain" onclick="toggleDetails(this)">
+    <div class="jico">🌐</div>
+    <div class="jbody">
+      <div class="jtop"><span class="jtitle">25+ Years Global Excellence — Hiring</span></div>
+      <div class="jco">Welo Global · Google, Spotify & Amazon Trusted</div>
+      <div class="tags">
+        <span class="tag tg">300+ Languages</span>
+        <span class="tag tc">Freelance</span>
+        <span class="tag tr">New</span>
+      </div>
+    </div>
+    <div class="jright">
+      <div class="jpay b">Multiple</div>
+      <div class="jtime">Today</div>
+      <div class="jchev">▾</div>
+    </div>
+  </div>
+  <div class="jdetails">
+    <p class="jdetail-text">Welo Global is a 25+ year old language and localization company trusted by Google, Spotify, Amazon, and other major brands — they handle translation, transcription, data annotation, and AI training tasks across 300+ languages. It's one of the more established names in this space, which generally means more structured onboarding and steadier project flow compared to smaller gig platforms.</p>
+    <div class="jdetail-grid">
+      <div class="jdetail-item"><b>Good fit for</b><span>Bilingual or multilingual speakers, especially those with skills in less common languages — but general annotators are also welcome</span></div>
+      <div class="jdetail-item"><b>Typically needs</b><span>A profile sign-up and language proficiency assessment — role type and pay depend on the specific project you qualify for</span></div>
+      <div class="jdetail-item"><b>Keep in mind</b><span>"Multiple" roles means pay varies a lot by task — check the specific project type after onboarding rather than assuming a single rate</span></div>
+    </div>
+    <a href="/welo" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+  </div>
+</div>
+    
     <div class="jcard" data-type="freelance" data-new="true">
   <div class="jmain" onclick="toggleDetails(this)">
     <div class="jico">✨</div>
@@ -1413,7 +1442,7 @@ function countUp(id, target, suffix){
   },25);
 }
 setTimeout(()=>{
-  countUp('c1',29,'+');
+  countUp('c1',30,'+');
   countUp('c2',230,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
