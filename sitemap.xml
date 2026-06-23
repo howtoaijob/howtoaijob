@@ -1,30 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url><loc>https://howtoaijob.pages.dev/terms.html</loc></url>
-<url><loc>https://howtoaijob.pages.dev/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/afterquery/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/crowdgen/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/dataannotation/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/deccan/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/mercor/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/mindrift/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/oneforma/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/outlier/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/telus/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/uber/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/sarootlabs/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/naveera/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/sme/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/turing/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/linguasense/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/micro1/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/rws/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/innodata/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/prolific/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/xai/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/meridial/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/scaleai/</loc></url>
-<url><loc>https://howtoaijob.pages.dev/handshake/</loc></url>
-  
+  <!-- MAIN PAGES -->
+  <url>
+    <loc>https://howtoaijob.pages.dev/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/privacy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/terms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- JOB LISTING PAGES -->
+  <url>
+    <loc>https://howtoaijob.pages.dev/pareto/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/rexzone/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/handshake/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/scaleai/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/crossover/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/meridial/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/mercor/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/xai/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/innodata/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/afterquery/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/mindrift/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/dataannotation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/oneforma/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/outlier/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/sarootlabs/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/crowdgen/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/telus/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/deccan/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/sme/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/turing/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/linguasense/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/micro1/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/rws/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/prolific/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/naveera/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/uber/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/alignerr/robotics/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/gitlab/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/stellar/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://howtoaijob.pages.dev/welo/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
