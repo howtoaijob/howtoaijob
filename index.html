@@ -291,6 +291,11 @@ nav{
   display:flex;align-items:center;justify-content:center;
   font-size:1.4rem;flex-shrink:0;
   transition:transform var(--tr);
+  overflow:hidden;
+}
+.jico img{
+  width:32px;height:32px;object-fit:contain;
+  border-radius:6px;
 }
 
 .jbody{flex:1;min-width:0;}
@@ -459,9 +464,9 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
   
   <div class="jobs-list" id="jobsList">
-    <div class="jcard" data-type="freelance" data-new="true">
+    <div class="jcard" data-type="freelance" data-new="true" data-domain="welo.com">
   <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico">🌐</div>
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=welo.com&sz=64" alt="welo.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌐'"></div>
     <div class="jbody">
       <div class="jtop"><span class="jtitle">25+ Years Global Excellence — Hiring</span></div>
       <div class="jco">Welo Global · Google, Spotify & Amazon Trusted</div>
@@ -488,9 +493,9 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
 </div>
     
-    <div class="jcard" data-type="freelance" data-new="true">
+    <div class="jcard" data-type="freelance" data-new="true" data-domain="stellarai.com">
   <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico">✨</div>
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=stellarai.com&sz=64" alt="stellarai.com logo" onerror="this.style.display='none';this.parentNode.textContent='✨'"></div>
     <div class="jbody">
       <div class="jtop"><span class="jtitle">Earn $25/hr+ Training AI — No Experience</span></div>
       <div class="jco">Stellar AI · Open-Ended Contract</div>
@@ -518,9 +523,9 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
 </div>
     
-    <div class="jcard" data-type="fulltime" data-new="true">
+    <div class="jcard" data-type="fulltime" data-new="true" data-domain="gitlab.com">
   <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico">🦊</div>
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=gitlab.com&sz=64" alt="gitlab.com logo" onerror="this.style.display='none';this.parentNode.textContent='🦊'"></div>
     <div class="jbody">
       <div class="jtop"><span class="jtitle">World's Largest All-Remote Company</span></div>
       <div class="jco">GitLab · 65+ Countries · NASDAQ-Listed</div>
@@ -547,9 +552,9 @@ footer a{color:var(--accent);text-decoration:none;}
   </div>
 </div>
     
-    <div class="jcard hot" data-type="freelance" data-new="true">
+    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="pareto.ai">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🎯</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=pareto.ai&sz=64" alt="pareto.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🎯'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Top 0.01% Expert Network — All Domains</span><span class="hot-badge">🔥 NEW</span></div>
           <div class="jco">Pareto AI · San Francisco</div>
@@ -572,9 +577,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance" data-new="true">
+    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="rex.zone">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🧬</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=rex.zone&sz=64" alt="rex.zone logo" onerror="this.style.display='none';this.parentNode.textContent='🧬'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Expert-First AI Training — All Domains</span><span class="hot-badge">🔥 NEW</span></div>
           <div class="jco">RemoExperts (Rex.zone)</div>
@@ -597,9 +602,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance" data-new="true">
+    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="joinhandshake.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🎓</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=joinhandshake.com&sz=64" alt="joinhandshake.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Earn Up to $100/hr — PhDs & Masters</span><span class="hot-badge">🔥 ACADEMIC</span></div>
           <div class="jco">Handshake AI Fellowship · 100K+ Fellows</div>
@@ -622,9 +627,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance">
+    <div class="jcard hot" data-type="freelance" data-domain="alignerr.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🤖</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=alignerr.com&sz=64" alt="alignerr.com logo" onerror="this.style.display='none';this.parentNode.textContent='🤖'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Robotics ML Expert</span><span class="hot-badge">★ HOT</span></div>
           <div class="jco">Alignerr · Machine Learning</div>
@@ -647,9 +652,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="uber.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🚗</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=uber.com&sz=64" alt="uber.com logo" onerror="this.style.display='none';this.parentNode.textContent='🚗'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Freelance AI Contributor</span></div>
           <div class="jco">Uber AI Solutions · Tech</div>
@@ -672,9 +677,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="afterquery.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">⚡</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=afterquery.com&sz=64" alt="afterquery.com logo" onerror="this.style.display='none';this.parentNode.textContent='⚡'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Expert — 40+ Roles Open</span></div>
           <div class="jco">AfterQuery (YC-backed) · Startup</div>
@@ -697,9 +702,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="mindrift.ai">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🧠</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=mindrift.ai&sz=64" alt="mindrift.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🧠'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Trainer — All Skills Welcome</span></div>
           <div class="jco">Mindrift · AI Training</div>
@@ -722,9 +727,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="dataannotation.tech">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">📊</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=dataannotation.tech&sz=64" alt="dataannotation.tech logo" onerror="this.style.display='none';this.parentNode.textContent='📊'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Data Annotator</span></div>
           <div class="jco">DataAnnotation.tech · Data</div>
@@ -747,9 +752,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="oneforma.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🌍</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=oneforma.com&sz=64" alt="oneforma.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌍'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Contributor — 60+ Languages</span></div>
           <div class="jco">OneForma · Linguistics</div>
@@ -772,9 +777,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="outlier.ai">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🔬</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=outlier.ai&sz=64" alt="outlier.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🔬'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Expert — 61+ Roles Open</span></div>
           <div class="jco">Outlier AI · Research</div>
@@ -797,9 +802,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="parttime">
+    <div class="jcard" data-type="parttime" data-domain="sarootlabs.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">✍️</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=sarootlabs.com&sz=64" alt="sarootlabs.com logo" onerror="this.style.display='none';this.parentNode.textContent='✍️'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Prompt Engineer</span></div>
           <div class="jco">Saroot Labs Inc. · Engineering</div>
@@ -822,9 +827,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="appen.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🌐</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=appen.com&sz=64" alt="appen.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌐'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Contributor — 500+ Languages</span></div>
           <div class="jco">CrowdGen by Appen · Global</div>
@@ -847,9 +852,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="telusinternational.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">📡</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=telusinternational.com&sz=64" alt="telusinternational.com logo" onerror="this.style.display='none';this.parentNode.textContent='📡'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Contributor — 7 Roles Open</span></div>
           <div class="jco">TELUS International AI · Telecom</div>
@@ -872,9 +877,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance">
+    <div class="jcard hot" data-type="freelance" data-domain="mercor.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">💎</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=mercor.com&sz=64" alt="mercor.com logo" onerror="this.style.display='none';this.parentNode.textContent='💎'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Premium AI Jobs — All Skills</span><span class="hot-badge">💰 TOP PAY</span></div>
           <div class="jco">Mercor · Premium Platform</div>
@@ -897,9 +902,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="fulltime">
+    <div class="jcard" data-type="fulltime" data-domain="naveera.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🚀</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=naveera.com&sz=64" alt="naveera.com logo" onerror="this.style.display='none';this.parentNode.textContent='🚀'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">25+ Remote Tech Jobs Open</span></div>
           <div class="jco">Naveera Tech · Software</div>
@@ -922,9 +927,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="deccanai.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">⭐</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=deccanai.com&sz=64" alt="deccanai.com logo" onerror="this.style.display='none';this.parentNode.textContent='⭐'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Top 1% AI Expert Network</span></div>
           <div class="jco">Deccan AI Experts · Elite</div>
@@ -947,9 +952,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="superannotate.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🎓</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=superannotate.com&sz=64" alt="superannotate.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Subject Matter Expert — AI Training</span></div>
           <div class="jco">SME Careers by SuperAnnotate</div>
@@ -972,9 +977,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="turing.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🧠</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=turing.com&sz=64" alt="turing.com logo" onerror="this.style.display='none';this.parentNode.textContent='🧠'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">LLM Trainer — Agent Function Call</span></div>
           <div class="jco">Turing — Anthropic • Nvidia • Disney</div>
@@ -997,9 +1002,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="linguasenseai.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🎤</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=linguasenseai.com&sz=64" alt="linguasenseai.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎤'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Language & Audio Remote Jobs</span></div>
           <div class="jco">LinguaSenseAI</div>
@@ -1022,9 +1027,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="micro1.ai">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🧠</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=micro1.ai&sz=64" alt="micro1.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🧠'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Expert — Frontier Lab Projects</span></div>
           <div class="jco">Micro1 — Palo Alto</div>
@@ -1047,9 +1052,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="rws.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🌐</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=rws.com&sz=64" alt="rws.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌐'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">AI Data Specialist — TrainAI Community</span></div>
           <div class="jco">RWS TrainAI · Since 1992</div>
@@ -1072,9 +1077,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance">
+    <div class="jcard hot" data-type="freelance" data-domain="x.ai">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">⚡</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=x.ai&sz=64" alt="x.ai logo" onerror="this.style.display='none';this.parentNode.textContent='⚡'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">219 Remote Jobs — Train GROK AI</span><span class="hot-badge">🔥 VIRAL</span></div>
           <div class="jco">xAI — Elon Musk's AI Company</div>
@@ -1097,9 +1102,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="fulltime">
+    <div class="jcard hot" data-type="fulltime" data-domain="innodata.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🏆</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=innodata.com&sz=64" alt="innodata.com logo" onerror="this.style.display='none';this.parentNode.textContent='🏆'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Work for Google, Apple & Microsoft!</span><span class="hot-badge">🔥 NASDAQ</span></div>
           <div class="jco">Innodata Inc. · 36+ Years Experience</div>
@@ -1122,9 +1127,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard" data-type="freelance">
+    <div class="jcard" data-type="freelance" data-domain="prolific.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🎓</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=prolific.com&sz=64" alt="prolific.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Get Paid for Online Studies</span></div>
           <div class="jco">Prolific · Founded at Oxford University</div>
@@ -1147,9 +1152,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance" data-new="true">
+    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="invisible.co">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">🌌</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=invisible.co&sz=64" alt="invisible.co logo" onerror="this.style.display='none';this.parentNode.textContent='🌌'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">80% of World's AI Models Trained Here!</span><span class="hot-badge">🔥 ELITE</span></div>
           <div class="jco">Invisible Technologies | Meridial Expert Network</div>
@@ -1172,9 +1177,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="fulltime" data-new="true">
+    <div class="jcard hot" data-type="fulltime" data-new="true" data-domain="crossover.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">👑</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=crossover.com&sz=64" alt="crossover.com logo" onerror="this.style.display='none';this.parentNode.textContent='👑'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">$10K–$1M/Year — Top 1% Remote Jobs</span><span class="hot-badge">💰 ELITE</span></div>
           <div class="jco">Crossover · Fortune 500 Clients · 100 Countries</div>
@@ -1197,9 +1202,9 @@ footer a{color:var(--accent);text-decoration:none;}
       </div>
     </div>
 
-    <div class="jcard hot" data-type="freelance" data-new="true">
+    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="scale.com">
       <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico">📐</div>
+        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=scale.com&sz=64" alt="scale.com logo" onerror="this.style.display='none';this.parentNode.textContent='📐'"></div>
         <div class="jbody">
           <div class="jtop"><span class="jtitle">Powers 90% of World's Top AI Models</span><span class="hot-badge">🔥 LEGENDARY</span></div>
           <div class="jco">Scale AI · Trusted by Meta, Mayo Clinic, US Gov</div>
@@ -1601,6 +1606,34 @@ function search(v){
 
 // Init pagination on load
 renderPage();
+
+/* ════════════════
+   AUTO LOGO SYSTEM
+   Har card mein data-domain="company.com" rakho
+   JS automatically Google favicon se logo fetch kar lega
+   ════════════════ */
+(function autoLogos(){
+  document.querySelectorAll('.jcard[data-domain]').forEach(card => {
+    const domain = card.dataset.domain;
+    const jico = card.querySelector('.jico');
+    if(!jico || !domain) return;
+
+    // Agar already img hai to skip karo
+    if(jico.querySelector('img')) return;
+
+    const emoji = jico.textContent.trim();
+    const img = document.createElement('img');
+    img.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+    img.alt = domain + ' logo';
+    img.style.cssText = 'width:32px;height:32px;object-fit:contain;border-radius:6px;';
+    img.onerror = function(){
+      this.remove();
+      jico.textContent = emoji;
+    };
+    jico.textContent = '';
+    jico.appendChild(img);
+  });
+})();
 </script>
 </body>
 </html>
