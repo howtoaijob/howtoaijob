@@ -331,10 +331,10 @@ nav{
 .jdetails{
   max-height:0;opacity:0;overflow:hidden;
   padding:0 1.5rem;
-  transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease,padding var(--tr);
+  transition:max-height 0.45s cubic-bezier(0.4,0,0.2,1),opacity 0.3s ease,padding var(--tr);
 }
 .jcard.open .jdetails{
-  max-height:560px;opacity:1;
+  max-height:800px;opacity:1;
   padding:0 1.5rem 1.4rem;
 }
 .jdetail-text{
@@ -401,13 +401,28 @@ footer a{color:var(--accent);text-decoration:none;}
   .nav-links{display:none;}
   .jmain{flex-wrap:wrap;padding:1rem 1.1rem;}
   .jright{flex-direction:row;align-items:center;width:100%;justify-content:space-between;}
-  .jdetails{padding-left:1.1rem;padding-right:1.1rem;}
-  .jcard.open .jdetails{padding:0 1.1rem 1.1rem;}
+  .jdetails{padding-left:1rem;padding-right:1rem;}
+  .jcard.open .jdetails{padding:0 1rem 1.2rem;}
   .hero{padding:4rem 1.5rem 3rem;}
   .hero h1{letter-spacing:-2px;}
   .stats-strip{flex-wrap:wrap;}
   .s-item{min-width:110px;}
   .sec-filter{display:none;}
+
+  /* Detail panel mobile fixes */
+  .jdetail-grid{
+    grid-template-columns:1fr;
+    gap:0.6rem;
+  }
+  .jdetail-text{font-size:0.82rem;}
+  .jdetail-item{padding:0.6rem 0.8rem;}
+  .apply-btn{
+    display:block;
+    text-align:center;
+    padding:0.75rem 1rem;
+    font-size:0.85rem;
+    margin-top:0.8rem;
+  }
 }
 </style>
 </head>
@@ -1531,15 +1546,22 @@ document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 function toggleDetails(headerEl){
   const card = headerEl.closest('.jcard');
   const wasOpen = card.classList.contains('open');
-  // accordion feel: close any other open card automatically
   document.querySelectorAll('.jcard.open').forEach(c=>{
     if(c!==card) c.classList.remove('open');
   });
   card.classList.toggle('open', !wasOpen);
   if(!wasOpen){
     setTimeout(()=>{
-      card.scrollIntoView({behavior:'smooth', block:'nearest'});
-    }, 180);
+      // Mobile pe card top pe scroll karo taaki poora content dikhe
+      const isMobile = window.innerWidth < 640;
+      if(isMobile){
+        const rect = card.getBoundingClientRect();
+        const scrollTop = window.pageYOffset + rect.top - 70;
+        window.scrollTo({top: scrollTop, behavior:'smooth'});
+      } else {
+        card.scrollIntoView({behavior:'smooth', block:'nearest'});
+      }
+    }, 200);
   }
 }
 
