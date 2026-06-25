@@ -449,7 +449,7 @@ footer a{color:var(--accent);text-decoration:none;}
 
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
-    <div class="sec-title">Latest Opportunities <span class="sec-badge">31 live</span></div>
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">32 live</span></div>
     <div class="filter-wrap">
       <button class="f-btn on" onclick="filt('all',this)">All</button>
       <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
@@ -467,6 +467,36 @@ footer a{color:var(--accent);text-decoration:none;}
     <p style="font-size:0.95rem;color:#ffffff;font-weight:600;margin:0.8rem 0 1.2rem;">
   ✅ verified listings — click any card to see full details & apply
 </p>
+
+    <div class="jcard" data-type="freelance" data-new="true" data-domain="dataforce.ai">
+  <div class="jmain" onclick="toggleDetails(this)">
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=dataforce.ai&sz=64" alt="dataforce.ai logo" onerror="this.style.display='none';this.parentNode.textContent='📊'"></div>
+    <div class="jbody">
+      <div class="jtop"><span class="jtitle">1.3M Worldwide Community — Sign Up in 5 Min</span></div>
+      <div class="jco">DataForce by TransPerfect · 25+ Years · 140+ Cities</div>
+      <div class="tags">
+        <span class="tag tg">Worldwide</span>
+        <span class="tag ta">$15–$48/hr</span>
+        <span class="tag tc">Freelance</span>
+        <span class="tag tr">New</span>
+      </div>
+    </div>
+    <div class="jright">
+      <div class="jpay b">Varies</div>
+      <div class="jtime">Today</div>
+      <div class="jchev">▾</div>
+    </div>
+  </div>
+  <div class="jdetails">
+    <p class="jdetail-text">DataForce is TransPerfect's AI data platform with over 1.3 million remote contributors worldwide, working on data annotation, transcription, search evaluation, and AI training tasks. It's a legitimate, established side of TransPerfect (25+ years, 140+ cities) — but reviews say to treat it as flexible freelance income, not a stable full-time job, since project availability varies by location and language demand.</p>
+    <div class="jdetail-grid">
+      <div class="jdetail-item"><b>Good fit for</b><span>Bilingual speakers, students, and anyone wanting flexible side income — beginners welcome, no AI experience needed</span></div>
+      <div class="jdetail-item"><b>Typically needs</b><span>A 5-minute sign-up plus a qualification step — pay is calculated per task, per hour, or flat rate depending on the project</span></div>
+      <div class="jdetail-item"><b>Keep in mind</b><span>Some users report waiting weeks for project access — approval timing depends heavily on your location and language demand</span></div>
+    </div>
+    <a href="/dataforce" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+  </div>
+</div>
     
     <div class="jcard" data-type="fulltime" data-new="true" data-domain="revolut.com">
   <div class="jmain" onclick="toggleDetails(this)">
@@ -1481,7 +1511,7 @@ function countUp(id, target, suffix){
   },25);
 }
 setTimeout(()=>{
-  countUp('c1',31,'+');
+  countUp('c1',32,'+');
   countUp('c2',230,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
