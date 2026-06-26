@@ -464,7 +464,7 @@ footer a{color:var(--accent);text-decoration:none;}
 
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
-    <div class="sec-title">Latest Opportunities <span class="sec-badge">32 live</span></div>
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">33 live</span></div>
     <div class="filter-wrap">
       <button class="f-btn on" onclick="filt('all',this)">All</button>
       <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
@@ -483,6 +483,35 @@ footer a{color:var(--accent);text-decoration:none;}
   ✅ verified listings — click any card to see full details & apply
 </p>
 
+    <div class="jcard" data-type="freelance" data-new="true" data-domain="besimple.com">
+  <div class="jmain" onclick="toggleDetails(this)">
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=besimple.com&sz=64" alt="besimple.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎤'"></div>
+    <div class="jbody">
+      <div class="jtop"><span class="jtitle">Get Paid to Record Your Voice for AI</span></div>
+      <div class="jco">Besimple AI · Y Combinator-Backed · 14+ Languages</div>
+      <div class="tags">
+        <span class="tag tg">Worldwide</span>
+        <span class="tag ta">$5–$15/session</span>
+        <span class="tag tc">Freelance</span>
+      </div>
+    </div>
+    <div class="jright">
+      <div class="jpay b">Varies</div>
+      <div class="jtime">Today</div>
+      <div class="jchev">▾</div>
+    </div>
+  </div>
+  <div class="jdetails">
+    <p class="jdetail-text">Besimple AI is a Y Combinator-backed startup building the data layer for voice AI. Their contributor side, Pila8, pays everyday people (not just engineers) to record short voice clips that train AI to understand different accents and languages — base rate is $0.10/minute, with non-English speakers and consistent contributors earning bonuses.</p>
+    <div class="jdetail-grid">
+      <div class="jdetail-item"><b>Good fit for</b><span>Anyone with a phone, a quiet space, and a few minutes a day — non-English speakers get higher bonus rates</span></div>
+      <div class="jdetail-item"><b>Typically needs</b><span>A Google account to sign up — no technical skills, just read provided scripts and record clearly</span></div>
+      <div class="jdetail-item"><b>Keep in mind</b><span>There's a 20-day maturity lock before you can withdraw, and you're granting rights to your voice (and face, for video) data — read the agreement first</span></div>
+    </div>
+    <a href="/besimple" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+  </div>
+</div>
+    
     <div class="jcard" data-type="freelance" data-new="true" data-domain="dataforce.ai">
   <div class="jmain" onclick="toggleDetails(this)">
     <div class="jico"><img src="https://www.google.com/s2/favicons?domain=dataforce.ai&sz=64" alt="dataforce.ai logo" onerror="this.style.display='none';this.parentNode.textContent='📊'"></div>
@@ -1526,7 +1555,7 @@ function countUp(id, target, suffix){
   },25);
 }
 setTimeout(()=>{
-  countUp('c1',32,'+');
+  countUp('c1',33,'+');
   countUp('c2',230,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
