@@ -464,7 +464,7 @@ footer a{color:var(--accent);text-decoration:none;}
 
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
-    <div class="sec-title">Latest Opportunities <span class="sec-badge">34 live</span></div>
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">35 live</span></div>
     <div class="filter-wrap">
       <button class="f-btn on" onclick="filt('all',this)">All</button>
       <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
@@ -483,6 +483,35 @@ footer a{color:var(--accent);text-decoration:none;}
   ✅ verified listings — click any card to see full details & apply
 </p>
 
+    <div class="jcard" data-type="freelance" data-new="true" data-domain="snorkel.ai">
+  <div class="jmain" onclick="toggleDetails(this)">
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=snorkel.ai&sz=64" alt="snorkel.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🤖'"></div>
+    <div class="jbody">
+      <div class="jtop"><span class="jtitle">Full-Time Careers OR Expert Community</span></div>
+      <div class="jco">Snorkel AI · SOC2 & HIPAA Certified · 30+ Roles</div>
+      <div class="tags">
+        <span class="tag tg">SF / Remote</span>
+        <span class="tag tc">Both Types</span>
+        <span class="tag tr">New</span>
+      </div>
+    </div>
+    <div class="jright">
+      <div class="jpay b">Multiple</div>
+      <div class="jtime">Today</div>
+      <div class="jchev">▾</div>
+    </div>
+  </div>
+  <div class="jdetails">
+    <p class="jdetail-text">Snorkel AI offers two genuinely different paths: full-time corporate roles in Engineering, Research, Sales and Product (mostly based in San Francisco/Redwood City, hybrid), and a separate Expert Community for PhDs and domain specialists who want contract-based, remote-friendly work building AI training datasets. Pick whichever matches what you're looking for.</p>
+    <div class="jdetail-grid">
+      <div class="jdetail-item"><b>Good fit for</b><span>Tech professionals wanting full-time SF-based careers, OR PhDs/specialists wanting flexible remote contract work — two very different audiences</span></div>
+      <div class="jdetail-item"><b>Typically needs</b><span>Full-time roles need relevant tech/research experience; Expert Community needs deep expertise in a specialized field, any background</span></div>
+      <div class="jdetail-item"><b>Keep in mind</b><span>Most full-time listings are hybrid in SF/Redwood City/NYC — true remote is mainly available through the Expert Community path or select "United States (Remote)" roles</span></div>
+    </div>
+    <a href="/snorkel" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+  </div>
+</div>
+    
     <div class="jcard" data-type="fulltime" data-new="true" data-domain="avalara.com">
   <div class="jmain" onclick="toggleDetails(this)">
     <div class="jico"><img src="https://www.google.com/s2/favicons?domain=avalara.com&sz=64" alt="avalara.com logo" onerror="this.style.display='none';this.parentNode.textContent='💼'"></div>
@@ -1584,7 +1613,7 @@ function countUp(id, target, suffix){
   },25);
 }
 setTimeout(()=>{
-  countUp('c1',34,'+');
+  countUp('c1',35,'+');
   countUp('c2',230,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
