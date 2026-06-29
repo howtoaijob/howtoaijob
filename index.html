@@ -2169,19 +2169,22 @@ async function sendChat(){
   const jobTitles = Array.from(document.querySelectorAll('.jtitle')).map(el => el.textContent).slice(0,10).join(', ');
   
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 300,
-        system: `You are a helpful AI Job Assistant for HowToAIjob.pages.dev — a site listing AI economy jobs. Current jobs on the page include: ${jobTitles}. Help users find the right opportunity. Be concise (2-4 sentences max). Don't use markdown. Speak in a friendly, direct way.`,
-        messages: [{role:'user', content: val}]
-      })
-    });
-    const data = await res.json();
-    const text = data.content?.[0]?.text || "Sorry, I couldn't get a response. Please try again!";
-    tm.remove();
+    const res = await fetch('/api/chat', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    message: val,
+    jobs: jobTitles
+  })
+});
+
+const data = await res.json();
+
+const text =
+  data.reply ||
+  "Sorry, I couldn't get a response. Please try again!";
     const bm = document.createElement('div');
     bm.className = 'msg bot';
     bm.textContent = text;
