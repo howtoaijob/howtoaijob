@@ -736,7 +736,7 @@ footer a:hover{text-shadow:0 0 10px rgba(0,255,213,0.5);}
 
   <!-- JOBS SECTION -->
   <div class="sec-head rv" id="jobs">
-    <div class="sec-title">Latest Opportunities <span class="sec-badge">36 live</span></div>
+    <div class="sec-title">Latest Opportunities <span class="sec-badge">37 live</span></div>
     <div class="filter-wrap">
       <button class="f-btn on" onclick="filt('all',this)">All</button>
       <button class="f-btn" onclick="filt('freelance',this)">Freelance</button>
@@ -755,6 +755,36 @@ footer a:hover{text-shadow:0 0 10px rgba(0,255,213,0.5);}
   ✅ verified listings — click any card to see full details & apply
 </p>
 
+    <div class="jcard" data-type="freelance" data-new="true" data-domain="imerit.ai">
+  <div class="jmain" onclick="toggleDetails(this)">
+    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=imerit.ai&sz=64" alt="imerit.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
+    <div class="jbody">
+      <div class="jtop"><span class="jtitle">PhD & Expert Network — Teams Not Crowds</span></div>
+      <div class="jco">Scholars by iMerit · 12+ Years · 5,000+ Employees</div>
+      <div class="tags">
+        <span class="tag tg">Worldwide</span>
+        <span class="tag tc">Freelance</span>
+        <span class="tag tp">PhD/MA/MSC</span>
+        <span class="tag tr">New</span>
+      </div>
+    </div>
+    <div class="jright">
+      <div class="jpay b">Varies</div>
+      <div class="jtime">Today</div>
+      <div class="jchev">▾</div>
+    </div>
+  </div>
+  <div class="jdetails">
+    <p class="jdetail-text">Scholars by iMerit is an expert network for PhDs, MDs, linguists and engineers who do AI training and chain-of-thought reasoning work for LLM fine-tuning. Unlike anonymous gig platforms, iMerit puts you on a small team with a project manager rather than treating you as part of a crowd — backed by 12+ years of company history.</p>
+    <div class="jdetail-grid">
+      <div class="jdetail-item"><b>Good fit for</b><span>Master's/PhD holders and subject matter experts across professional, academic, and creative fields — from medicine to mathematics to creative writing</span></div>
+      <div class="jdetail-item"><b>Typically needs</b><span>A relevant advanced degree (MA, MSC, or PhD depending on the project) and proficiency in the required language for that role</span></div>
+      <div class="jdetail-item"><b>Keep in mind</b><span>Projects range from a few days to long-term contracts, and some listings are "pre-register" only — meaning you apply ahead of the actual project start date</span></div>
+    </div>
+    <a href="/imerit" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
+  </div>
+</div>
+    
     <div class="jcard" data-type="fulltime" data-new="true" data-domain="aiacquisition.com">
   <div class="jmain" onclick="toggleDetails(this)">
     <div class="jico"><img src="https://www.google.com/s2/favicons?domain=aiacquisition.com&sz=64" alt="aiacquisition.com logo" onerror="this.style.display='none';this.parentNode.textContent='💼'"></div>
@@ -1914,7 +1944,7 @@ function countUp(id, target, suffix){
   },25);
 }
 setTimeout(()=>{
-  countUp('c1',36,'+');
+  countUp('c1',37,'+');
   countUp('c2',230,'');
   countUp('c3',200,'+');
   countUp('c4',100,'%');
