@@ -2224,19 +2224,19 @@ async function sendChat(){
   msgs.appendChild(tm);
   msgs.scrollTop = msgs.scrollHeight;
   
-  // Build job context from page
-  const jobTitles = Array.from(document.querySelectorAll('.jtitle')).map(el => el.textContent).slice(0,10).join(', ');
-  
-  try {
-    const res = await fetch('/api/chat', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    message: val,
-    jobs: jobTitles
-  })
+  // Load jobs from jobs.json
+const jobs = await fetch('/jobs.json').then(res => res.json());
+
+try {
+  const res = await fetch('/api/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      message: val,
+      jobs: jobs
+    })
 });
 
 const data = await res.json();
