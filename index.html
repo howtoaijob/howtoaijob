@@ -2241,6 +2241,8 @@ try {
 
 const data = await res.json();
 
+tm.remove();
+
 const text =
   data.reply ||
   "Sorry, I couldn't get a response. Please try again!";
