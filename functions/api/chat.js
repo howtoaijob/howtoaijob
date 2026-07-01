@@ -1,25 +1,34 @@
 export async function onRequestPost(context) {
   try {
     const { request, env } = context;
+
     const body = await request.json();
 
     const message = body.message || "";
-    const jobs = body.jobs || "";
+    const jobs = Array.isArray(body.jobs) ? body.jobs : [];
 
-    const systemPrompt = `You are the AI Job Assistant for HowToAIJob.
+    const systemPrompt = `You are the official AI assistant for HowToAIJob.
 
-Current jobs:
-${jobs}
+Below is the complete jobs database in JSON format.
+
+${JSON.stringify(jobs, null, 2)}
 
 Rules:
-- Answer only about AI jobs, freelancing, remote work, resumes and careers.
-- Keep answers short.
-- Don't use markdown.
-- Be friendly.`;
+
+- Answer ONLY using the jobs provided above.
+- Never invent companies, salaries, countries, links or job details.
+- If the requested company or job is not found, reply:
+"I couldn't find that job on HowToAIJob."
+- Help users find suitable jobs based on skills, country, experience or interests.
+- Keep replies short and clear.
+- Do not use markdown.
+- Plain text only.
+- If multiple jobs match, recommend the best ones.`;
 
     // ---------------- GEMINI ----------------
 
     try {
+
       const gemini = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${env.GEMINI_API_KEY}`,
         {
@@ -46,19 +55,25 @@ Rules:
       );
 
       if (gemini.ok) {
+
         const data = await gemini.json();
 
         const reply =
           data.candidates?.[0]?.content?.parts?.[0]?.text;
 
         if (reply) {
+
           return Response.json({
             reply
           });
+
         }
+
       }
 
-    } catch (e) {}
+    } catch (e) {
+      console.log(e);
+    }
 
     // ---------------- OPENAI FALLBACK ----------------
 
@@ -96,25 +111,29 @@ Rules:
           data.choices?.[0]?.message?.content;
 
         if (reply) {
+
           return Response.json({
             reply
           });
+
         }
 
       }
 
-    } catch (e) {}
+    } catch (e) {
+      console.log(e);
+    }
 
     return Response.json({
-      reply:
-        "Sorry, AI is temporarily unavailable."
+      reply: "Sorry, AI is temporarily unavailable."
     });
 
   } catch (e) {
 
+    console.log(e);
+
     return Response.json({
-      reply:
-        "Something went wrong."
+      reply: "Something went wrong."
     });
 
   }
