@@ -1,997 +1,762 @@
-<div class="jcard hot" data-type="freelance" data-new="true" data-domain="elevenlabs.io">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=64" alt="elevenlabs.io logo" onerror="this.style.display='none';this.parentNode.textContent='🎤'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">150+ Roles — World's #1 Voice AI Company</span><span class="hot-badge">🔥 $3.3B</span></div>
-      <div class="jco">ElevenLabs · Full-time & Freelance · 30+ Countries</div>
-      <div class="tags">
-        <span class="tag tg">30+ Countries</span>
-        <span class="tag ta">Both Types</span>
-        <span class="tag tr">150+ Roles</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">ElevenLabs is the world's leading AI voice platform ($3.3B valuation), offering 150+ open roles across engineering, growth, revenue, and operations — plus separate freelance roles for audiobook specialists, dubbing specialists, translators, and audio engineers. India-specific roles are available. This is a rare platform offering both full-time careers AND paid freelance work at the same company.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Engineers, marketers, and sales professionals for full-time roles; linguists, translators, and audio specialists for the freelance productions path</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>Full-time roles need relevant experience; freelance roles (dubbing, transcription, audiobook) depend on language skills and audio quality</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Most full-time roles are remote but tied to specific countries — check your region. Freelance productions roles are available across Brazil, UK, India and more</span></div>
-    </div>
-    <a href="/elevenlabs" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div> 
-    
-    <div class="jcard" data-type="freelance" data-new="true" data-domain="imerit.ai">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=imerit.ai&sz=64" alt="imerit.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">PhD & Expert Network — Teams Not Crowds</span></div>
-      <div class="jco">Scholars by iMerit · 12+ Years · 5,000+ Employees</div>
-      <div class="tags">
-        <span class="tag tg">Worldwide</span>
-        <span class="tag tc">Freelance</span>
-        <span class="tag tp">PhD/MA/MSC</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Varies</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Scholars by iMerit is an expert network for PhDs, MDs, linguists and engineers who do AI training and chain-of-thought reasoning work for LLM fine-tuning. Unlike anonymous gig platforms, iMerit puts you on a small team with a project manager rather than treating you as part of a crowd — backed by 12+ years of company history.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Master's/PhD holders and subject matter experts across professional, academic, and creative fields — from medicine to mathematics to creative writing</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>A relevant advanced degree (MA, MSC, or PhD depending on the project) and proficiency in the required language for that role</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Projects range from a few days to long-term contracts, and some listings are "pre-register" only — meaning you apply ahead of the actual project start date</span></div>
-    </div>
-    <a href="/imerit" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-
-    <div class="jcard" data-type="fulltime" data-new="true" data-domain="aiacquisition.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=aiacquisition.com&sz=64" alt="aiacquisition.com logo" onerror="this.style.display='none';this.parentNode.textContent='💼'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">50+ Remote Corporate Roles — 20+ Countries</span></div>
-      <div class="jco">AI Acquisition LLC · Marketing, Ops, Customer Success</div>
-      <div class="tags">
-        <span class="tag tg">Multi-Country</span>
-        <span class="tag tp">Full-time/Contract</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">AI Acquisition is a marketing/growth agency that sells AI-powered business systems to entrepreneurs — NOT an "earn from AI" platform. Their careers page lists 50+ genuine internal job openings (Marketing, Operations, Customer Success, Finance) across 20+ countries including India. Treat this as a normal remote job application, not a gig-economy opportunity.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Marketing, Operations, or Customer Success professionals looking for standard full-time or contract remote employment</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>Relevant experience matching the specific department — these are standard corporate hires with normal interview processes</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>This company's main business is selling AI marketing systems to entrepreneurs, with bold revenue claims that come with heavy disclaimers — but the job openings themselves appear to be real, standard hiring</span></div>
-    </div>
-    <a href="/aiacquisition" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="freelance" data-new="true" data-domain="snorkel.ai">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=snorkel.ai&sz=64" alt="snorkel.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🤖'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">Full-Time Careers OR Expert Community</span></div>
-      <div class="jco">Snorkel AI · SOC2 & HIPAA Certified · 30+ Roles</div>
-      <div class="tags">
-        <span class="tag tg">SF / Remote</span>
-        <span class="tag tc">Both Types</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Snorkel AI offers two genuinely different paths: full-time corporate roles in Engineering, Research, Sales and Product (mostly based in San Francisco/Redwood City, hybrid), and a separate Expert Community for PhDs and domain specialists who want contract-based, remote-friendly work building AI training datasets. Pick whichever matches what you're looking for.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Tech professionals wanting full-time SF-based careers, OR PhDs/specialists wanting flexible remote contract work — two very different audiences</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>Full-time roles need relevant tech/research experience; Expert Community needs deep expertise in a specialized field, any background</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Most full-time listings are hybrid in SF/Redwood City/NYC — true remote is mainly available through the Expert Community path or select "United States (Remote)" roles</span></div>
-    </div>
-    <a href="/snorkel" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="fulltime" data-new="true" data-domain="avalara.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=avalara.com&sz=64" alt="avalara.com logo" onerror="this.style.display='none';this.parentNode.textContent='💼'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">Global Tax-Tech Company — Multiple Roles</span></div>
-      <div class="jco">Avalara (NYSE: AVLR) · 200,000+ Customers · 75+ Countries</div>
-      <div class="tags">
-        <span class="tag tg">Pune, India</span>
-        <span class="tag tp">Full-time</span>
-        <span class="tag tc">Corporate</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Avalara is a publicly-traded (NYSE: AVLR) tax compliance and AI platform with 200,000+ customers across 75+ countries. This is a stable, traditional corporate job rather than a freelance gig — Glassdoor shows a 3.2/5 employee rating with 49% recommending it to a friend, which is solid but not exceptional. Open roles include account management, benefits systems, and engineering positions, with some based in Pune, India.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Professionals wanting stable, long-term corporate employment rather than quick freelance income</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>Relevant degree and work experience matching the specific role — these are standard full-time hires, not gig work</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Customer reviews of Avalara's tax product mention support issues — this reflects the product experience, not necessarily what it's like to work there as an employee (3.2/5 on Glassdoor)</span></div>
-    </div>
-    <a href="/avalara" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="freelance" data-new="true" data-domain="besimple.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=besimple.com&sz=64" alt="besimple.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎤'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">Get Paid to Record Your Voice for AI</span></div>
-      <div class="jco">Besimple AI · Y Combinator-Backed · 14+ Languages</div>
-      <div class="tags">
-        <span class="tag tg">Worldwide</span>
-        <span class="tag ta">$5–$15/session</span>
-        <span class="tag tc">Freelance</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Varies</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Besimple AI is a Y Combinator-backed startup building the data layer for voice AI. Their contributor side, Pila8, pays everyday people (not just engineers) to record short voice clips that train AI to understand different accents and languages — base rate is $0.10/minute, with non-English speakers and consistent contributors earning bonuses.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Anyone with a phone, a quiet space, and a few minutes a day — non-English speakers get higher bonus rates</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>A Google account to sign up — no technical skills, just read provided scripts and record clearly</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>There's a 20-day maturity lock before you can withdraw, and you're granting rights to your voice (and face, for video) data — read the agreement first</span></div>
-    </div>
-    <a href="/besimple" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="freelance" data-new="true" data-domain="dataforce.ai">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=dataforce.ai&sz=64" alt="dataforce.ai logo" onerror="this.style.display='none';this.parentNode.textContent='📊'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">1.3M Worldwide Community — Sign Up in 5 Min</span></div>
-      <div class="jco">DataForce by TransPerfect · 25+ Years · 140+ Cities</div>
-      <div class="tags">
-        <span class="tag tg">Worldwide</span>
-        <span class="tag ta">$15–$48/hr</span>
-        <span class="tag tc">Freelance</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Varies</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">DataForce is TransPerfect's AI data platform with over 1.3 million remote contributors worldwide, working on data annotation, transcription, search evaluation, and AI training tasks. It's a legitimate, established side of TransPerfect (25+ years, 140+ cities) — but reviews say to treat it as flexible freelance income, not a stable full-time job, since project availability varies by location and language demand.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Bilingual speakers, students, and anyone wanting flexible side income — beginners welcome, no AI experience needed</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>A 5-minute sign-up plus a qualification step — pay is calculated per task, per hour, or flat rate depending on the project</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Some users report waiting weeks for project access — approval timing depends heavily on your location and language demand</span></div>
-    </div>
-    <a href="/dataforce" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="fulltime" data-new="true" data-domain="revolut.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=revolut.com&sz=64" alt="revolut.com logo" onerror="this.style.display='none';this.parentNode.textContent='💳'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">622 Open Positions — Hiring Now!</span></div>
-      <div class="jco">Revolut · Fintech · 10,000+ Employees Globally</div>
-      <div class="tags">
-        <span class="tag tg">Remote-First</span>
-        <span class="tag tp">Full-time</span>
-        <span class="tag tr">622 Roles</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Revolut is a global fintech "super app" with 60+ million customers and 622 open roles across Engineering, Compliance, Sales, Finance, and Legal. It's genuinely remote-first — 239 of its open roles are fully remote — and known for fast growth, strong pay (engineers average $126K+), and an intense, results-driven culture rather than a relaxed one.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Experienced professionals in fintech, compliance, engineering, or finance who want high pay and don't mind a fast, demanding pace</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>Relevant degree or work experience for the specific team — most roles are full-time employment, not freelance/gig work</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Reviews mention long hours (12–14 hrs some days) and around 500 applicants per role — competitive, demanding, but well-compensated</span></div>
-    </div>
-    <a href="/revolut" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="freelance" data-new="true" data-domain="welo.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=welo.com&sz=64" alt="welo.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌐'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">25+ Years Global Excellence — Hiring</span></div>
-      <div class="jco">Welo Global · Google, Spotify & Amazon Trusted</div>
-      <div class="tags">
-        <span class="tag tg">300+ Languages</span>
-        <span class="tag tc">Freelance</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Welo Global is a 25+ year old language and localization company trusted by Google, Spotify, Amazon, and other major brands — they handle translation, transcription, data annotation, and AI training tasks across 300+ languages. It's one of the more established names in this space, which generally means more structured onboarding and steadier project flow compared to smaller gig platforms.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Bilingual or multilingual speakers, especially those with skills in less common languages — but general annotators are also welcome</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>A profile sign-up and language proficiency assessment — role type and pay depend on the specific project you qualify for</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>"Multiple" roles means pay varies a lot by task — check the specific project type after onboarding rather than assuming a single rate</span></div>
-    </div>
-    <a href="/welo" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="freelance" data-new="true" data-domain="stellarai.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=stellarai.com&sz=64" alt="stellarai.com logo" onerror="this.style.display='none';this.parentNode.textContent='✨'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">Earn $25/hr+ Training AI — No Experience</span></div>
-      <div class="jco">Stellar AI · Open-Ended Contract</div>
-      <div class="tags">
-        <span class="tag tg">Worldwide</span>
-        <span class="tag ta">$25/hr+</span>
-        <span class="tag tc">Flexible</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay">$25<span class="unit">/hr</span></div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">Stellar AI is a freelance AI training platform open to contributors worldwide with no prior experience required — you complete tasks like rating responses, writing prompts, or evaluating AI outputs, and get paid hourly. The "$25/hr+" framing means that's the starting rate, with higher-paying tasks available depending on skill and task type. Being "open-ended contract" means there's no fixed end date, but also no guaranteed hours — work is available when projects are live.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>Beginners looking for a low-barrier entry into AI training work — no degree or prior experience needed to start</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>Just a sign-up and a short onboarding — most tasks are self-explanatory with built-in guidelines</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Hours aren't guaranteed — task availability depends on active projects, so treat this as flexible side income rather than a fixed schedule</span></div>
-    </div>
-    <a href="/stellar" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard" data-type="fulltime" data-new="true" data-domain="gitlab.com">
-  <div class="jmain" onclick="toggleDetails(this)">
-    <div class="jico"><img src="https://www.google.com/s2/favicons?domain=gitlab.com&sz=64" alt="gitlab.com logo" onerror="this.style.display='none';this.parentNode.textContent='🦊'"></div>
-    <div class="jbody">
-      <div class="jtop"><span class="jtitle">World's Largest All-Remote Company</span></div>
-      <div class="jco">GitLab · 65+ Countries · NASDAQ-Listed</div>
-      <div class="tags">
-        <span class="tag tg">100% Remote</span>
-        <span class="tag tp">Full-time</span>
-        <span class="tag tr">New</span>
-      </div>
-    </div>
-    <div class="jright">
-      <div class="jpay b">Multiple</div>
-      <div class="jtime">Today</div>
-      <div class="jchev">▾</div>
-    </div>
-  </div>
-  <div class="jdetails">
-    <p class="jdetail-text">GitLab is a major, publicly traded (Nasdaq: GTLB) DevOps platform company that's run fully remote since it was founded — no offices, no headquarters, just a globally distributed team across 65+ countries. It's a different kind of listing than most others here: this is full-time employment at an established public tech company, not freelance or gig-based AI training work.</p>
-    <div class="jdetail-grid">
-      <div class="jdetail-item"><b>Good fit for</b><span>People wanting a stable, full-time remote job at an established public company — not freelance gig work</span></div>
-      <div class="jdetail-item"><b>Typically needs</b><span>A standard full-time hiring process — resume screening, interviews, and role-specific assessments</span></div>
-      <div class="jdetail-item"><b>Keep in mind</b><span>Roles span engineering, sales, marketing and more — check GitLab's own careers page to filter by your actual skill set</span></div>
-    </div>
-    <a href="/gitlab" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-  </div>
-</div>
-    
-    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="pareto.ai">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=pareto.ai&sz=64" alt="pareto.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🎯'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Top 0.01% Expert Network — All Domains</span><span class="hot-badge">🔥 NEW</span></div>
-          <div class="jco">Pareto AI · San Francisco</div>
-          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$35–$230/hr</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$230<span class="unit">/hr</span></div>
-          <div class="jtime">Yesterday</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Pareto AI runs a human-data platform that connects AI labs with vetted subject-matter experts for RLHF, prompt evaluation, and domain-specific annotation — across fields like medicine, law, finance, and engineering. It sits at the high end of this list: the company says general work pays $35–$60/hr, with specialized expert tasks going up to $230/hr, and that it has raised $37M in funding so far.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Licensed or credentialed specialists — doctors, lawyers, engineers, quants — not just general annotation experience</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A completed profile, a paid screening task, and proof of your professional background</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>$230/hr applies to specialized expert work, not the general rate — check which tier you actually qualify for before applying</span></div>
-        </div>
-        <a href="/pareto" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="rex.zone">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=rex.zone&sz=64" alt="rex.zone logo" onerror="this.style.display='none';this.parentNode.textContent='🧬'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Expert-First AI Training — All Domains</span><span class="hot-badge">🔥 NEW</span></div>
-          <div class="jco">RemoExperts (Rex.zone)</div>
-          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$25–$65/hr</span><span class="tag tc">Freelance</span><span class="tag tr">New</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$65<span class="unit">/hr</span></div>
-          <div class="jtime">2 days ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Rex.zone connects subject-matter experts with AI labs that need domain-specific data — model answers get checked, scored, or rewritten across fields like law, medicine, finance and more. Work is task-based and remote, so you pick projects that match what you actually know.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People with deep knowledge in a specific field, not just general writing skill</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A laptop, stable internet, and proof of expertise (resume or portfolio) in your domain</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Apply with the domain you're strongest in — niche expertise usually gets matched to better-paying projects</span></div>
-        </div>
-        <a href="/rexzone" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="joinhandshake.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=joinhandshake.com&sz=64" alt="joinhandshake.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Earn Up to $100/hr — PhDs & Masters</span><span class="hot-badge">🔥 ACADEMIC</span></div>
-          <div class="jco">Handshake AI Fellowship · 100K+ Fellows</div>
-          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">Up to $100/hr</span><span class="tag tp">30+ Fields</span><span class="tag tr">New</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$100<span class="unit">/hr</span></div>
-          <div class="jtime">3 days ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Built on Handshake's existing university network, this fellowship targets PhD and Master's-level fellows who evaluate or generate advanced AI responses in their academic specialty. It's one of the higher-paying options here, but it leans heavily on formal qualifications.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Current or recent grad students with a Master's or PhD</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Academic transcripts or proof of degree, often a short subject test</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Have your degree or transcript ready before applying — it speeds up screening a lot</span></div>
-        </div>
-        <a href="/handshake" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-domain="alignerr.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=alignerr.com&sz=64" alt="alignerr.com logo" onerror="this.style.display='none';this.parentNode.textContent='🤖'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Robotics ML Expert</span><span class="hot-badge">★ HOT</span></div>
-          <div class="jco">Alignerr · Machine Learning</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$1000<span class="unit">/ref</span></div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Alignerr recruits ML experts to label and validate robotics-related training data. Worth flagging clearly: the $1000 shown on this card is a referral bonus for bringing in other qualified experts, not the hourly pay for the work itself — actual task pay is set separately once you're onboarded.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People with a robotics, ML, or computer-vision background</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Relevant technical background; the referral bonus needs a successful invite</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Don't apply expecting $1000/hr — check the real task rate on the application page first</span></div>
-        </div>
-        <a href="/alignerr/robotics" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="uber.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=uber.com&sz=64" alt="uber.com logo" onerror="this.style.display='none';this.parentNode.textContent='🚗'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Freelance AI Contributor</span></div>
-          <div class="jco">Uber AI Solutions · Tech</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay a">Flexible</div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Listed as a flexible freelance contributor role. We don't have much first-hand detail on this one yet, so treat it like any unfamiliar gig listing: read the actual offer page closely before committing real time to it.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People comfortable evaluating a new platform on their own</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Details vary by role — check the official application page</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Search the company name plus "review" before applying to any platform you haven't heard of</span></div>
-        </div>
-        <a href="/uber" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="afterquery.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=afterquery.com&sz=64" alt="afterquery.com logo" onerror="this.style.display='none';this.parentNode.textContent='⚡'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Expert — 40+ Roles Open</span></div>
-          <div class="jco">AfterQuery (YC-backed) · Startup</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$90/hr</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$90<span class="unit">/hr</span></div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">AfterQuery is a YC-backed startup hiring AI experts to evaluate and refine model outputs across 40+ open roles. Being YC-backed means it went through outside investor vetting, which is a decent — though not guaranteed — signal of legitimacy.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Freelancers comfortable with structured evaluation and grading tasks</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A remote setup; some roles want a specific technical or writing background</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Browse a few of the 40+ roles — pay and requirements differ a lot between them</span></div>
-        </div>
-        <a href="/afterquery" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="mindrift.ai">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=mindrift.ai&sz=64" alt="mindrift.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🧠'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Trainer — All Skills Welcome</span></div>
-          <div class="jco">Mindrift · AI Training</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$15–$100/hr</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$100<span class="unit">/hr</span></div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Mindrift runs AI training projects across many skill areas and languages, with pay scaling from entry-level to expert tasks. It's a broad, multi-skill platform rather than one narrow niche, so most backgrounds can usually find something to apply for.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Beginners and experienced contributors alike — roles span a wide pay range</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Sign-up plus a short skills assessment for your chosen track</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Try a couple of different task categories — pay varies more by task type than by platform</span></div>
-        </div>
-        <a href="/mindrift" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="dataannotation.tech">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=dataannotation.tech&sz=64" alt="dataannotation.tech logo" onerror="this.style.display='none';this.parentNode.textContent='📊'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Data Annotator</span></div>
-          <div class="jco">DataAnnotation.tech · Data</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$25–$100/hr</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$100<span class="unit">/hr</span></div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">One of the more established platforms on this list — contributors complete coding, writing, and data-labeling tasks that help train AI models, paid hourly. Getting in usually means passing a qualification exercise first; pay tends to rise as you build a track record.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People willing to start with simpler tasks and build up from there</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Passing an initial qualification test before you get access to paid tasks</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Early tasks pay less while you're being evaluated — that's normal, not a red flag</span></div>
-        </div>
-        <a href="/dataannotation" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="oneforma.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=oneforma.com&sz=64" alt="oneforma.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌍'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Contributor — 60+ Languages</span></div>
-          <div class="jco">OneForma · Linguistics</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$4.5–$45/hr</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$45<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">OneForma focuses on linguistic and data-collection microtasks — translation checks, transcription, search relevance — across 60+ languages. Pay per task is usually modest since tasks are short, but it's accessible if your language isn't widely supported elsewhere.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Bilingual or multilingual speakers, especially in less common languages</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Native or fluent-level skill in your listed language(s)</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Multilingual applicants usually get matched to more available tasks, faster</span></div>
-        </div>
-        <a href="/oneforma" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="outlier.ai">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=outlier.ai&sz=64" alt="outlier.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🔬'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Expert — 61+ Roles Open</span></div>
-          <div class="jco">Outlier AI · Research</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag tc">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">Varies</div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Outlier runs expert evaluation tasks — reviewing, scoring, and correcting AI-generated answers — across 60+ open roles in subjects like coding, math, and writing. Pay is task-based rather than a flat hourly rate, so it depends on which project you qualify for.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People strong in a specific subject — coding, writing, math, and similar</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Passing a subject-specific qualification quiz to unlock paid tasks</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Pick the subject category you're genuinely confident in — qualification tests can be strict</span></div>
-        </div>
-        <a href="/outlier" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="parttime" data-domain="sarootlabs.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=sarootlabs.com&sz=64" alt="sarootlabs.com logo" onerror="this.style.display='none';this.parentNode.textContent='✍️'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Prompt Engineer</span></div>
-          <div class="jco">Saroot Labs Inc. · Engineering</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$20–$30/hr</span><span class="tag tp">Part-time</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$30<span class="unit">/hr</span></div>
-          <div class="jtime">2 weeks ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">A part-time Prompt Engineer role — writing and refining prompts used to test or steer AI model behavior. It's narrower and more specialized than most listings here, and the pay reflects a part-time rather than full freelance commitment.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People comfortable writing clear, structured instructions for AI systems</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Strong written English and some familiarity with how AI chat tools respond to prompts</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>A short portfolio of example prompts can help a lot during screening</span></div>
-        </div>
-        <a href="/sarootlabs" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="appen.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=appen.com&sz=64" alt="appen.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌐'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Contributor — 500+ Languages</span></div>
-          <div class="jco">CrowdGen by Appen · Global</div>
-          <div class="tags"><span class="tag tc">200+ Countries</span><span class="tag ta">Up to $40/hr</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$40<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Appen is a long-running, publicly listed data company, and CrowdGen is its crowdsourced worker portal for things like search evaluation, data collection, and transcription in 200+ countries. It's a high-volume microtask model — individual tasks pay modestly but availability is broad.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Anyone wanting flexible, low-commitment microtasks on the side</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Just a sign-up and basic task tutorials — no special qualification usually needed</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Treat this as supplemental income rather than a primary one — task volume can be inconsistent</span></div>
-        </div>
-        <a href="/crowdgen" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="telusinternational.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=telusinternational.com&sz=64" alt="telusinternational.com logo" onerror="this.style.display='none';this.parentNode.textContent='📡'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Contributor — 7 Roles Open</span></div>
-          <div class="jco">TELUS International AI · Telecom</div>
-          <div class="tags"><span class="tag tc">Worldwide</span><span class="tag ta">$6–$50/hr</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$50<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">TELUS Digital's AI data arm runs annotation and labeling projects worldwide, currently with seven open contributor roles. Being part of a large, established company, the process tends to be more structured than smaller gig platforms.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People who prefer a more corporate, process-driven application experience</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>ID verification or a background check is common for larger BPO-style platforms</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Expect a slightly longer onboarding process than you'd see on smaller startups</span></div>
-        </div>
-        <a href="/telus" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-domain="mercor.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=mercor.com&sz=64" alt="mercor.com logo" onerror="this.style.display='none';this.parentNode.textContent='💎'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Premium AI Jobs — All Skills</span><span class="hot-badge">💰 TOP PAY</span></div>
-          <div class="jco">Mercor · Premium Platform</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$16–$200/hr</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$200<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Mercor matches experts directly with frontier AI labs for premium-paying contract work, with pay varying a lot by skill level and project. It's one of the higher-end options on this list, which usually also means more competitive screening.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Experienced professionals — engineering, research, or specialized domains</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A strong resume or portfolio — screening is more competitive at this pay tier</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Tailor your application to one specific skill area rather than applying broadly</span></div>
-        </div>
-        <a href="/mercor" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="fulltime" data-domain="naveera.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=naveera.com&sz=64" alt="naveera.com logo" onerror="this.style.display='none';this.parentNode.textContent='🚀'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">25+ Remote Tech Jobs Open</span></div>
-          <div class="jco">Naveera Tech · Software</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">Full-time</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">25+ Roles</div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Listed as full-time remote tech roles rather than freelance gig work, with 25+ positions open. Full-time listings are worth a closer look at company background, since the commitment level here is higher than a freelance task platform.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People looking for a full-time remote tech job, not freelance gigs</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A standard full-time hiring process — interviews, background checks, and so on</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>For any full-time offer, confirm the legal entity and contract terms before signing anything</span></div>
-        </div>
-        <a href="/naveera" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="deccanai.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=deccanai.com&sz=64" alt="deccanai.com logo" onerror="this.style.display='none';this.parentNode.textContent='⭐'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Top 1% AI Expert Network</span></div>
-          <div class="jco">Deccan AI Experts · Elite</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">Up to $50/hr</span><span class="tag tp">Invite Only</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$50<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">An invite-only network for top-tier AI experts. Invite-only models usually mean a higher entry bar and limited slots, so this one's less about applying on demand and more about getting noticed by the network in the first place.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Established experts with a public track record — publications, GitHub, portfolio</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Typically a referral or an inbound invite rather than an open application</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>A visible public portfolio helps — invite-only networks often source candidates that way</span></div>
-        </div>
-        <a href="/deccan" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="superannotate.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=superannotate.com&sz=64" alt="superannotate.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Subject Matter Expert — AI Training</span></div>
-          <div class="jco">SME Careers by SuperAnnotate</div>
-          <div class="tags"><span class="tag tg">40+ Countries</span><span class="tag ta">$20–$130+/hr</span><span class="tag tp">Freelance</span><span class="tag tr">NVIDIA Backed</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$130<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">SuperAnnotate's subject-matter-expert track pays a wide range depending on how specialized your knowledge is, with roles open across 40+ countries. The wide $20–$130+/hr band reflects how much subject expertise can change your rate.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Specialists in a technical or academic field, not generalists</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Proof of subject expertise — degree, certification, or relevant work history</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>The high end of that pay range usually goes to rare or highly technical specialties</span></div>
-        </div>
-        <a href="/sme" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="turing.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=turing.com&sz=64" alt="turing.com logo" onerror="this.style.display='none';this.parentNode.textContent='🧠'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">LLM Trainer — Agent Function Call</span></div>
-          <div class="jco">Turing — Anthropic • Nvidia • Disney</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">6 Weeks</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">Frontier AI</div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Turing places software and AI engineers with major companies on a project basis, including LLM-training work like agent function-calling — teaching a model to correctly trigger tools and APIs. Engagements are typically several weeks long rather than one-off tasks.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Software engineers comfortable with technical interviews</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Usually a coding assessment plus a technical interview</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Brush up on tool-use and function-calling patterns specifically before the interview</span></div>
-        </div>
-        <a href="/turing" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="linguasenseai.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=linguasenseai.com&sz=64" alt="linguasenseai.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎤'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Language & Audio Remote Jobs</span></div>
-          <div class="jco">LinguaSenseAI</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag tp">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">Varies</div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Focused specifically on language and audio work — transcription, voice recording, pronunciation review for AI speech models. It's a narrower niche than most listings here, so it suits people with strong audio or language skills more than general data work.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People with clear speech, strong language skills, or audio-editing experience</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A decent microphone or quiet recording space for audio-based tasks</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Test your mic setup before any audio task — quality often affects payment approval</span></div>
-        </div>
-        <a href="/linguasense" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="micro1.ai">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=micro1.ai&sz=64" alt="micro1.ai logo" onerror="this.style.display='none';this.parentNode.textContent='🧠'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Expert — Frontier Lab Projects</span></div>
-          <div class="jco">Micro1 — Palo Alto</div>
-          <div class="tags"><span class="tag tg">Remote</span><span class="tag ta">$20–$100+/hr</span><span class="tag tp">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$100<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Similar in model to Mercor and Turing — micro1 matches AI experts with frontier lab projects, with pay scaling by skill level. A few platforms on this page use this same "staffing agency for AI labs" approach, so requirements tend to overlap.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Experienced AI/ML practitioners comfortable with a formal screening process</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A resume review plus a technical assessment</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Rejected by one staffing-style platform? The others here (Mercor, Turing) are worth trying too — criteria differ slightly</span></div>
-        </div>
-        <a href="/micro1" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="rws.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=rws.com&sz=64" alt="rws.com logo" onerror="this.style.display='none';this.parentNode.textContent='🌐'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">AI Data Specialist — TrainAI Community</span></div>
-          <div class="jco">RWS TrainAI · Since 1992</div>
-          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$8–$20+/hr</span><span class="tag tp">Freelance</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$20<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">RWS is an established language-services company expanding into AI training data work through TrainAI, covering translation-adjacent and linguistic annotation tasks. Pay here sits on the lower end of this list, which is typical for high-volume linguistic microtasks.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Translators or bilingual freelancers looking for AI-adjacent work</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Language-pair fluency relevant to the open tasks</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Useful as a side platform alongside others on this list rather than a sole income source</span></div>
-        </div>
-        <a href="/rws" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-domain="x.ai">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=x.ai&sz=64" alt="x.ai logo" onerror="this.style.display='none';this.parentNode.textContent='⚡'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">219 Remote Jobs — Train GROK AI</span><span class="hot-badge">🔥 VIRAL</span></div>
-          <div class="jco">xAI — Elon Musk's AI Company</div>
-          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">$40–$200+/hr</span><span class="tag tr">219 Roles!</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$200<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">xAI is running a large recruiting push — 219 listed roles — for people who help train and evaluate Grok. A drive at this scale usually means varied roles at very different pay levels, so "up to $200/hr" applies to specific senior tasks, not every opening.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>A wide range of backgrounds, given how many different roles are open</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Varies a lot by specific role — check each listing individually</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Don't assume every one of the 219 roles pays the headline $200/hr — check the actual listing</span></div>
-        </div>
-        <a href="/xai" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="fulltime" data-domain="innodata.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=innodata.com&sz=64" alt="innodata.com logo" onerror="this.style.display='none';this.parentNode.textContent='🏆'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Work for Google, Apple & Microsoft!</span><span class="hot-badge">🔥 NASDAQ</span></div>
-          <div class="jco">Innodata Inc. · 36+ Years Experience</div>
-          <div class="tags"><span class="tag tg">20+ Countries</span><span class="tag ta">85+ Languages</span><span class="tag tp">Full-time</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">Premium</div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Innodata is a publicly traded (Nasdaq) AI data engineering company that's been operating for decades, working with major tech clients. As a listed public company, it has more public financial transparency than most platforms on this page.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People who prefer working with an established, publicly accountable company</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>A standard full-time application process, often with role-specific technical screening</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>You can check Innodata's public filings or investor info for extra confidence before applying</span></div>
-        </div>
-        <a href="/innodata" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard" data-type="freelance" data-domain="prolific.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=prolific.com&sz=64" alt="prolific.com logo" onerror="this.style.display='none';this.parentNode.textContent='🎓'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Get Paid for Online Studies</span></div>
-          <div class="jco">Prolific · Founded at Oxford University</div>
-          <div class="tags"><span class="tag tg">Worldwide</span><span class="tag ta">$8–$20+/hr</span><span class="tag tp">Flexible</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$20<span class="unit">/hr</span></div>
-          <div class="jtime">1 week ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Prolific is a bit different from the rest of this list — instead of AI-labeling tasks, it connects you with paid academic and commercial research studies and surveys, some of which feed into AI/UX research. Pay is per-study rather than ongoing hourly task work.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>People who enjoy surveys and short studies rather than ongoing task work</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Just a participant profile — no special qualification needed to start</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Studies fill up fast — turning on notifications helps you catch ones in your demographic</span></div>
-        </div>
-        <a href="/prolific" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="invisible.co">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=invisible.co&sz=64" alt="invisible.co logo" onerror="this.style.display='none';this.parentNode.textContent='🌌'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">80% of World's AI Models Trained Here!</span><span class="hot-badge">🔥 ELITE</span></div>
-          <div class="jco">Invisible Technologies | Meridial Expert Network</div>
-          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">Premium Pay</span><span class="tag tp">24K+ Experts</span><span class="tag tr">New</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">Elite</div>
-          <div class="jtime">5 days ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Invisible Technologies runs the Meridial Expert Network, an operations-and-data partner for several major AI labs, with a large existing pool of experts already onboarded. Being part of a bigger network can mean steadier project flow, but also more competition to get matched.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Generalists comfortable with varied operational and data tasks, not just one niche</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Onboarding into the expert network before tasks become available</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Expect an onboarding period before consistent project flow starts</span></div>
-        </div>
-        <a href="/meridial" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="fulltime" data-new="true" data-domain="crossover.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=crossover.com&sz=64" alt="crossover.com logo" onerror="this.style.display='none';this.parentNode.textContent='👑'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">$10K–$1M/Year — Top 1% Remote Jobs</span><span class="hot-badge">💰 ELITE</span></div>
-          <div class="jco">Crossover · Fortune 500 Clients · 100 Countries</div>
-          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag ta">$10K–$1M/yr</span><span class="tag tp">Top 1% Only</span><span class="tag tr">New</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay">$1M<span class="unit">/yr</span></div>
-          <div class="jtime">5 days ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Crossover has run remote, performance-based hiring for years, placing people in roles with Fortune 500 clients across 100 countries, with a wide pay band reflecting very different role levels. The "top 1%" framing means the screening process is intentionally selective.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Highly experienced professionals comfortable with rigorous, performance-tracked work</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Multi-stage interviews and skills testing — the process is longer than most</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Block out real time for the application — Crossover's process is known for being thorough</span></div>
-        </div>
-        <a href="/crossover" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-
-    <div class="jcard hot" data-type="freelance" data-new="true" data-domain="scale.com">
-      <div class="jmain" onclick="toggleDetails(this)">
-        <div class="jico"><img src="https://www.google.com/s2/favicons?domain=scale.com&sz=64" alt="scale.com logo" onerror="this.style.display='none';this.parentNode.textContent='📐'"></div>
-        <div class="jbody">
-          <div class="jtop"><span class="jtitle">Powers 90% of World's Top AI Models</span><span class="hot-badge">🔥 LEGENDARY</span></div>
-          <div class="jco">Scale AI · Trusted by Meta, Mayo Clinic, US Gov</div>
-          <div class="tags"><span class="tag tg">100% Remote</span><span class="tag tp">Since 2016</span><span class="tag tr">New</span></div>
-        </div>
-        <div class="jright">
-          <div class="jpay b">Premium</div>
-          <div class="jtime">4 days ago</div>
-          <div class="jchev">▾</div>
-        </div>
-      </div>
-      <div class="jdetails">
-        <p class="jdetail-text">Scale AI is one of the most established names in AI training data, founded in 2016 and used by many major AI labs. As the most well-known platform on this list, expect higher applicant volume and correspondingly more competitive task qualification.</p>
-        <div class="jdetail-grid">
-          <div class="jdetail-item"><b>Good fit for</b><span>Anyone wanting to start with a recognizable, widely-used platform</span></div>
-          <div class="jdetail-item"><b>Typically needs</b><span>Account sign-up plus task-specific qualification tests</span></div>
-          <div class="jdetail-item"><b>Keep in mind</b><span>Popular task categories fill fast — check back regularly for new openings</span></div>
-        </div>
-        <a href="/scaleai" target="_blank" rel="noopener noreferrer" class="apply-btn" onclick="event.stopPropagation()">Visit official page →</a>
-      </div>
-    </div>
-  </div>
+[
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "elevenlabs.io",
+    "title": "150+ Roles — World's #1 Voice AI Company",
+    "badge": "🔥 $3.3B",
+    "company_line": "ElevenLabs · Full-time & Freelance · 30+ Countries",
+    "tags": [
+      "30+ Countries",
+      "Both Types",
+      "150+ Roles"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "ElevenLabs is the world's leading AI voice platform ($3.3B valuation), offering 150+ open roles across engineering, growth, revenue, and operations — plus separate freelance roles for audiobook specialists, dubbing specialists, translators, and audio engineers. India-specific roles are available. This is a rare platform offering both full-time careers AND paid freelance work at the same company.",
+    "good_fit_for": "Engineers, marketers, and sales professionals for full-time roles; linguists, translators, and audio specialists for the freelance productions path",
+    "typically_needs": "Full-time roles need relevant experience; freelance roles (dubbing, transcription, audiobook) depend on language skills and audio quality",
+    "keep_in_mind": "Most full-time roles are remote but tied to specific countries — check your region. Freelance productions roles are available across Brazil, UK, India and more",
+    "apply": "/elevenlabs"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "imerit.ai",
+    "title": "PhD & Expert Network — Teams Not Crowds",
+    "badge": "",
+    "company_line": "Scholars by iMerit · 12+ Years · 5,000+ Employees",
+    "tags": [
+      "Worldwide",
+      "Freelance",
+      "PhD/MA/MSC",
+      "New"
+    ],
+    "pay": "Varies",
+    "posted": "Today",
+    "description": "Scholars by iMerit is an expert network for PhDs, MDs, linguists and engineers who do AI training and chain-of-thought reasoning work for LLM fine-tuning. Unlike anonymous gig platforms, iMerit puts you on a small team with a project manager rather than treating you as part of a crowd — backed by 12+ years of company history.",
+    "good_fit_for": "Master's/PhD holders and subject matter experts across professional, academic, and creative fields — from medicine to mathematics to creative writing",
+    "typically_needs": "A relevant advanced degree (MA, MSC, or PhD depending on the project) and proficiency in the required language for that role",
+    "keep_in_mind": "Projects range from a few days to long-term contracts, and some listings are \"pre-register\" only — meaning you apply ahead of the actual project start date",
+    "apply": "/imerit"
+  },
+  {
+    "type": "fulltime",
+    "new": true,
+    "domain": "aiacquisition.com",
+    "title": "50+ Remote Corporate Roles — 20+ Countries",
+    "badge": "",
+    "company_line": "AI Acquisition LLC · Marketing, Ops, Customer Success",
+    "tags": [
+      "Multi-Country",
+      "Full-time/Contract",
+      "New"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "AI Acquisition is a marketing/growth agency that sells AI-powered business systems to entrepreneurs — NOT an \"earn from AI\" platform. Their careers page lists 50+ genuine internal job openings (Marketing, Operations, Customer Success, Finance) across 20+ countries including India. Treat this as a normal remote job application, not a gig-economy opportunity.",
+    "good_fit_for": "Marketing, Operations, or Customer Success professionals looking for standard full-time or contract remote employment",
+    "typically_needs": "Relevant experience matching the specific department — these are standard corporate hires with normal interview processes",
+    "keep_in_mind": "This company's main business is selling AI marketing systems to entrepreneurs, with bold revenue claims that come with heavy disclaimers — but the job openings themselves appear to be real, standard hiring",
+    "apply": "/aiacquisition"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "snorkel.ai",
+    "title": "Full-Time Careers OR Expert Community",
+    "badge": "",
+    "company_line": "Snorkel AI · SOC2 & HIPAA Certified · 30+ Roles",
+    "tags": [
+      "SF / Remote",
+      "Both Types",
+      "New"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "Snorkel AI offers two genuinely different paths: full-time corporate roles in Engineering, Research, Sales and Product (mostly based in San Francisco/Redwood City, hybrid), and a separate Expert Community for PhDs and domain specialists who want contract-based, remote-friendly work building AI training datasets. Pick whichever matches what you're looking for.",
+    "good_fit_for": "Tech professionals wanting full-time SF-based careers, OR PhDs/specialists wanting flexible remote contract work — two very different audiences",
+    "typically_needs": "Full-time roles need relevant tech/research experience; Expert Community needs deep expertise in a specialized field, any background",
+    "keep_in_mind": "Most full-time listings are hybrid in SF/Redwood City/NYC — true remote is mainly available through the Expert Community path or select \"United States (Remote)\" roles",
+    "apply": "/snorkel"
+  },
+  {
+    "type": "fulltime",
+    "new": true,
+    "domain": "avalara.com",
+    "title": "Global Tax-Tech Company — Multiple Roles",
+    "badge": "",
+    "company_line": "Avalara (NYSE: AVLR) · 200,000+ Customers · 75+ Countries",
+    "tags": [
+      "Pune, India",
+      "Full-time",
+      "Corporate"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "Avalara is a publicly-traded (NYSE: AVLR) tax compliance and AI platform with 200,000+ customers across 75+ countries. This is a stable, traditional corporate job rather than a freelance gig — Glassdoor shows a 3.2/5 employee rating with 49% recommending it to a friend, which is solid but not exceptional. Open roles include account management, benefits systems, and engineering positions, with some based in Pune, India.",
+    "good_fit_for": "Professionals wanting stable, long-term corporate employment rather than quick freelance income",
+    "typically_needs": "Relevant degree and work experience matching the specific role — these are standard full-time hires, not gig work",
+    "keep_in_mind": "Customer reviews of Avalara's tax product mention support issues — this reflects the product experience, not necessarily what it's like to work there as an employee (3.2/5 on Glassdoor)",
+    "apply": "/avalara"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "besimple.com",
+    "title": "Get Paid to Record Your Voice for AI",
+    "badge": "",
+    "company_line": "Besimple AI · Y Combinator-Backed · 14+ Languages",
+    "tags": [
+      "Worldwide",
+      "$5–$15/session",
+      "Freelance"
+    ],
+    "pay": "Varies",
+    "posted": "Today",
+    "description": "Besimple AI is a Y Combinator-backed startup building the data layer for voice AI. Their contributor side, Pila8, pays everyday people (not just engineers) to record short voice clips that train AI to understand different accents and languages — base rate is $0.10/minute, with non-English speakers and consistent contributors earning bonuses.",
+    "good_fit_for": "Anyone with a phone, a quiet space, and a few minutes a day — non-English speakers get higher bonus rates",
+    "typically_needs": "A Google account to sign up — no technical skills, just read provided scripts and record clearly",
+    "keep_in_mind": "There's a 20-day maturity lock before you can withdraw, and you're granting rights to your voice (and face, for video) data — read the agreement first",
+    "apply": "/besimple"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "dataforce.ai",
+    "title": "1.3M Worldwide Community — Sign Up in 5 Min",
+    "badge": "",
+    "company_line": "DataForce by TransPerfect · 25+ Years · 140+ Cities",
+    "tags": [
+      "Worldwide",
+      "$15–$48/hr",
+      "Freelance",
+      "New"
+    ],
+    "pay": "Varies",
+    "posted": "Today",
+    "description": "DataForce is TransPerfect's AI data platform with over 1.3 million remote contributors worldwide, working on data annotation, transcription, search evaluation, and AI training tasks. It's a legitimate, established side of TransPerfect (25+ years, 140+ cities) — but reviews say to treat it as flexible freelance income, not a stable full-time job, since project availability varies by location and language demand.",
+    "good_fit_for": "Bilingual speakers, students, and anyone wanting flexible side income — beginners welcome, no AI experience needed",
+    "typically_needs": "A 5-minute sign-up plus a qualification step — pay is calculated per task, per hour, or flat rate depending on the project",
+    "keep_in_mind": "Some users report waiting weeks for project access — approval timing depends heavily on your location and language demand",
+    "apply": "/dataforce"
+  },
+  {
+    "type": "fulltime",
+    "new": true,
+    "domain": "revolut.com",
+    "title": "622 Open Positions — Hiring Now!",
+    "badge": "",
+    "company_line": "Revolut · Fintech · 10,000+ Employees Globally",
+    "tags": [
+      "Remote-First",
+      "Full-time",
+      "622 Roles"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "Revolut is a global fintech \"super app\" with 60+ million customers and 622 open roles across Engineering, Compliance, Sales, Finance, and Legal. It's genuinely remote-first — 239 of its open roles are fully remote — and known for fast growth, strong pay (engineers average $126K+), and an intense, results-driven culture rather than a relaxed one.",
+    "good_fit_for": "Experienced professionals in fintech, compliance, engineering, or finance who want high pay and don't mind a fast, demanding pace",
+    "typically_needs": "Relevant degree or work experience for the specific team — most roles are full-time employment, not freelance/gig work",
+    "keep_in_mind": "Reviews mention long hours (12–14 hrs some days) and around 500 applicants per role — competitive, demanding, but well-compensated",
+    "apply": "/revolut"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "welo.com",
+    "title": "25+ Years Global Excellence — Hiring",
+    "badge": "",
+    "company_line": "Welo Global · Google, Spotify & Amazon Trusted",
+    "tags": [
+      "300+ Languages",
+      "Freelance",
+      "New"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "Welo Global is a 25+ year old language and localization company trusted by Google, Spotify, Amazon, and other major brands — they handle translation, transcription, data annotation, and AI training tasks across 300+ languages. It's one of the more established names in this space, which generally means more structured onboarding and steadier project flow compared to smaller gig platforms.",
+    "good_fit_for": "Bilingual or multilingual speakers, especially those with skills in less common languages — but general annotators are also welcome",
+    "typically_needs": "A profile sign-up and language proficiency assessment — role type and pay depend on the specific project you qualify for",
+    "keep_in_mind": "\"Multiple\" roles means pay varies a lot by task — check the specific project type after onboarding rather than assuming a single rate",
+    "apply": "/welo"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "stellarai.com",
+    "title": "Earn $25/hr+ Training AI — No Experience",
+    "badge": "",
+    "company_line": "Stellar AI · Open-Ended Contract",
+    "tags": [
+      "Worldwide",
+      "$25/hr+",
+      "Flexible",
+      "New"
+    ],
+    "pay": "$25 /hr",
+    "posted": "Today",
+    "description": "Stellar AI is a freelance AI training platform open to contributors worldwide with no prior experience required — you complete tasks like rating responses, writing prompts, or evaluating AI outputs, and get paid hourly. The \"$25/hr+\" framing means that's the starting rate, with higher-paying tasks available depending on skill and task type. Being \"open-ended contract\" means there's no fixed end date, but also no guaranteed hours — work is available when projects are live.",
+    "good_fit_for": "Beginners looking for a low-barrier entry into AI training work — no degree or prior experience needed to start",
+    "typically_needs": "Just a sign-up and a short onboarding — most tasks are self-explanatory with built-in guidelines",
+    "keep_in_mind": "Hours aren't guaranteed — task availability depends on active projects, so treat this as flexible side income rather than a fixed schedule",
+    "apply": "/stellar"
+  },
+  {
+    "type": "fulltime",
+    "new": true,
+    "domain": "gitlab.com",
+    "title": "World's Largest All-Remote Company",
+    "badge": "",
+    "company_line": "GitLab · 65+ Countries · NASDAQ-Listed",
+    "tags": [
+      "100% Remote",
+      "Full-time",
+      "New"
+    ],
+    "pay": "Multiple",
+    "posted": "Today",
+    "description": "GitLab is a major, publicly traded (Nasdaq: GTLB) DevOps platform company that's run fully remote since it was founded — no offices, no headquarters, just a globally distributed team across 65+ countries. It's a different kind of listing than most others here: this is full-time employment at an established public tech company, not freelance or gig-based AI training work.",
+    "good_fit_for": "People wanting a stable, full-time remote job at an established public company — not freelance gig work",
+    "typically_needs": "A standard full-time hiring process — resume screening, interviews, and role-specific assessments",
+    "keep_in_mind": "Roles span engineering, sales, marketing and more — check GitLab's own careers page to filter by your actual skill set",
+    "apply": "/gitlab"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "pareto.ai",
+    "title": "Top 0.01% Expert Network — All Domains",
+    "badge": "🔥 NEW",
+    "company_line": "Pareto AI · San Francisco",
+    "tags": [
+      "Worldwide",
+      "$35–$230/hr",
+      "Freelance",
+      "New"
+    ],
+    "pay": "$230 /hr",
+    "posted": "Yesterday",
+    "description": "Pareto AI runs a human-data platform that connects AI labs with vetted subject-matter experts for RLHF, prompt evaluation, and domain-specific annotation — across fields like medicine, law, finance, and engineering. It sits at the high end of this list: the company says general work pays $35–$60/hr, with specialized expert tasks going up to $230/hr, and that it has raised $37M in funding so far.",
+    "good_fit_for": "Licensed or credentialed specialists — doctors, lawyers, engineers, quants — not just general annotation experience",
+    "typically_needs": "A completed profile, a paid screening task, and proof of your professional background",
+    "keep_in_mind": "$230/hr applies to specialized expert work, not the general rate — check which tier you actually qualify for before applying",
+    "apply": "/pareto"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "rex.zone",
+    "title": "Expert-First AI Training — All Domains",
+    "badge": "🔥 NEW",
+    "company_line": "RemoExperts (Rex.zone)",
+    "tags": [
+      "Worldwide",
+      "$25–$65/hr",
+      "Freelance",
+      "New"
+    ],
+    "pay": "$65 /hr",
+    "posted": "2 days ago",
+    "description": "Rex.zone connects subject-matter experts with AI labs that need domain-specific data — model answers get checked, scored, or rewritten across fields like law, medicine, finance and more. Work is task-based and remote, so you pick projects that match what you actually know.",
+    "good_fit_for": "People with deep knowledge in a specific field, not just general writing skill",
+    "typically_needs": "A laptop, stable internet, and proof of expertise (resume or portfolio) in your domain",
+    "keep_in_mind": "Apply with the domain you're strongest in — niche expertise usually gets matched to better-paying projects",
+    "apply": "/rexzone"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "joinhandshake.com",
+    "title": "Earn Up to $100/hr — PhDs & Masters",
+    "badge": "🔥 ACADEMIC",
+    "company_line": "Handshake AI Fellowship · 100K+ Fellows",
+    "tags": [
+      "100% Remote",
+      "Up to $100/hr",
+      "30+ Fields",
+      "New"
+    ],
+    "pay": "$100 /hr",
+    "posted": "3 days ago",
+    "description": "Built on Handshake's existing university network, this fellowship targets PhD and Master's-level fellows who evaluate or generate advanced AI responses in their academic specialty. It's one of the higher-paying options here, but it leans heavily on formal qualifications.",
+    "good_fit_for": "Current or recent grad students with a Master's or PhD",
+    "typically_needs": "Academic transcripts or proof of degree, often a short subject test",
+    "keep_in_mind": "Have your degree or transcript ready before applying — it speeds up screening a lot",
+    "apply": "/handshake"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "alignerr.com",
+    "title": "Robotics ML Expert",
+    "badge": "★ HOT",
+    "company_line": "Alignerr · Machine Learning",
+    "tags": [
+      "Remote",
+      "Freelance"
+    ],
+    "pay": "$1000 /ref",
+    "posted": "2 weeks ago",
+    "description": "Alignerr recruits ML experts to label and validate robotics-related training data. Worth flagging clearly: the $1000 shown on this card is a referral bonus for bringing in other qualified experts, not the hourly pay for the work itself — actual task pay is set separately once you're onboarded.",
+    "good_fit_for": "People with a robotics, ML, or computer-vision background",
+    "typically_needs": "Relevant technical background; the referral bonus needs a successful invite",
+    "keep_in_mind": "Don't apply expecting $1000/hr — check the real task rate on the application page first",
+    "apply": "/alignerr/robotics"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "uber.com",
+    "title": "Freelance AI Contributor",
+    "badge": "",
+    "company_line": "Uber AI Solutions · Tech",
+    "tags": [
+      "Remote",
+      "Freelance"
+    ],
+    "pay": "Flexible",
+    "posted": "2 weeks ago",
+    "description": "Listed as a flexible freelance contributor role. We don't have much first-hand detail on this one yet, so treat it like any unfamiliar gig listing: read the actual offer page closely before committing real time to it.",
+    "good_fit_for": "People comfortable evaluating a new platform on their own",
+    "typically_needs": "Details vary by role — check the official application page",
+    "keep_in_mind": "Search the company name plus \"review\" before applying to any platform you haven't heard of",
+    "apply": "/uber"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "afterquery.com",
+    "title": "AI Expert — 40+ Roles Open",
+    "badge": "",
+    "company_line": "AfterQuery (YC-backed) · Startup",
+    "tags": [
+      "Remote",
+      "$90/hr",
+      "Freelance"
+    ],
+    "pay": "$90 /hr",
+    "posted": "2 weeks ago",
+    "description": "AfterQuery is a YC-backed startup hiring AI experts to evaluate and refine model outputs across 40+ open roles. Being YC-backed means it went through outside investor vetting, which is a decent — though not guaranteed — signal of legitimacy.",
+    "good_fit_for": "Freelancers comfortable with structured evaluation and grading tasks",
+    "typically_needs": "A remote setup; some roles want a specific technical or writing background",
+    "keep_in_mind": "Browse a few of the 40+ roles — pay and requirements differ a lot between them",
+    "apply": "/afterquery"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "mindrift.ai",
+    "title": "AI Trainer — All Skills Welcome",
+    "badge": "",
+    "company_line": "Mindrift · AI Training",
+    "tags": [
+      "Remote",
+      "$15–$100/hr",
+      "Freelance"
+    ],
+    "pay": "$100 /hr",
+    "posted": "2 weeks ago",
+    "description": "Mindrift runs AI training projects across many skill areas and languages, with pay scaling from entry-level to expert tasks. It's a broad, multi-skill platform rather than one narrow niche, so most backgrounds can usually find something to apply for.",
+    "good_fit_for": "Beginners and experienced contributors alike — roles span a wide pay range",
+    "typically_needs": "Sign-up plus a short skills assessment for your chosen track",
+    "keep_in_mind": "Try a couple of different task categories — pay varies more by task type than by platform",
+    "apply": "/mindrift"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "dataannotation.tech",
+    "title": "AI Data Annotator",
+    "badge": "",
+    "company_line": "DataAnnotation.tech · Data",
+    "tags": [
+      "Remote",
+      "$25–$100/hr",
+      "Freelance"
+    ],
+    "pay": "$100 /hr",
+    "posted": "2 weeks ago",
+    "description": "One of the more established platforms on this list — contributors complete coding, writing, and data-labeling tasks that help train AI models, paid hourly. Getting in usually means passing a qualification exercise first; pay tends to rise as you build a track record.",
+    "good_fit_for": "People willing to start with simpler tasks and build up from there",
+    "typically_needs": "Passing an initial qualification test before you get access to paid tasks",
+    "keep_in_mind": "Early tasks pay less while you're being evaluated — that's normal, not a red flag",
+    "apply": "/dataannotation"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "oneforma.com",
+    "title": "AI Contributor — 60+ Languages",
+    "badge": "",
+    "company_line": "OneForma · Linguistics",
+    "tags": [
+      "Remote",
+      "$4.5–$45/hr",
+      "Freelance"
+    ],
+    "pay": "$45 /hr",
+    "posted": "1 week ago",
+    "description": "OneForma focuses on linguistic and data-collection microtasks — translation checks, transcription, search relevance — across 60+ languages. Pay per task is usually modest since tasks are short, but it's accessible if your language isn't widely supported elsewhere.",
+    "good_fit_for": "Bilingual or multilingual speakers, especially in less common languages",
+    "typically_needs": "Native or fluent-level skill in your listed language(s)",
+    "keep_in_mind": "Multilingual applicants usually get matched to more available tasks, faster",
+    "apply": "/oneforma"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "outlier.ai",
+    "title": "AI Expert — 61+ Roles Open",
+    "badge": "",
+    "company_line": "Outlier AI · Research",
+    "tags": [
+      "Remote",
+      "Freelance"
+    ],
+    "pay": "Varies",
+    "posted": "2 weeks ago",
+    "description": "Outlier runs expert evaluation tasks — reviewing, scoring, and correcting AI-generated answers — across 60+ open roles in subjects like coding, math, and writing. Pay is task-based rather than a flat hourly rate, so it depends on which project you qualify for.",
+    "good_fit_for": "People strong in a specific subject — coding, writing, math, and similar",
+    "typically_needs": "Passing a subject-specific qualification quiz to unlock paid tasks",
+    "keep_in_mind": "Pick the subject category you're genuinely confident in — qualification tests can be strict",
+    "apply": "/outlier"
+  },
+  {
+    "type": "parttime",
+    "new": false,
+    "domain": "sarootlabs.com",
+    "title": "Prompt Engineer",
+    "badge": "",
+    "company_line": "Saroot Labs Inc. · Engineering",
+    "tags": [
+      "Remote",
+      "$20–$30/hr",
+      "Part-time"
+    ],
+    "pay": "$30 /hr",
+    "posted": "2 weeks ago",
+    "description": "A part-time Prompt Engineer role — writing and refining prompts used to test or steer AI model behavior. It's narrower and more specialized than most listings here, and the pay reflects a part-time rather than full freelance commitment.",
+    "good_fit_for": "People comfortable writing clear, structured instructions for AI systems",
+    "typically_needs": "Strong written English and some familiarity with how AI chat tools respond to prompts",
+    "keep_in_mind": "A short portfolio of example prompts can help a lot during screening",
+    "apply": "/sarootlabs"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "appen.com",
+    "title": "AI Contributor — 500+ Languages",
+    "badge": "",
+    "company_line": "CrowdGen by Appen · Global",
+    "tags": [
+      "200+ Countries",
+      "Up to $40/hr"
+    ],
+    "pay": "$40 /hr",
+    "posted": "1 week ago",
+    "description": "Appen is a long-running, publicly listed data company, and CrowdGen is its crowdsourced worker portal for things like search evaluation, data collection, and transcription in 200+ countries. It's a high-volume microtask model — individual tasks pay modestly but availability is broad.",
+    "good_fit_for": "Anyone wanting flexible, low-commitment microtasks on the side",
+    "typically_needs": "Just a sign-up and basic task tutorials — no special qualification usually needed",
+    "keep_in_mind": "Treat this as supplemental income rather than a primary one — task volume can be inconsistent",
+    "apply": "/crowdgen"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "telusinternational.com",
+    "title": "AI Contributor — 7 Roles Open",
+    "badge": "",
+    "company_line": "TELUS International AI · Telecom",
+    "tags": [
+      "Worldwide",
+      "$6–$50/hr"
+    ],
+    "pay": "$50 /hr",
+    "posted": "1 week ago",
+    "description": "TELUS Digital's AI data arm runs annotation and labeling projects worldwide, currently with seven open contributor roles. Being part of a large, established company, the process tends to be more structured than smaller gig platforms.",
+    "good_fit_for": "People who prefer a more corporate, process-driven application experience",
+    "typically_needs": "ID verification or a background check is common for larger BPO-style platforms",
+    "keep_in_mind": "Expect a slightly longer onboarding process than you'd see on smaller startups",
+    "apply": "/telus"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "mercor.com",
+    "title": "Premium AI Jobs — All Skills",
+    "badge": "💰 TOP PAY",
+    "company_line": "Mercor · Premium Platform",
+    "tags": [
+      "Remote",
+      "$16–$200/hr"
+    ],
+    "pay": "$200 /hr",
+    "posted": "1 week ago",
+    "description": "Mercor matches experts directly with frontier AI labs for premium-paying contract work, with pay varying a lot by skill level and project. It's one of the higher-end options on this list, which usually also means more competitive screening.",
+    "good_fit_for": "Experienced professionals — engineering, research, or specialized domains",
+    "typically_needs": "A strong resume or portfolio — screening is more competitive at this pay tier",
+    "keep_in_mind": "Tailor your application to one specific skill area rather than applying broadly",
+    "apply": "/mercor"
+  },
+  {
+    "type": "fulltime",
+    "new": false,
+    "domain": "naveera.com",
+    "title": "25+ Remote Tech Jobs Open",
+    "badge": "",
+    "company_line": "Naveera Tech · Software",
+    "tags": [
+      "Remote",
+      "Full-time"
+    ],
+    "pay": "25+ Roles",
+    "posted": "1 week ago",
+    "description": "Listed as full-time remote tech roles rather than freelance gig work, with 25+ positions open. Full-time listings are worth a closer look at company background, since the commitment level here is higher than a freelance task platform.",
+    "good_fit_for": "People looking for a full-time remote tech job, not freelance gigs",
+    "typically_needs": "A standard full-time hiring process — interviews, background checks, and so on",
+    "keep_in_mind": "For any full-time offer, confirm the legal entity and contract terms before signing anything",
+    "apply": "/naveera"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "deccanai.com",
+    "title": "Top 1% AI Expert Network",
+    "badge": "",
+    "company_line": "Deccan AI Experts · Elite",
+    "tags": [
+      "Remote",
+      "Up to $50/hr",
+      "Invite Only"
+    ],
+    "pay": "$50 /hr",
+    "posted": "1 week ago",
+    "description": "An invite-only network for top-tier AI experts. Invite-only models usually mean a higher entry bar and limited slots, so this one's less about applying on demand and more about getting noticed by the network in the first place.",
+    "good_fit_for": "Established experts with a public track record — publications, GitHub, portfolio",
+    "typically_needs": "Typically a referral or an inbound invite rather than an open application",
+    "keep_in_mind": "A visible public portfolio helps — invite-only networks often source candidates that way",
+    "apply": "/deccan"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "superannotate.com",
+    "title": "Subject Matter Expert — AI Training",
+    "badge": "",
+    "company_line": "SME Careers by SuperAnnotate",
+    "tags": [
+      "40+ Countries",
+      "$20–$130+/hr",
+      "Freelance",
+      "NVIDIA Backed"
+    ],
+    "pay": "$130 /hr",
+    "posted": "1 week ago",
+    "description": "SuperAnnotate's subject-matter-expert track pays a wide range depending on how specialized your knowledge is, with roles open across 40+ countries. The wide $20–$130+/hr band reflects how much subject expertise can change your rate.",
+    "good_fit_for": "Specialists in a technical or academic field, not generalists",
+    "typically_needs": "Proof of subject expertise — degree, certification, or relevant work history",
+    "keep_in_mind": "The high end of that pay range usually goes to rare or highly technical specialties",
+    "apply": "/sme"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "turing.com",
+    "title": "LLM Trainer — Agent Function Call",
+    "badge": "",
+    "company_line": "Turing — Anthropic • Nvidia • Disney",
+    "tags": [
+      "Remote",
+      "6 Weeks"
+    ],
+    "pay": "Frontier AI",
+    "posted": "1 week ago",
+    "description": "Turing places software and AI engineers with major companies on a project basis, including LLM-training work like agent function-calling — teaching a model to correctly trigger tools and APIs. Engagements are typically several weeks long rather than one-off tasks.",
+    "good_fit_for": "Software engineers comfortable with technical interviews",
+    "typically_needs": "Usually a coding assessment plus a technical interview",
+    "keep_in_mind": "Brush up on tool-use and function-calling patterns specifically before the interview",
+    "apply": "/turing"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "linguasenseai.com",
+    "title": "Language & Audio Remote Jobs",
+    "badge": "",
+    "company_line": "LinguaSenseAI",
+    "tags": [
+      "Remote",
+      "Freelance"
+    ],
+    "pay": "Varies",
+    "posted": "1 week ago",
+    "description": "Focused specifically on language and audio work — transcription, voice recording, pronunciation review for AI speech models. It's a narrower niche than most listings here, so it suits people with strong audio or language skills more than general data work.",
+    "good_fit_for": "People with clear speech, strong language skills, or audio-editing experience",
+    "typically_needs": "A decent microphone or quiet recording space for audio-based tasks",
+    "keep_in_mind": "Test your mic setup before any audio task — quality often affects payment approval",
+    "apply": "/linguasense"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "micro1.ai",
+    "title": "AI Expert — Frontier Lab Projects",
+    "badge": "",
+    "company_line": "Micro1 — Palo Alto",
+    "tags": [
+      "Remote",
+      "$20–$100+/hr",
+      "Freelance"
+    ],
+    "pay": "$100 /hr",
+    "posted": "1 week ago",
+    "description": "Similar in model to Mercor and Turing — micro1 matches AI experts with frontier lab projects, with pay scaling by skill level. A few platforms on this page use this same \"staffing agency for AI labs\" approach, so requirements tend to overlap.",
+    "good_fit_for": "Experienced AI/ML practitioners comfortable with a formal screening process",
+    "typically_needs": "A resume review plus a technical assessment",
+    "keep_in_mind": "Rejected by one staffing-style platform? The others here (Mercor, Turing) are worth trying too — criteria differ slightly",
+    "apply": "/micro1"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "rws.com",
+    "title": "AI Data Specialist — TrainAI Community",
+    "badge": "",
+    "company_line": "RWS TrainAI · Since 1992",
+    "tags": [
+      "Worldwide",
+      "$8–$20+/hr",
+      "Freelance"
+    ],
+    "pay": "$20 /hr",
+    "posted": "1 week ago",
+    "description": "RWS is an established language-services company expanding into AI training data work through TrainAI, covering translation-adjacent and linguistic annotation tasks. Pay here sits on the lower end of this list, which is typical for high-volume linguistic microtasks.",
+    "good_fit_for": "Translators or bilingual freelancers looking for AI-adjacent work",
+    "typically_needs": "Language-pair fluency relevant to the open tasks",
+    "keep_in_mind": "Useful as a side platform alongside others on this list rather than a sole income source",
+    "apply": "/rws"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "x.ai",
+    "title": "219 Remote Jobs — Train GROK AI",
+    "badge": "🔥 VIRAL",
+    "company_line": "xAI — Elon Musk's AI Company",
+    "tags": [
+      "100% Remote",
+      "$40–$200+/hr",
+      "219 Roles!"
+    ],
+    "pay": "$200 /hr",
+    "posted": "1 week ago",
+    "description": "xAI is running a large recruiting push — 219 listed roles — for people who help train and evaluate Grok. A drive at this scale usually means varied roles at very different pay levels, so \"up to $200/hr\" applies to specific senior tasks, not every opening.",
+    "good_fit_for": "A wide range of backgrounds, given how many different roles are open",
+    "typically_needs": "Varies a lot by specific role — check each listing individually",
+    "keep_in_mind": "Don't assume every one of the 219 roles pays the headline $200/hr — check the actual listing",
+    "apply": "/xai"
+  },
+  {
+    "type": "fulltime",
+    "new": false,
+    "domain": "innodata.com",
+    "title": "Work for Google, Apple & Microsoft!",
+    "badge": "🔥 NASDAQ",
+    "company_line": "Innodata Inc. · 36+ Years Experience",
+    "tags": [
+      "20+ Countries",
+      "85+ Languages",
+      "Full-time"
+    ],
+    "pay": "Premium",
+    "posted": "1 week ago",
+    "description": "Innodata is a publicly traded (Nasdaq) AI data engineering company that's been operating for decades, working with major tech clients. As a listed public company, it has more public financial transparency than most platforms on this page.",
+    "good_fit_for": "People who prefer working with an established, publicly accountable company",
+    "typically_needs": "A standard full-time application process, often with role-specific technical screening",
+    "keep_in_mind": "You can check Innodata's public filings or investor info for extra confidence before applying",
+    "apply": "/innodata"
+  },
+  {
+    "type": "freelance",
+    "new": false,
+    "domain": "prolific.com",
+    "title": "Get Paid for Online Studies",
+    "badge": "",
+    "company_line": "Prolific · Founded at Oxford University",
+    "tags": [
+      "Worldwide",
+      "$8–$20+/hr",
+      "Flexible"
+    ],
+    "pay": "$20 /hr",
+    "posted": "1 week ago",
+    "description": "Prolific is a bit different from the rest of this list — instead of AI-labeling tasks, it connects you with paid academic and commercial research studies and surveys, some of which feed into AI/UX research. Pay is per-study rather than ongoing hourly task work.",
+    "good_fit_for": "People who enjoy surveys and short studies rather than ongoing task work",
+    "typically_needs": "Just a participant profile — no special qualification needed to start",
+    "keep_in_mind": "Studies fill up fast — turning on notifications helps you catch ones in your demographic",
+    "apply": "/prolific"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "invisible.co",
+    "title": "80% of World's AI Models Trained Here!",
+    "badge": "🔥 ELITE",
+    "company_line": "Invisible Technologies | Meridial Expert Network",
+    "tags": [
+      "100% Remote",
+      "Premium Pay",
+      "24K+ Experts",
+      "New"
+    ],
+    "pay": "Elite",
+    "posted": "5 days ago",
+    "description": "Invisible Technologies runs the Meridial Expert Network, an operations-and-data partner for several major AI labs, with a large existing pool of experts already onboarded. Being part of a bigger network can mean steadier project flow, but also more competition to get matched.",
+    "good_fit_for": "Generalists comfortable with varied operational and data tasks, not just one niche",
+    "typically_needs": "Onboarding into the expert network before tasks become available",
+    "keep_in_mind": "Expect an onboarding period before consistent project flow starts",
+    "apply": "/meridial"
+  },
+  {
+    "type": "fulltime",
+    "new": true,
+    "domain": "crossover.com",
+    "title": "$10K–$1M/Year — Top 1% Remote Jobs",
+    "badge": "💰 ELITE",
+    "company_line": "Crossover · Fortune 500 Clients · 100 Countries",
+    "tags": [
+      "100% Remote",
+      "$10K–$1M/yr",
+      "Top 1% Only",
+      "New"
+    ],
+    "pay": "$1M /yr",
+    "posted": "5 days ago",
+    "description": "Crossover has run remote, performance-based hiring for years, placing people in roles with Fortune 500 clients across 100 countries, with a wide pay band reflecting very different role levels. The \"top 1%\" framing means the screening process is intentionally selective.",
+    "good_fit_for": "Highly experienced professionals comfortable with rigorous, performance-tracked work",
+    "typically_needs": "Multi-stage interviews and skills testing — the process is longer than most",
+    "keep_in_mind": "Block out real time for the application — Crossover's process is known for being thorough",
+    "apply": "/crossover"
+  },
+  {
+    "type": "freelance",
+    "new": true,
+    "domain": "scale.com",
+    "title": "Powers 90% of World's Top AI Models",
+    "badge": "🔥 LEGENDARY",
+    "company_line": "Scale AI · Trusted by Meta, Mayo Clinic, US Gov",
+    "tags": [
+      "100% Remote",
+      "Since 2016",
+      "New"
+    ],
+    "pay": "Premium",
+    "posted": "4 days ago",
+    "description": "Scale AI is one of the most established names in AI training data, founded in 2016 and used by many major AI labs. As the most well-known platform on this list, expect higher applicant volume and correspondingly more competitive task qualification.",
+    "good_fit_for": "Anyone wanting to start with a recognizable, widely-used platform",
+    "typically_needs": "Account sign-up plus task-specific qualification tests",
+    "keep_in_mind": "Popular task categories fill fast — check back regularly for new openings",
+    "apply": "/scaleai"
+  }
+]
